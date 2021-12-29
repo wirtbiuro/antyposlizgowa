@@ -1,0 +1,83 @@
+.menu{
+    display: flex;
+    position: relative;
+    max-width: 1440px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 30px;
+}
+
+.menu{
+    font-size: 15px;    
+    font-family: "Lato";
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    font-style: normal;
+}
+
+.menu nav{
+    display: flex;
+}
+
+.menu nav div{
+    margin: 15px;
+}
+
+.menu nav div.main{
+    color: #f9d400;    
+}
+
+.menu nav div:hover{
+    color: #f9d400;
+}
+
+.menuBtn{
+    display: none;
+    cursor: pointer;
+}
+
+.menu .logo img{
+    width: 240px;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 1170px){
+    .menuBtn{
+        display: block;
+    }
+    .menu nav{
+        flex-direction: column;
+        overflow: hidden;
+        max-height: 0;
+        position: absolute;
+        z-index: 2;
+        background-color: white;
+        transition-duration: 0.4s;
+        opacity: 0.7;
+        width: 100%;
+        text-align: center;
+        right: 0;
+        top: 100px;
+    }
+    .menu nav.hide{
+        max-height: 0;
+        opacity: 0.7;
+
+    }
+    .menu nav.show{
+        max-height: 500px;
+        opacity: 1;
+    }
+    .menu nav div{
+        padding: 15px;
+        margin: 0;
+        border-bottom: 1px solid rgba(0,0,0,.1);
+    }
+    .menu nav div:hover{
+        background-color: rgba(0,0,0,.05);
+        color: slateblue;
+    }
+}

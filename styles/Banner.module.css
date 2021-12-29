@@ -1,0 +1,41 @@
+.banner{
+    background-image: url('https://antyposlizgowa.com/wp-content/uploads/2021/04/14.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-top: 160px;
+}
+
+.childrenDiv{
+    max-width: 1185px;
+    margin: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.waves{
+    /* position: absolute; */
+    bottom: 0;
+    width: 100%;
+}
+
+.st0{
+    opacity: 0.1;
+}
+
+.st1{
+    opacity: 0.18;
+}
+  
+.st2{
+    opacity: 0.24;
+}
+  
+.st3{
+    opacity: 0.3;
+}
+  
+.st4{
+    opacity: 1;
+}

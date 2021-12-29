@@ -1,0 +1,78 @@
+.footer{
+    display: flex;
+    max-width: 1185px;
+    margin: auto;
+    padding: 0 20px;
+    padding: 70px 20px;
+}
+
+.footer .col{
+    flex: 1;
+    padding: 0 10px;
+}
+
+.footer .row{
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.footer .row .left{
+    width: 20px;
+}
+
+.footer .row .right, .footer .row a{
+    font-size: 14px;
+    line-height: 23.8px;
+    color: #626262;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+.footer a:hover{
+    color: #f9d400;
+}
+
+.footer .logo{
+    height: 40px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.footer h2.title{
+    font-family: Poppins;
+    font-weight: 700;
+    margin: 0px;
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+    font-size: 30px;
+    letter-spacing: -1px;
+    font-style: normal;
+    margin-bottom: 30px;
+}
+
+.footer i{
+    color: #f9d400;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    font-size: 14px;
+}
+
+.map-marker::before{
+    content: "\f3c5";
+}
+
+.phone::before{
+    content: "\f095";
+}
+
+.envelope::before{
+    content: "\f0e0";
+}
+
+.file::before{
+    content: "\f15c";
+}

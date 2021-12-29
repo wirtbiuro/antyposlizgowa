@@ -1,0 +1,109 @@
+.diffBlock{
+    max-width: 1185px;
+    margin: auto;
+}
+
+.mainBlock{
+    display: flex;
+    padding: 20px;
+}
+
+.mainBlock > .left{
+    width: 50%;
+    padding-right: 2.84%;
+}
+
+.mainBlock > .right{
+    width: 50%;
+    padding-left: 2%;
+}
+
+
+.mainBlock .right img{
+    width: 100%;
+    border-radius: 12px;
+}
+
+.row{
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 60px;
+    line-height: 40px;
+    border-color: #f9d400;
+    border-width: 2px;
+    border-style: solid;
+    margin-right: 20px;
+    box-sizing: content-box;
+    border-radius: 50%;
+
+    font-size: 30px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-style: normal;
+    font-variant: normal;
+    text-align: center;
+    color: #f9d400;
+
+}
+
+.icon.atom::before{
+    content: "\f5d2";
+}
+
+.icon.check::before{
+    content: "\f00c";
+}
+
+.icon.thumbsup::before{
+    content: "\f164";
+}
+
+.header h3{
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    letter-spacing: -1px;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1.21;
+}
+
+/* .row:hover div:nth-of-type(2) h3{
+    color: #f9d400;
+} */
+
+.text{
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0px;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.carouselText{
+    padding: 25px;
+    line-height: normal;
+    background-color: #f9f9fb;
+    color: #4a4e57;
+    font-style: italic;
+    background-color: #f9f9fb;
+    color: #4a4e57;
+    font-size: 16px;
+}
+
+.author{
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0px;
+    font-style: normal;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+

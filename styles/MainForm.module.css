@@ -1,0 +1,94 @@
+.mainForm{
+    width: 40%;
+    /* margin: 0 4.8%; */
+    padding: 25px 15px 15px 15px;
+    background-color: white;
+    z-index: 1;
+    border-radius: 8px;
+}
+
+.row{
+    display: flex;
+    margin: 32px 0;
+    align-items: center;
+}
+
+.row:nth-of-type(1){
+    margin-top: 0;
+}
+
+.row:last-of-type{
+    margin-bottom: 0;
+}
+
+.mainForm .row h2{
+    margin: 0 3.84%;
+    font-size: 28px;
+    color: #3f3f3f;
+}
+
+.mainForm input, .mainForm textarea{
+    margin: 0 3.84%;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #d2d2d2;
+    font-size: 14px;
+    color: #9ea0a4;
+    padding: 0 1em;
+    outline: 0;
+}
+
+.mainForm input[type=text]{
+    height: 50px;
+}
+
+.mainForm input[type=checkbox]{
+    width: auto;
+}
+
+.mainForm textarea{
+    padding: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mainForm input:focus, .mainForm textarea:focus{
+    border-color: #f9d400;
+}
+
+.mainForm input:hover:not(:focus), .mainForm textarea:hover:not(:focus){
+    border-color: rgba(249,212,0,0.5);
+}
+
+.mainForm label{
+    color: #3f3f3f;
+    cursor: pointer;
+    font-size: 0.8rem;
+    letter-spacing: 0px;
+    line-height: normal;
+}
+
+.mainForm input[type=submit]{
+    width: auto;
+    padding: 13px 29px;
+    line-height: 17px;
+    font-size: 14px;
+    background: #fff00f;
+    border-color: #ffffff;
+    cursor: pointer;
+    font-family: Poppins;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 1px;
+    border-width: 0px;
+    border-style: solid;
+    border-radius: 50px;
+    text-transform: uppercase;
+    color: #282828;
+}
+
+.mainForm input[type=submit]:hover{
+    background: #f9d400;
+}
+
+
+

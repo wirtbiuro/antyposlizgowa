@@ -1,0 +1,40 @@
+.trustBlock{
+    max-width: 1185px;
+    margin: auto;
+    padding: 0 20px;
+    margin-top: 61px;
+    margin-bottom: 160px;
+}
+
+.trustBlock .main{
+    display: flex;
+}
+
+.trustBlock .header h2{
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    line-height: 65px;
+    letter-spacing: -1px;
+    font-style: normal;
+    font-size: 2.5rem;
+    color: #3f3f3f;
+}
+
+.imgDiv{
+    flex: 1;
+    margin-right: 10px;
+    border: 1px solid #cccccc;
+    padding: 10px;
+    height: 115px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgDiv img{
+    height: 100%;
+}
+
+.imgDiv:last-of-type{
+    margin-right: 0;
+}

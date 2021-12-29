@@ -1,0 +1,22 @@
+.buttonStyles a{
+    width: auto;
+    padding: 13px 29px;
+    line-height: 17px;
+    font-size: 14px;
+    background: #fff00f;
+    border-color: #ffffff;
+    cursor: pointer;
+    font-family: Poppins;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 1px;
+    border-width: 0px;
+    border-style: solid;
+    border-radius: 50px;
+    text-transform: uppercase;
+    color: #282828;
+}
+
+.buttonStyles a:hover{
+    background: #f9d400;
+}
