@@ -16,7 +16,7 @@ const Cards = () => {
                 <Card title='Impregnacja' href="/" aClassName="icon-allWIPER"/>
                 <Card title='Nasze produkty' href="/" aClassName="icon-allMEGAPHONE"/>
             </div>
-            <div className={`${buttonStyles.buttonStyles} ${styles.btn}`}><Link href='/'><a>Dowiedz się więcej >></a></Link></div>
+            <div className={`${buttonStyles.buttonStyles} ${styles.btn}`}><Link href='/'><a>Dowiedz się więcej &gt;&gt;</a></Link></div>
         </div>
     )
 }
