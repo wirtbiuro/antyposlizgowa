@@ -166,3 +166,94 @@
 .pageBody .decorImg{
   border-radius: 8px;
 }
+
+@media (max-width: 1024px){
+  .bannerInner .left{
+    width: 50%;
+  }
+  .pageBody{
+    flex-direction: column;
+  }
+  .pageBody .left{
+    width: auto;
+  }
+  .pageBody .right{
+    width: 50%;
+    margin-left: 30px;
+  }
+  .bannerInner .left.self{
+    width: auto;
+  }
+  .bannerInner .left.self{
+    padding-bottom: 50px;
+  }
+  .bannerInner .left.self h1{
+    font-size: 3.8rem;
+  }
+  .bannerInner h1{
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 850px){
+  .bannerInner h1{
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 725px){
+  .pageBody .right{
+    width: auto;
+  }
+  .bannerInner h1{
+    font-size: 2rem;
+  }
+  .bannerInner .left p{
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 640px){
+  .bannerInner .left{
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  .bannerInner h1{
+    font-size: 2.5rem;
+    color: #3f3f3f;
+  }
+  .bannerInner .left.self h1{
+    font-size: 3rem;
+  }
+  .bannerInner .center h1{
+    color: white;
+  }
+}
+
+@media (max-width: 425px){
+  .bannerInner h1{
+    font-size: 2rem;
+  }
+  .bannerInner .left.self h1{
+    font-size: 2.5rem;
+  }
+  .bannerInner a{
+    font-size: 12px;
+    padding: 13px 15px;
+  }
+  .pageBody .right, .pageBody .left{
+    /* margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 0;
+    padding-right: 0; */
+  }
+}
+
+@media (max-width: 375px){
+  .bannerInner h1{
+    font-size: 1.8rem;
+  }
+  .bannerInner .left.self h1{
+    font-size: 2rem;
+  }
+}

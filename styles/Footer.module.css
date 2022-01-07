@@ -76,3 +76,13 @@
 .file::before{
     content: "\f15c";
 }
+
+@media (max-width: 640px){
+    .footer{
+        flex-direction: column;
+    }
+    .footer h2.title{
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+}

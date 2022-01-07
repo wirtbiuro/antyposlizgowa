@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react'
 import Link from 'next/link'
 import styles from '../styles/Menu.module.css'
 import {useRouter} from 'next/router'
-import {DownOutlined} from '@ant-design/icons'
+import {DownOutlined, MenuOutlined} from '@ant-design/icons'
 
 
 const Menu = () => {
@@ -63,7 +63,10 @@ const Menu = () => {
             <div className={styles.logo}><Link href='/'><a>
                 <img src='https://antyposlizgowa.com/wp-content/uploads/2021/02/logo1.png'/>
             </a></Link></div>
-            <div className={styles.menuBtn} onClick={onMenuBtn}>MENU</div>
+            <div className={styles.menuBtn} onClick={onMenuBtn}>
+                <span className={styles.title}>MENU</span>
+                <MenuOutlined />
+            </div>
             <nav className={show? styles.show: styles.hide} onClick={navClicked}>
                 <Link href='/'><a>
                     <div className={isMainClass('/') ? styles.main: null}>STRONA GŁÓWNA</div>

@@ -25,10 +25,20 @@
     margin-right: 10px;
     border: 1px solid #cccccc;
     padding: 10px;
-    height: 115px;
+    /* height: 115px; */
+    height: 10vw;
+    max-height: 115px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.carousel{
+    display: none;
+}
+
+.carousel img{
+    border: 1px solid #cccccc;
 }
 
 .imgDiv img{
@@ -37,4 +47,13 @@
 
 .imgDiv:last-of-type{
     margin-right: 0;
+}
+
+@media (max-width: 640px){
+    .carousel{
+        display: block;
+    }
+    .trustBlock .main{
+        display: none;
+    }
 }

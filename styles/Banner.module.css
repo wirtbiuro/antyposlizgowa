@@ -6,7 +6,7 @@
     position: relative;
     padding-top: 160px;
     padding-top: 12%;
-    z-index: -1;
+    /* z-index: -1; */
 }
 
 .childrenDiv{
@@ -40,4 +40,10 @@
   
 .st4{
     opacity: 1;
+}
+
+@media (max-width: 425px){
+    /* .childrenDiv{
+        padding: 0 10px;
+    } */
 }

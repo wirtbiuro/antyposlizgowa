@@ -111,5 +111,35 @@
     color: rgb(0, 0, 0);
 }
 
+@media (max-width: 1024px){
+    .mainForm{
+        width: 50%;
+    }
+    .row{
+        flex-direction: column;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    .row input[type=text], .row textarea, .mainForm .row h2{
+        margin-bottom: 25px;
+    }
+    .row label{
+        margin-bottom: 15px;
+    }
+    .mainForm .row h2{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .row.withCheckbox{
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 640px){
+    .mainForm{
+        display: none;
+    }
+}
+
 
 

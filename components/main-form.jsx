@@ -30,13 +30,13 @@ const MainForm = () => {
                 <div className={styles.row}>
                     <textarea name="message" placeholder="Wiadomość" rows={4}/>
                 </div>
-                <div className={styles.row}>
+                <div className={`${styles.row} ${styles.withCheckbox}`}>
                     <input type="checkbox" name="zgoda1" id="zgoda1"/>
                     <label htmlFor="zgoda1">
                         Wyrażam zgodę na przetwarzanie przez CT Service S.A. moich danych osobowych podanych w niniejszym formularzu w celach związanych z prezentacją usług oferowanych przez CT Service S.A. oraz w celach marketingowych.
                     </label>
                 </div>
-                <div className={styles.row}>
+                <div className={`${styles.row} ${styles.withCheckbox}`}>
                     <input type="checkbox" name="zgoda2" id="zgoda2"/>
                     <label htmlFor="zgoda2">
                         Wyrażam zgodę na otrzymywanie od CT Service S.A. z siedzibą w Piasecznie przy ul. Okulickiego 19 informacji handlowych na adres elektroniczny podany w niniejszym Formularzu.                    

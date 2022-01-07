@@ -40,6 +40,23 @@ const Footer = () => {
                     <div className={styles.right}>NIP: 9512513546</div>
                 </div>
             </div>
+
+            {/* <div className={styles.col}>
+                <div className={styles.row}><h2 className={styles.title}>Informacje</h2></div>
+                <div className={styles.row}><Link href="/"><a>Cennik</a></Link></div>
+                <div className={styles.row}><Link href="/"><a>Polityka Prywatności</a></Link></div>
+                <div className={styles.row}><Link href="/"><a>Polityka plików „cookies”</a></Link></div>
+                <div className={styles.row}><Link href="/"><a>Wiedza</a></Link></div>
+            </div> */}
+            <div className={styles.col}>
+                <div className={styles.row}><h2 className={styles.title}>Nawigacja</h2></div>
+                <div className={styles.row}><Link href="/"><a>Strona główna</a></Link></div>
+                <div className={styles.row}><Link href="/"><a>Nasze usługi</a></Link></div>
+                {/* <div className={styles.row}><Link href="/"><a>Realizacje</a></Link></div> */}
+                <div className={styles.row}><Link href="/"><a>O nas</a></Link></div>
+                <div className={styles.row}><Link href="/"><a>Kontakt</a></Link></div>
+            </div>
+
             <div className={styles.col}>
                 <div className={styles.row}><h2 className={styles.title}>Usługi</h2></div>
                 <div className={styles.row}><Link href="/"><a>Zabezpieczenie antypoślizgowe</a></Link></div>
@@ -47,21 +64,6 @@ const Footer = () => {
                 <div className={styles.row}><Link href="/"><a>Doczyszczanie powierzchni</a></Link></div>
                 <div className={styles.row}><Link href="/"><a>Odkamienianie</a></Link></div>
                 <div className={styles.row}><Link href="/"><a>Impregnacja</a></Link></div>
-            </div>
-            <div className={styles.col}>
-                <div className={styles.row}><h2 className={styles.title}>Informacje</h2></div>
-                <div className={styles.row}><Link href="/"><a>Cennik</a></Link></div>
-                <div className={styles.row}><Link href="/"><a>Polityka Prywatności</a></Link></div>
-                <div className={styles.row}><Link href="/"><a>Polityka plików „cookies”</a></Link></div>
-                <div className={styles.row}><Link href="/"><a>Wiedza</a></Link></div>
-            </div>
-            <div className={styles.col}>
-                <div className={styles.row}><h2 className={styles.title}>Nawigacja</h2></div>
-                <div className={styles.row}><Link href="/"><a>Strona główna</a></Link></div>
-                <div className={styles.row}><Link href="/"><a>Nasze usługi</a></Link></div>
-                <div className={styles.row}><Link href="/"><a>Realizacje</a></Link></div>
-                <div className={styles.row}><Link href="/"><a>O nas</a></Link></div>
-                <div className={styles.row}><Link href="/"><a>Kontakt</a></Link></div>
             </div>
         </div>
     )

@@ -25,5 +25,33 @@
     bottom: -20px;
 }
 
+.ant-carousel .slick-next, .ant-carousel .slick-prev{
+    font-family: "Font Awesome 5 Free";
+    font-style:normal;
+    font-weight:900;
+}
+
+.ant-carousel .slick-next{
+    right: 10px;
+}
+
+.ant-carousel .slick-prev{
+    left: 0px;
+    z-index: 1;
+}
+
+.ant-carousel .slick-next::before, .ant-carousel .slick-prev::before{
+    color: white;
+    content: '\f054';
+    font-size: 16px;
+    padding: 10px;
+    background-color: rgba(29,36,45,0.7);
+}
+
+.ant-carousel .slick-prev::before{
+    content: '\f053';
+}
+
+
 
 

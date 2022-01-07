@@ -27,18 +27,6 @@
     margin: 20px 0;
 }
 
-@media (max-width: 880px){
-    .card{
-        width: 50%;
-    }
-}
-
-@media (max-width: 600px){
-    .card{
-        width: 100%;
-    }
-}
-
 .card .inner{
     margin: 0 5.76%;
     padding: 50px 30px;
@@ -109,4 +97,21 @@
 
 .icon-allMEGAPHONE:before{
     content: "\e977";
+}
+@media (max-width: 1024px){
+    .card .top a{
+        font-size: 80px;
+    }
+}
+
+@media (max-width: 880px){
+    .card{
+        width: 50%;
+    }
+}
+
+@media (max-width: 600px){
+    .card{
+        width: 100%;
+    }
 }
