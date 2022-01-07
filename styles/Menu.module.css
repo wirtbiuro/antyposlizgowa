@@ -68,6 +68,7 @@
     cursor: pointer;
     width: 275px;
     border-radius: 6px;
+    z-index: 2;
 }
 
 .menu .uslugi .usluga:hover{
