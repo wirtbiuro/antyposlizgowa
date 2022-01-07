@@ -90,5 +90,26 @@
     background: #f9d400;
 }
 
+.mainForm span{
+    margin: 0 3.84%;
+}
+
+.mainForm.auxForm{
+    width: 100%;
+    border: 1px solid rgb(220, 220, 220);
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.mainForm.auxForm .row h2{
+    line-height: 1.2;
+    font-size: 24px;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    letter-spacing: -1px;
+    font-style: normal;
+    color: rgb(0, 0, 0);
+}
+
 
 

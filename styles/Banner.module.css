@@ -1,10 +1,12 @@
 .banner{
-    background-image: url('https://antyposlizgowa.com/wp-content/uploads/2021/04/14.jpg');
+    /* background-image: url('https://antyposlizgowa.com/wp-content/uploads/2021/04/14.jpg'); */
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     padding-top: 160px;
+    padding-top: 12%;
+    z-index: -1;
 }
 
 .childrenDiv{

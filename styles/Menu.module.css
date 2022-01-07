@@ -21,9 +21,9 @@
     display: flex;
 }
 
-.menu nav div{
-    margin: 15px;
-}
+/* .menu nav div{
+    padding: 15px;
+} */
 
 .menu nav div.main{
     color: #f9d400;    
@@ -42,6 +42,72 @@
     width: 240px;
     display: flex;
     align-items: center;
+}
+
+.menu .uslugiDiv{
+    position: relative;
+    display: flex;
+    margin: 0 15px;
+}
+
+.menu .uslugiDiv a{
+    margin: 0;
+}
+
+.menu .uslugi{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    padding: 0;
+    top: 20px;
+    cursor: pointer;
+    width: 275px;
+    border-radius: 6px;
+}
+
+.menu .uslugi .usluga:hover{
+    background-color: #eeeeee;
+}
+
+.menu .uslugi .usluga{
+    font-size: 12px;
+    padding: 12px 20px;
+    color: rgba(0, 0, 0, 0.85);
+}
+
+.menu .uslugi .usluga:hover{
+    color: #f9d400;    
+}
+
+.menu .uslugi .usluga.main{
+    color: #f9d400;    
+}
+
+.menu .titleWithArrow{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    border: none;
+}
+
+.menu .title{
+    width: 100%;
+}
+
+.menu .title, .menu .arrow{
+    padding: 0;
+    border: none;
+    padding-left: 10px;
+}
+
+.menu a{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.menu .fake{
+    height: 30px;
 }
 
 @media (max-width: 1170px){
@@ -72,12 +138,36 @@
         opacity: 1;
     }
     .menu nav div{
-        padding: 15px;
+        /* padding: 15px; */
         margin: 0;
-        border-bottom: 1px solid rgba(0,0,0,.1);
+        /* border-bottom: 1px solid rgba(0,0,0,.1); */
     }
     .menu nav div:hover{
+        color: slateblue;
+    }
+    .menu nav a:hover{
         background-color: rgba(0,0,0,.05);
         color: slateblue;
+    }
+    .menu .uslugi{
+        position: static;
+        width: auto;
+        margin-top: 20px;
+    }
+    .menu .uslugi a{
+        padding: 0;
+    }
+    .menu a{
+        margin: 0;
+        padding: 15px 0;
+        border-bottom: 1px solid #e2e2e2;
+    }
+    .menu .uslugiDiv{
+        margin: 0;
+        display: block;
+        padding: 0 15px;
+    }
+    .menu .fake{
+        display: none;
     }
 }
