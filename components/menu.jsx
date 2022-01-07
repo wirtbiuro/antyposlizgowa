@@ -47,7 +47,15 @@ const Menu = () => {
         if(arrowRef.current.contains(e.target) && width <= 1170){
             console.log('contains')
             e.preventDefault()
+            e.stopPropagation()
+            setShow(true)
+        } else{
+            setShowUslugi(false)
         }
+    }
+
+    const navClicked = ()=>{
+        setShow(false)
     }
 
     return (
@@ -56,7 +64,7 @@ const Menu = () => {
                 <img src='https://antyposlizgowa.com/wp-content/uploads/2021/02/logo1.png'/>
             </a></Link></div>
             <div className={styles.menuBtn} onClick={onMenuBtn}>MENU</div>
-            <nav className={show? styles.show: styles.hide}>
+            <nav className={show? styles.show: styles.hide} onClick={navClicked}>
                 <Link href='/'><a>
                     <div className={isMainClass('/') ? styles.main: null}>STRONA GŁÓWNA</div>
                 </a></Link>

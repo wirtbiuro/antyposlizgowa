@@ -35,17 +35,17 @@ const FrictionMeasurement = () => {
                     <p>Ze względów praktycznych, najczęściej takich pomiarów dokonuje się przy użyciu dwóch mobilnych metod :</p>
                     <p>1. Metodą weryfikacji odporności posadzki na poślizg jest <strong>badanie oporu poślizgu</strong>. Badanie to wykonujemy przy użyciu przyrządu zwanego wahadłem angielskim, stąd badanie w skrócie określane jest jako PTV (Pendulum Test Value). Metodę badania opisano szczegółowo w normie PN-EN 13036-4:2011.</p>
                     <video 
-                        playsinline="true" 
+                        playsInline={true} 
                         width="100%" 
                         style={{"objectFit": "cover"}} 
-                        autoplay="true" 
-                        muted="true" 
-                        loop="true" 
+                        autoPlay={true} 
+                        muted={true} 
+                        loop={true} 
                         preload="auto" 
                         controls="1"
                     >
                         <source src="https://antyposlizgowa.com/wp-content/uploads/2021/03/Pomiar_wahadlem-angielskim.mov" type="video/mp4" />
-                        Sorry, your browser doesn't support embedded videos.
+                        Sorry, your browser does not support embedded videos.
                     </video>
                     <p>Wartości oporu poślizgu PTV stanowią podstawę klasyfikacji posadzki w ujęciu ryzyka poślizgu. Klasyfikację tę przedstawiono w poniższej tabeli.</p>
                     <table width="100%">
@@ -72,17 +72,17 @@ const FrictionMeasurement = () => {
                     <p>2. Drugą metodą badania odporności posadzki na poślizg jest <strong>pomiar dynamicznego współczynnika tarcia µ według normy DIN 51131.</strong></p>
                     <p>Test wykonywany jest przez nas <strong>za pomocą urządzenia FSC 2011 lub GMG 200</strong>. Metoda ta została wykorzystana już w roku 1995, do porównania otrzymanych wyników pomiarów dynamicznego współczynnika tarcia µ, do parametrów antypoślizgowości R otrzymanych przy badaniu wg normy DIN 51130 oraz parametrów A/B/C otrzymanych przy badaniu wg normy DIN 51097.</p>
                     <video 
-                        playsinline="true" 
+                        playsInline={true} 
                         width="100%" 
-                        style={{objectFit: "cover"}} 
-                        autoplay="true" 
-                        muted="true" 
-                        loop="true" 
+                        style={{"objectFit": "cover"}} 
+                        autoPlay={true} 
+                        muted={true} 
+                        loop={true} 
                         preload="auto" 
                         controls="1"
                     >
                         <source src="https://antyposlizgowa.com/wp-content/uploads/2021/04/FSC_2011.mp4" type="video/mp4"/>
-                        Sorry, your browser doesn't support embedded videos.
+                        Sorry, your browser does not support embedded videos.
                     </video>
                     <p>&nbsp;</p>
                     <h2>Jak działamy?</h2>
