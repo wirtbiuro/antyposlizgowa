@@ -31,7 +31,7 @@ const Contact = () => {
                         <h2>Zamów bezpłatną próbę zabezpieczenia antypoślizgowego</h2>
                     </div>
                     <div className={otherStyles.right}>
-                        <a href='/'><span>TEL.&nbsp;&nbsp;22&nbsp;&nbsp;750&nbsp;&nbsp;20&nbsp;&nbsp;66</span></a>
+                        <Link href='/'><a><span>TEL.&nbsp;&nbsp;22&nbsp;&nbsp;750&nbsp;&nbsp;20&nbsp;&nbsp;66</span></a></Link>
                     </div>
                 </div>
                 <div className={`${styles.pageBody} ${otherStyles.innerPageBody}`}>
