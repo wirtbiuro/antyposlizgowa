@@ -9,7 +9,7 @@ const AntpslzgBreadcrumb = ({pathArr}) => {
             <div className={styles.inner}>
                 <Breadcrumb separator="»">
                     <Breadcrumb.Item>
-                        <a href='/'>Home</a>
+                        <Link href='/'><a>Home</a></Link>
                     </Breadcrumb.Item>
                     {pathArr.map(path=>(
                         <Breadcrumb.Item>
