@@ -42,6 +42,10 @@
     padding-right: 10px;
 }
 
+.menu .logo{
+    z-index: 3;
+}
+
 .menu .logo img{
     width: 240px;
     display: flex;
@@ -179,7 +183,7 @@
     }
 }
 
-@media (max-width: 425px){
+@media (max-width: 768px){
     .menu .logo img{
         width: 180px;
     }

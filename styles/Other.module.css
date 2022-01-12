@@ -1,0 +1,109 @@
+.pageBody{
+    max-width: 1185px;
+    margin: auto;
+    transform: translateY(-20px);
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.banner{
+    background: url('/images/color-background.png');
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner .left h2{
+    color: rgb(61, 61, 61);
+    font-family: Poppins;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.banner .right a span{
+    font-family: Poppins;
+    font-size: 14px;
+    font-style:normal;
+    font-weight: 700;
+    padding: 15px 30px;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 50px;
+}
+
+.banner .right a:hover span{
+    background-color: #7a7a7a;
+}
+
+.pageBody .innerPageBody{
+    transform: none;
+    margin-top: 90px;
+}
+
+.pageBody .innerPageBody .left, .pageBody .innerPageBody .right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pageBody .innerPageBody .left{
+    margin-left: 0;
+    margin-bottom: 0;
+}
+
+.pageBody .innerPageBody .left p, .pageBody .innerPageBody .right p,
+.pageBody .innerPageBody .left h2, .pageBody .innerPageBody .right h2
+{
+    color: rgb(63, 63, 63);
+}
+
+.pageBody .innerPageBody .right{
+    padding-right: 0;
+}
+
+.pageBody .innerPageBody .noMargin{
+    margin: 0;
+}  
+
+@media (max-width: 1024px){
+    /* .pageBody{
+        margin-left: 30px;
+        margin-right: 30px;
+    } */
+    .pageBody .innerPageBody .left, .pageBody .innerPageBody .right{
+        width: auto;
+    }
+    .pageBody .innerPageBody .left{
+        margin-right: 0;
+    }
+    .pageBody .innerPageBody .right{
+        margin-left: 0;
+    }
+    
+}
+
+@media (max-width: 840px){
+    .banner{
+        flex-direction: column;
+    }
+    .banner .left{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 650px){
+    .banner .left h2{
+        font-size: 28px;
+    }    
+}

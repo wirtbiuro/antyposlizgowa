@@ -1,0 +1,20 @@
+.antpslzgBreadcrumb{
+    border-width: 1px 0px 1px 0px;
+    border-color: #e2e2e2;
+    border-style: solid;
+}
+
+.inner{
+    max-width: 1185px;
+    margin: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 768px){
+    .antpslzgBreadcrumb{
+        display: none;
+    }
+}

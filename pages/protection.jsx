@@ -8,10 +8,12 @@ import DiffBlock from '../components/diff-block'
 import TrustBlock from '../components/trust-block'
 import Footer from '../components/footer'
 import AuxForm from '../components/aux-form'
+import AntpslzgBreadcrumb from '../components/antpslzgBreadcrumb'
 
 const Protection = () => {
     return (
         <div>
+            <AntpslzgBreadcrumb pathArr={[{title: 'Usługi', href:'/services'}, {title: 'Zabezpieczenie antypoślizgowe'}]}/>
             <Banner backgroundImage='url(/images/floor.png)' withwaves={false}>
                 <div className={`${styles.bannerInner}`}>
                     <div className={`${styles.left} ${styles.self}`}>

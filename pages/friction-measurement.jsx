@@ -4,10 +4,12 @@ import Link from 'next/link'
 import styles from '../styles/Common.module.css'
 import Footer from '../components/footer'
 import AuxForm from '../components/aux-form'
+import AntpslzgBreadcrumb from '../components/antpslzgBreadcrumb'
 
 const FrictionMeasurement = () => {
     return (
         <div className={styles.frictionMeasurement}>
+            <AntpslzgBreadcrumb pathArr={[{title: 'Usługi', href:'/services'}, {title: 'Pomiar współczynnika tarcia i PTV'}]}/>
             <Banner backgroundImage='url(/images/stairs.png)' withwaves={false}>
                 <div className={`${styles.bannerInner}`}>
                     <div className={`${styles.left} ${styles.self}`}>

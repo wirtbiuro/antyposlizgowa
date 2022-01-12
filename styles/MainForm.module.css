@@ -133,6 +133,16 @@
     .row.withCheckbox{
         flex-direction: row;
     }
+    .row.withCheckbox input{
+        margin-left: 0;
+    }
+    .row.submit{
+        align-items: flex-start;
+    }
+    .row.submit input{
+        margin-top: 40px;
+        margin-left: 0;
+    }
 }
 
 @media (max-width: 640px){

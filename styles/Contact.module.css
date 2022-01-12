@@ -1,0 +1,52 @@
+.mainFormWrapper{
+    margin-bottom: 80px;
+    margin-right: 20px;
+}
+
+.mainFormWrapper h2{
+    margin-bottom: 40px !important;
+}
+
+.row{
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.col p{
+    margin: 0 !important;
+}
+
+.col h2{
+    margin-bottom: 40px !important;
+}
+
+.col h3{
+    margin-bottom: 0 !important;
+    font-size: 24px;
+}
+
+.row i{
+    color: rgb(249, 212, 0);
+    font-family: "Font Awesome 5 Free";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 900;
+    margin-right: 20px;
+}
+
+i.adress::before{
+    content: "\f658";
+}
+
+i.phone::before{
+    content: "\f095";
+}
+
+@media (max-width: 425px){
+    .row i{
+        font-size: 18px;
+    }
+    .col h3{
+        font-size: 18px;
+    }  
+}

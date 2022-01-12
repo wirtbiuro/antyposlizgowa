@@ -1,0 +1,72 @@
+import React from 'react'
+import Banner from '../components/banner'
+import MainForm from '../components/main-form'
+import Link from 'next/link'
+import styles from '../styles/Common.module.css'
+import Cards from '../components/cards'
+import DiffBlock from '../components/diff-block'
+import TrustBlock from '../components/trust-block'
+import Footer from '../components/footer'
+import AuxForm from '../components/aux-form'
+import AntpslzgBreadcrumb from '../components/antpslzgBreadcrumb'
+
+const Descaling = () => {
+    return (
+        <div>
+            <AntpslzgBreadcrumb pathArr={[{title: 'Usługi', href:'/services'}, {title: 'Odkamienianie'}]}/>
+            <Banner backgroundImage='url(/images/plates-flowers.jpg)' withwaves={false}>
+                <div className={`${styles.bannerInner}`}>
+                    <div className={`${styles.left} ${styles.self}`}>
+                        <h1>Odkamienianie</h1>
+                        <p>Zanieczyszczenie np. basenu kamieniem tworzy konieczność zastosowania kwaśnych preparatów chemicznych. Należy także pamiętać o okresowym czyszczeniu takiej przestrzeni. Napisz do nas i zapytaj jak możemy pomóc.</p>
+                        <div className={styles.link}><Link href='/'><a>SPRAWDŹ WSZYSTKIE USŁUGI</a></Link></div>
+                    </div>
+                </div>
+            </Banner>
+            <div className={styles.pageBody}>
+                <div className={styles.left}>
+                    <img src="/images/plates.png" className={styles.decorImg}/>
+                    <h2>Odkamienianie</h2>
+                    <p>&nbsp;</p>
+                    <p>Skład chemiczny osadów kamiennych powstających w procesie eksploatacji np. basenu kąpielowego, zależy od rodzaju i jakości wody, stosowanych złóż filtracyjnych, reagentów chemicznych i ich dawek zastosowanych w oczyszczaniu wody oraz pH wody.</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <h2>Skąd bierze się osad kamienny ?</h2>
+                    <p>&nbsp;</p>
+                    <p>Woda wodociągowa czy głębinowa jest nośnikiem dla łatwo rozpuszczalnych w wodzie związków chemicznych. Woda, zawierając dwutlenek węgla, wchodzi w reakcje ze składnikami skał przez które przepływa. Przepływając przez glebę i skały, woda ulega zanieczyszczeniu przez kwaśne węglany, szczawiany i siarczany, wapnia i magnezu oraz inne składniki w nich występujące mniejszych ilościach. Ich stężenie w wodzie określa jej twardość. Im większa ich ilość, tym woda jest twardsza.</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <h2>Jak powstaje osad kamienny ?</h2>
+                    <p>&nbsp;</p>
+                    <p>Składniki mineralne niesione przez wodę, przylegają do powierzchni np. płytek basenowych, powodując odkłada się warstwami osadów kamiennych. Powszechnie stosowana na basenach woda kanalizacyjna, może w ciągu roku spowodować przyrost kamienia na poziomie około 2-3 mm. Całkowite wyeliminowanie minerałów z wody wodociągowej czy basenowej nie jest możliwe. Filtry i uzdatnianie wody mogą jedynie nieznacznie zmniejszyć szybkość gromadzenia się osadów, ale nie są w stanie całkowicie wyeliminować tego zjawiska. Jest to proces zupełnie naturalny i nieunikniony, z którym musimy się pogodzić i jemu przeciwdziałać.</p>
+                    <p>&nbsp;</p>
+                    <p>Warstwy osadu kamiennego posiadają niezwykle porowatą strukturę, do której przyczepiają się wszelkie zabrudzenia, a jego powierzchnia jest bardzo chłonna.</p>
+                    <p>Osad wżera się w powierzchnię i jest praktycznie nie do usunięcia przez tradycyjne czyszczenie czy nawet szorowanie. Luźny osad kamienny ulega przekształceniu w bardziej zwięzły kamień w wyniku szeregu procesów, określanych łącznie mianem cementacji. W środowisku naturalnym procesy cementacji prowadzą do powstawania skał.</p>
+                    <p>W środowisku domowym czy przemysłowym, kamień z reguły pozostaje nam usunąć bezinwazyjnie, tylko środkami chemicznymi.</p>
+                    <p>Gdy problem zanieczyszczenia np. basenu kamieniem jest duży, należy zaprosić do działania kwaśne preparaty chemiczne. Podczas ich stosowania trzeba oczywiście zachować należytą ostrożność. Środki chemiczne o wysokiej kwasowości są jednak niezbędne do usunięcia dużych osadów kamiennych.</p>
+                    <p>W miejscach, które narażone są na ciągły kontakt z wodą, a w szczególności z ciepłą wodą, należy pamiętać o okresowym czyszczeniu ich wodą z dodatkiem kwaśnego preparatu chemicznego.</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+
+                    <div className={styles.link}><Link href='/'><a>ZAMÓW USŁUGĘ &gt;&gt;</a></Link></div>
+                </div>
+                <div className={styles.right}>
+                    <AuxForm/>
+                </div>
+            </div>
+            <Banner backgroundImage="url('/images/feet2.jpg')">
+                <div className={styles.bannerInner}>
+                    <div className={styles.center}>
+                        <h1>Zamów bezpłatną próbę zabezpieczenia antypoślizgowego!</h1>
+                        <h2>Skontaktuj się z nami:</h2>
+                        <div><Link href='/'><a>TEL. 22 750 20 66</a></Link></div>
+                    </div>
+                </div>
+            </Banner>
+            <Footer/>
+            <div className={styles.footerBar}></div>
+        </div>
+    )
+}
+
+export default Descaling

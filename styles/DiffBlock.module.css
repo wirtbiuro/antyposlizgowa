@@ -3,6 +3,16 @@
     margin: auto;
 }
 
+.diffBlock.aboutUs{
+    padding-top: 6%;
+    padding-bottom: 2%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.background{
+    background-color: rgba(249,212,0,0.04);
+}
+
 .mainBlock{
     display: flex;
     padding: 20px;
@@ -11,6 +21,12 @@
 .mainBlock > .left{
     width: 50%;
     padding-right: 2.84%;
+}
+
+.aboutUs .mainBlock > .left{
+    display: flex;
+    width: auto;
+    padding-right: 0;
 }
 
 .mainBlock > .right{
@@ -27,6 +43,11 @@
 .row{
     display: flex;
     margin-bottom: 40px;
+}
+
+.aboutUs .row{
+    flex: 1;
+    padding: 0 15px;
 }
 
 .icon{
@@ -105,6 +126,12 @@
     font-style: normal;
     font-size: 16px;
     margin-bottom: 20px;
+}
+
+@media (max-width: 1024px){
+    .aboutUs .mainBlock > .left{
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 768px){

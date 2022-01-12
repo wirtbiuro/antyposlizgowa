@@ -71,11 +71,11 @@ const Menu = () => {
                 <Link href='/'><a>
                     <div className={isMainClass('/') ? styles.main: null}>STRONA GŁÓWNA</div>
                 </a></Link>
-                <Link href='/uslugi'><a onClick={uslugiClicked} onMouseLeave={uslugiOut}
+                <Link href='/services'><a onClick={uslugiClicked} onMouseLeave={uslugiOut}
                     onMouseOver={uslugiIn}
                 >
                     <div 
-                        className={`${isMainClass('/uslugi') ? styles.main: null} ${styles.uslugiDiv}`} 
+                        className={`${isMainClass('/services') ? styles.main: null} ${styles.uslugiDiv}`} 
                     >
                         <div className={styles.titleWithArrow}>
                             <div className={styles.title}>
@@ -87,7 +87,7 @@ const Menu = () => {
                         </div>
                             
                         {showUslugi && <div className={styles.uslugi} onMouseLeave={uslugiOut} onMouseOver={uslugiIn}>
-                            <Link href='/uslugi'><a>
+                            <Link href='/services'><a>
                                 <div className={styles.fake}></div>
                             </a></Link>
                             <Link href='/protection'><a>
@@ -105,18 +105,18 @@ const Menu = () => {
                                     Doczyszczanie powierzchni
                                 </div>
                             </a></Link>
-                            <Link href='/ff'><a>
-                                <div className={`${isMainClass('/ff') ? styles.main: null} ${styles.usluga}`}>
+                            <Link href='/descaling'><a>
+                                <div className={`${isMainClass('/descaling') ? styles.main: null} ${styles.usluga}`}>
                                     Odkamienianie
                                 </div>
                             </a></Link>
-                            <Link href='/ff'><a>
-                                <div className={`${isMainClass('/ff') ? styles.main: null} ${styles.usluga}`}>
+                            <Link href='/impregnation'><a>
+                                <div className={`${isMainClass('/impregnation') ? styles.main: null} ${styles.usluga}`}>
                                     Impregnacja
                                 </div>
                             </a></Link>
-                            <Link href='/ff'><a>
-                                <div className={`${isMainClass('/ff') ? styles.main: null} ${styles.usluga}`}>
+                            <Link href='/products'><a>
+                                <div className={`${isMainClass('/products') ? styles.main: null} ${styles.usluga}`}>
                                     Nasze produkty
                                 </div>
                             </a></Link>
@@ -124,11 +124,11 @@ const Menu = () => {
                     </div>
                 </a></Link>
             
-                <Link href='/onas'><a>
-                    <div className={isMainClass('/onas') ? styles.main: null}>O NAS</div>
+                <Link href='/about-us'><a>
+                    <div className={isMainClass('/about-us') ? styles.main: null}>O NAS</div>
                 </a></Link>
-                <Link href='/kontakt'><a>
-                    <div className={isMainClass('/kontakt') ? styles.main: null}>KONTAKT</div>
+                <Link href='/contact'><a>
+                    <div className={isMainClass('/contact') ? styles.main: null}>KONTAKT</div>
                 </a></Link>
             </nav>
         </div>

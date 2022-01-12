@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from '../styles/MainForm.module.css'
 
-const MainForm = () => {
+const MainForm = ({style, title='Potrzebujesz konsultacji? Napisz do nas wiadomość:'}) => {
 
     const submit = (e)=>{
         e.preventDefault()
@@ -12,11 +12,11 @@ const MainForm = () => {
     }
 
     return (
-        <div className={styles.mainForm}>
+        <div className={styles.mainForm} style={style}>
             <form onSubmit={submit}>
                 <div className={styles.row}>
                     <h2>
-                        Potrzebujesz konsultacji? Napisz do nas wiadomość:
+                        {title}
                     </h2>
                 </div>
                 <div className={styles.row}>
@@ -42,8 +42,8 @@ const MainForm = () => {
                         Wyrażam zgodę na otrzymywanie od CT Service S.A. z siedzibą w Piasecznie przy ul. Okulickiego 19 informacji handlowych na adres elektroniczny podany w niniejszym Formularzu.                    
                     </label>
                 </div>
-                <div className={styles.row}>
-                    <input type="submit" value="send"/>
+                <div className={`${styles.row} ${styles.submit}`}>
+                    <input type="submit" value="WYŚLIJ"/>
                 </div>
             </form>
         </div>

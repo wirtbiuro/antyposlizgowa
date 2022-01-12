@@ -133,7 +133,7 @@
   margin-bottom: 50px;
 }
 
-.pageBody .left h2{
+.pageBody .left h2, .pageBody .right h2{
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 700;
   line-height: 2rem;
@@ -144,7 +144,7 @@
   margin-bottom: 0;
 }
 
-.pageBody .left p, .pageBody.left td, .pageBody .left tr{
+.pageBody .left p, .pageBody .right p, .pageBody.left td, .pageBody .left tr{
   margin-top: 0;
   margin-bottom: 20px;
   line-height: 1.8;
@@ -163,8 +163,14 @@
   padding-left: 10px;
 }
 
-.pageBody .decorImg{
+.pageBody .decorImg, .pageBody .selection{
   border-radius: 8px;
+}
+
+.pageBody .selection{
+  background-color: #cccccc;
+  padding: 40px;
+
 }
 
 @media (max-width: 1024px){
