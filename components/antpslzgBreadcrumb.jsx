@@ -12,7 +12,7 @@ const AntpslzgBreadcrumb = ({pathArr}) => {
                         <Link href='/'><a>Home</a></Link>
                     </Breadcrumb.Item>
                     {pathArr.map(path=>(
-                        <Breadcrumb.Item>
+                        <Breadcrumb.Item key={path.title}>
                             {path.href? <Link href={path.href}><a>{path.title}</a></Link>: path.title}
                         </Breadcrumb.Item>
                     ))}
