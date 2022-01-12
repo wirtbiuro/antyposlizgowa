@@ -15,7 +15,7 @@ const FrictionMeasurement = () => {
                     <div className={`${styles.left} ${styles.self}`}>
                         <h1>Pomiar współczynnika tarcia i PTV</h1>
                         <p>Wykonamy pomiar antypoślizgowości Twojej powierzchni według wytycznych Instytutu Techniki Budowlanej. Następnie otrzymasz Certyfikat Zgodności przeprowadzonego badania.</p>
-                        <div className={styles.link}><Link href='/'><a>SPRAWDŹ WSZYSTKIE USŁUGI</a></Link></div>
+                        <div className={styles.link}><Link href='/services'><a>SPRAWDŹ WSZYSTKIE USŁUGI</a></Link></div>
                     </div>
                 </div>
             </Banner>
@@ -116,7 +116,7 @@ const FrictionMeasurement = () => {
                     </ul>
                     <p>&nbsp;</p>
 
-                    <div className={styles.link}><Link href='/'><a>ZAMÓW USŁUGĘ &gt;&gt;</a></Link></div>
+                    <div className={styles.link}><Link href='/contact'><a>ZAMÓW USŁUGĘ &gt;&gt;</a></Link></div>
                 </div>
                 <div className={styles.right}>
                     <AuxForm/>

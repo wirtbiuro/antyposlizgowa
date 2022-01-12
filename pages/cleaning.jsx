@@ -19,7 +19,7 @@ const Protection = () => {
                     <div className={`${styles.left} ${styles.self}`}>
                         <h1>Doczyszczanie powierzchni</h1>
                         <p>Usuwamy większość zanieczyszczeń powstałych z długoletniego użytkowania powierzchni takich jak: płytki ceramiczne, ceramika basenowa, kamień naturalny, beton i klinkier.</p>
-                        <div className={styles.link}><Link href='/'><a>SPRAWDŹ WSZYSTKIE USŁUGI</a></Link></div>
+                        <div className={styles.link}><Link href='/services'><a>SPRAWDŹ WSZYSTKIE USŁUGI</a></Link></div>
                     </div>
                 </div>
             </Banner>
@@ -46,7 +46,7 @@ const Protection = () => {
                     </ul>
                     <p>Przed realizacją zlecenia zawsze wykonujemy bezpłatną próbę. Będziesz mieć pewność, że planowane czyszczenie będzie skuteczne i bezpieczne dla materiału.</p>
                     <p>&nbsp;</p>
-                    <div className={styles.link}><Link href='/'><a>ZAMÓW USŁUGĘ &gt;&gt;</a></Link></div>
+                    <div className={styles.link}><Link href='/contact'><a>ZAMÓW USŁUGĘ &gt;&gt;</a></Link></div>
                 </div>
                 <div className={styles.right}>
                     <AuxForm/>

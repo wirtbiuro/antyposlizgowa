@@ -19,7 +19,7 @@ const Protection = () => {
                     <div className={`${styles.left} ${styles.self}`}>
                         <h1>Zabezpieczenia antypoślizgowe</h1>
                         <p>Jeśli jesteś odpowiedzialny za przestrzeń publiczną, to także ponosisz odpowiedzialność za bolesne upadki, poślizgnięcia, urazy powstałe jako ich skutek. Uniknij wysokich roszczeń odszkodowawczych i zadbaj o bezpieczeństwo użytkowników. Sprawdź jak wdrożyć zabezpieczenie antypoślizgowe.</p>
-                        <div className={styles.link}><Link href='/'><a>SPRAWDŹ WSZYSTKIE USŁUGI</a></Link></div>
+                        <div className={styles.link}><Link href='/services'><a>SPRAWDŹ WSZYSTKIE USŁUGI</a></Link></div>
                     </div>
                 </div>
             </Banner>
@@ -42,7 +42,7 @@ const Protection = () => {
                     <h2>Szukasz skutecznego rozwiązania?</h2>
                     <p>&nbsp;</p>
                     <p>CTS Chemistry jako jedyna polska firma świadczy profesjonalne usługi zabezpieczenia śliskich powierzchni w oparciu o <strong>własną, opatentowaną technologię ZAP</strong>. Wykonujemy profesjonalne pomiary antypoślizgowości i wystawiamy Certyfikat Zgodności przeprowadzonego badania oraz dołączamy wydruk charakterystyki współczynnika tarcia dynamicznego zabezpieczonej powierzchni.</p>
-                    <div className={styles.link}><Link href='/'><a>ZAMÓW USŁUGĘ &gt;&gt;</a></Link></div>
+                    <div className={styles.link}><Link href='/contact'><a>ZAMÓW USŁUGĘ &gt;&gt;</a></Link></div>
                 </div>
                 <div className={styles.right}>
                     <AuxForm/>

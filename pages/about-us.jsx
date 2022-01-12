@@ -18,7 +18,7 @@ const AboutUs = () => {
                     <div className={`${styles.left} ${styles.self}`}>
                         <h1>O nas</h1>
                         <p>Świadczymy specjalistyczne usługi z zakresu zabezpieczenia antypoślizgowego, gruntownego doczyszczania, odkamieniania, impregnacji.</p>
-                        {/* <div className={styles.link}><Link href='/'><a>SPRAWDŹ WSZYSTKIE USŁUGI</a></Link></div> */}
+                        {/* <div className={styles.link}><Link href='/services'><a>SPRAWDŹ WSZYSTKIE USŁUGI</a></Link></div> */}
                     </div>
                 </div>
             </Banner>

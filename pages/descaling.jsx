@@ -19,7 +19,7 @@ const Descaling = () => {
                     <div className={`${styles.left} ${styles.self}`}>
                         <h1>Odkamienianie</h1>
                         <p>Zanieczyszczenie np. basenu kamieniem tworzy konieczność zastosowania kwaśnych preparatów chemicznych. Należy także pamiętać o okresowym czyszczeniu takiej przestrzeni. Napisz do nas i zapytaj jak możemy pomóc.</p>
-                        <div className={styles.link}><Link href='/'><a>SPRAWDŹ WSZYSTKIE USŁUGI</a></Link></div>
+                        <div className={styles.link}><Link href='/services'><a>SPRAWDŹ WSZYSTKIE USŁUGI</a></Link></div>
                     </div>
                 </div>
             </Banner>
@@ -48,7 +48,7 @@ const Descaling = () => {
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
 
-                    <div className={styles.link}><Link href='/'><a>ZAMÓW USŁUGĘ &gt;&gt;</a></Link></div>
+                    <div className={styles.link}><Link href='/contact'><a>ZAMÓW USŁUGĘ &gt;&gt;</a></Link></div>
                 </div>
                 <div className={styles.right}>
                     <AuxForm/>

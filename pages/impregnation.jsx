@@ -15,7 +15,7 @@ const Impregnation = () => {
                     <div className={`${styles.left} ${styles.self}`}>
                         <h1>Impregnacja</h1>
                         <p>Impregnacja skutecznie chroni przed wchłanianiem wody, tłustych plam, czy innych substancji w powierzchnię. Dzięki niej brud można łatwo usunąć, a materiał pozostaje niezniszczony.</p>
-                        <div className={styles.link}><Link href='/'><a>SPRAWDŹ WSZYSTKIE USŁUGI</a></Link></div>
+                        <div className={styles.link}><Link href='/services'><a>SPRAWDŹ WSZYSTKIE USŁUGI</a></Link></div>
                     </div>
                 </div>
             </Banner>
@@ -81,7 +81,7 @@ const Impregnation = () => {
                         </ul>
                     </div>                    
                     <p>&nbsp;</p>
-                    <div className={styles.link}><Link href='/'><a>ZAMÓW USŁUGĘ &gt;&gt;</a></Link></div>
+                    <div className={styles.link}><Link href='/contact'><a>ZAMÓW USŁUGĘ &gt;&gt;</a></Link></div>
                 </div>
                 <div className={styles.right}>
                     <AuxForm/>

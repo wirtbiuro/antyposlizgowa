@@ -16,7 +16,7 @@ const Home = () => {
                     <div className={styles.left}>
                         <h1>Zabezpieczenia antypoślizgowe</h1>
                         <h2>pomiar współczynnika tarcia i PTV, doczyszczanie, odkamienianie, impregnacja</h2>
-                        <div><Link href='/'><a>SPRAWDŹ NASZE USŁUGI</a></Link></div>
+                        <div><Link href='/services'><a>SPRAWDŹ NASZE USŁUGI</a></Link></div>
                     </div>
                     <MainForm/>
                 </div>

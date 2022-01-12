@@ -51,19 +51,19 @@ const Footer = () => {
             <div className={styles.col}>
                 <div className={styles.row}><h2 className={styles.title}>Nawigacja</h2></div>
                 <div className={styles.row}><Link href="/"><a>Strona główna</a></Link></div>
-                <div className={styles.row}><Link href="/"><a>Nasze usługi</a></Link></div>
+                <div className={styles.row}><Link href="/services"><a>Nasze usługi</a></Link></div>
                 {/* <div className={styles.row}><Link href="/"><a>Realizacje</a></Link></div> */}
-                <div className={styles.row}><Link href="/"><a>O nas</a></Link></div>
-                <div className={styles.row}><Link href="/"><a>Kontakt</a></Link></div>
+                <div className={styles.row}><Link href="/about-us"><a>O nas</a></Link></div>
+                <div className={styles.row}><Link href="/contact"><a>Kontakt</a></Link></div>
             </div>
 
             <div className={styles.col}>
                 <div className={styles.row}><h2 className={styles.title}>Usługi</h2></div>
-                <div className={styles.row}><Link href="/"><a>Zabezpieczenie antypoślizgowe</a></Link></div>
-                <div className={styles.row}><Link href="/"><a>Pomiar współczynnika tarcia i PTV</a></Link></div>
-                <div className={styles.row}><Link href="/"><a>Doczyszczanie powierzchni</a></Link></div>
-                <div className={styles.row}><Link href="/"><a>Odkamienianie</a></Link></div>
-                <div className={styles.row}><Link href="/"><a>Impregnacja</a></Link></div>
+                <div className={styles.row}><Link href="/protection"><a>Zabezpieczenie antypoślizgowe</a></Link></div>
+                <div className={styles.row}><Link href="/friction-measurement"><a>Pomiar współczynnika tarcia i PTV</a></Link></div>
+                <div className={styles.row}><Link href="/cleaning"><a>Doczyszczanie powierzchni</a></Link></div>
+                <div className={styles.row}><Link href="/descaling"><a>Odkamienianie</a></Link></div>
+                <div className={styles.row}><Link href="/impregnation"><a>Impregnacja</a></Link></div>
             </div>
         </div>
     )

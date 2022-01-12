@@ -9,14 +9,14 @@ const Cards = () => {
         <div className={styles.cards}>
             <h2>Co robimy?</h2>
             <div className={styles.cardBox}>
-                <Card title='Zabezpieczenie antypoślizgowe' href="/" aClassName="icon-allwet-floor-sign-cleaning-warning"/>
-                <Card title='Pomiar współczynnika tarcia dynamicznego oraz PTV' href="/pomiar" aClassName="icon-cleanwahadlo-ikona"/>
-                <Card title='Doczyszczanie' href="/" aClassName="icon-allPIANO"/>
-                <Card title='Odkamienianie' href="/" aClassName="icon-allwindow-cleaning-clean-housekeeper"/>
-                <Card title='Impregnacja' href="/" aClassName="icon-allWIPER"/>
-                <Card title='Nasze produkty' href="/" aClassName="icon-allMEGAPHONE"/>
+                <Card title='Zabezpieczenie antypoślizgowe' href="/protection" aClassName="icon-allwet-floor-sign-cleaning-warning"/>
+                <Card title='Pomiar współczynnika tarcia dynamicznego oraz PTV' href="/friction-measurement" aClassName="icon-cleanwahadlo-ikona"/>
+                <Card title='Doczyszczanie' href="/cleaning" aClassName="icon-allPIANO"/>
+                <Card title='Odkamienianie' href="/descaling" aClassName="icon-allwindow-cleaning-clean-housekeeper"/>
+                <Card title='Impregnacja' href="/impregnation" aClassName="icon-allWIPER"/>
+                <Card title='Nasze produkty' href="/products" aClassName="icon-allMEGAPHONE"/>
             </div>
-            <div className={`${buttonStyles.buttonStyles} ${styles.btn}`}><Link href='/'><a>Dowiedz się więcej &gt;&gt;</a></Link></div>
+            <div className={`${buttonStyles.buttonStyles} ${styles.btn}`}><Link href='/services'><a>Dowiedz się więcej &gt;&gt;</a></Link></div>
         </div>
     )
 }
