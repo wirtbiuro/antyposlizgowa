@@ -38,12 +38,28 @@
     outline: 0;
 }
 
-.mainForm input[type=text]{
+.mainForm input.error, .mainForm input.error:focus, 
+.mainForm input:invalid, .mainForm input:invalid:focus, .mainForm input:invalid:hover,
+.mainForm input:invalid:hover:not(:focus){
+    border: 1px solid red;
+}
+
+.mainForm input[type=text], .mainForm input[type=email]{
     height: 50px;
 }
 
 .mainForm input[type=checkbox]{
     width: auto;
+}
+
+.mainForm input[type=checkbox].error, .mainForm input[type=checkbox]:invalid{
+    /* border: none;
+    box-shadow: 0px 0px 2px 1px red;
+    background-color: red; */
+}
+
+.mainForm input[type=checkbox]:invalid ~ label{
+    color: red;
 }
 
 .mainForm textarea{
@@ -120,7 +136,7 @@
         margin-bottom: 0;
         margin-top: 0;
     }
-    .row input[type=text], .row textarea, .mainForm .row h2{
+    .row input[type=text], .mainForm input[type=email], .row textarea, .mainForm .row h2{
         margin-bottom: 25px;
     }
     .row label{
@@ -142,6 +158,9 @@
     .row.submit input{
         margin-top: 40px;
         margin-left: 0;
+    }
+    .row.info{
+        margin-bottom: 10px;
     }
 }
 
