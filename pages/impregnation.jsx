@@ -1,16 +1,23 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import Banner from '../components/banner'
 import Link from 'next/link'
 import styles from '../styles/Common.module.css'
 import Footer from '../components/footer'
 import AuxForm from '../components/aux-form'
 import AntpslzgBreadcrumb from '../components/antpslzgBreadcrumb'
+import Animate from '../components/animate'
 
 const Impregnation = () => {
+
+    const imgRef = useRef()
+    const selectionRef = useRef()
+
     return (
         <div className={styles.frictionMeasurement}>
+            <Animate elementRef={imgRef} animationName="fadeInUp10"/>
+            <Animate elementRef={selectionRef} animationName="fadeInUp10"/>
             <AntpslzgBreadcrumb pathArr={[{title: 'Usługi', href:'/services'}, {title: 'Impregnacja'}]}/>
-            <Banner backgroundImage='url(/images/gray-plates.jpg)' withwaves={false}>
+            <Banner backgroundImage='url(/images/gray-plates.jpg)' withwaves={false} isFadeInLeft10={true}>
                 <div className={`${styles.bannerInner}`}>
                     <div className={`${styles.left} ${styles.self}`}>
                         <h1>Impregnacja</h1>
@@ -21,7 +28,7 @@ const Impregnation = () => {
             </Banner>
             <div className={styles.pageBody}>
                 <div className={styles.left}>
-                    <img src="/images/drops.png" className={styles.decorImg}/>
+                    <img src="/images/drops.png" className={styles.decorImg} ref={imgRef}/>
                     <p>&nbsp;</p>
                     <h2>Jakie powierzchnie warto impregnować i dlaczego?</h2>
                     <p>&nbsp;</p>
@@ -72,7 +79,7 @@ const Impregnation = () => {
                     </ul>
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
-                    <div className={styles.selection}>
+                    <div className={styles.selection} ref={selectionRef}>
                         <ul>
                             <li><p>Zalecamy stosowanie impregnacji na nowych i starych powierzchniach, zarówno wewnątrz jak i na zewnątrz budynków.</p></li>
                             <li><p>Zabezpieczenie nowych niezabrudzonych powierzchni znacząco przedłuży czas, w którym będą wyglądać czysto i świeżo oraz ułatwi ich codzienną pielęgnację.</p></li>
@@ -87,7 +94,7 @@ const Impregnation = () => {
                     <AuxForm/>
                 </div>
             </div>
-            <Banner backgroundImage="url('/images/feet2.jpg')">
+            <Banner backgroundImage="url('/images/feet2.jpg')" isFadeInUp={true}>
                 <div className={styles.bannerInner}>
                     <div className={styles.center}>
                         <h1>Zamów bezpłatną próbę zabezpieczenia antypoślizgowego!</h1>

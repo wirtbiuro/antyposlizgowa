@@ -10,7 +10,12 @@ const Products = () => {
     return (
         <div className={styles.frictionMeasurement}>
             <AntpslzgBreadcrumb pathArr={[{title: 'Usługi', href:'/services'}, {title: 'Nasze produkty'}]}/>
-            <Banner backgroundImage='url(/images/products.png)' withwaves={false}>
+            <Banner 
+                backgroundImage='linear-gradient(180deg, #ffffff 0%,rgba(255,255,255,0) 100%), url(/images/products.png)' 
+                withwaves={false}
+                backgroundPosition="center bottom"
+                isFadeInLeft10={true}
+            >
                 <div className={`${styles.bannerInner}`}>
                     <div className={`${styles.left} ${styles.self}`}>
                         <h1>Nasze produkty</h1>
@@ -62,7 +67,7 @@ const Products = () => {
                     <AuxForm/>
                 </div>
             </div>
-            <Banner backgroundImage="url('/images/feet2.jpg')">
+            <Banner backgroundImage="url('/images/feet2.jpg')" isFadeInUp={true}>
                 <div className={styles.bannerInner}>
                     <div className={styles.center}>
                         <h1>Zamów bezpłatną próbę zabezpieczenia antypoślizgowego!</h1>

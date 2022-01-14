@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import Banner from '../components/banner'
 import MainForm from '../components/main-form'
 import Link from 'next/link'
@@ -9,12 +9,17 @@ import TrustBlock from '../components/trust-block'
 import Footer from '../components/footer'
 import AuxForm from '../components/aux-form'
 import AntpslzgBreadcrumb from '../components/antpslzgBreadcrumb'
+import Animate from '../components/animate'
 
 const Descaling = () => {
+
+    const imgRef = useRef()
+
     return (
         <div>
+            <Animate elementRef={imgRef} animationName="fadeInUp10"/>
             <AntpslzgBreadcrumb pathArr={[{title: 'Usługi', href:'/services'}, {title: 'Odkamienianie'}]}/>
-            <Banner backgroundImage='url(/images/plates-flowers.jpg)' withwaves={false}>
+            <Banner backgroundImage='url(/images/plates-flowers.jpg)' withwaves={false} isFadeInLeft10={true}>
                 <div className={`${styles.bannerInner}`}>
                     <div className={`${styles.left} ${styles.self}`}>
                         <h1>Odkamienianie</h1>
@@ -25,7 +30,7 @@ const Descaling = () => {
             </Banner>
             <div className={styles.pageBody}>
                 <div className={styles.left}>
-                    <img src="/images/plates.png" className={styles.decorImg}/>
+                    <img src="/images/plates.png" className={styles.decorImg} ref={imgRef}/>
                     <h2>Odkamienianie</h2>
                     <p>&nbsp;</p>
                     <p>Skład chemiczny osadów kamiennych powstających w procesie eksploatacji np. basenu kąpielowego, zależy od rodzaju i jakości wody, stosowanych złóż filtracyjnych, reagentów chemicznych i ich dawek zastosowanych w oczyszczaniu wody oraz pH wody.</p>
@@ -54,7 +59,7 @@ const Descaling = () => {
                     <AuxForm/>
                 </div>
             </div>
-            <Banner backgroundImage="url('/images/feet2.jpg')">
+            <Banner backgroundImage="url('/images/feet2.jpg')" isFadeInUp={true}>
                 <div className={styles.bannerInner}>
                     <div className={styles.center}>
                         <h1>Zamów bezpłatną próbę zabezpieczenia antypoślizgowego!</h1>

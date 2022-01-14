@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import Banner from '../components/banner'
 import MainForm from '../components/main-form'
 import Link from 'next/link'
@@ -9,12 +9,18 @@ import TrustBlock from '../components/trust-block'
 import Footer from '../components/footer'
 import AuxForm from '../components/aux-form'
 import AntpslzgBreadcrumb from '../components/antpslzgBreadcrumb'
+import Animate from '../components/animate'
 
 const Protection = () => {
+
+    const leftRef = useRef()
+    const imgRef = useRef()
+
     return (
         <div>
+            <Animate elementRef={imgRef} animationName="fadeInUp10"/>
             <AntpslzgBreadcrumb pathArr={[{title: 'Usługi', href:'/services'}, {title: 'Zabezpieczenie antypoślizgowe'}]}/>
-            <Banner backgroundImage='url(/images/floor.png)' withwaves={false}>
+            <Banner backgroundImage='url(/images/floor.png)' withwaves={false} isFadeInLeft10={true}>
                 <div className={`${styles.bannerInner}`}>
                     <div className={`${styles.left} ${styles.self}`}>
                         <h1>Zabezpieczenia antypoślizgowe</h1>
@@ -24,8 +30,8 @@ const Protection = () => {
                 </div>
             </Banner>
             <div className={styles.pageBody}>
-                <div className={styles.left}>
-                    <img src="/images/wet-floor.png" className={styles.decorImg}/>
+                <div className={styles.left} ref={leftRef}>
+                    <img src="/images/wet-floor.png" className={styles.decorImg} ref={imgRef}/>
                     <h2>Zabezpieczenie antypoślizgowe</h2>
                     <p>&nbsp;</p>
                     <p>Usługi zabezpieczenia antypoślizgowego wykonujemy <strong>zgodnie z wytycznymi Instytutu Techniki Budowlanej i Ministerstwa Rozwoju.</strong></p>
@@ -48,7 +54,7 @@ const Protection = () => {
                     <AuxForm/>
                 </div>
             </div>
-            <Banner backgroundImage="url('/images/feet2.jpg')">
+            <Banner backgroundImage="url('/images/feet2.jpg')" isFadeInUp={true}>
                 <div className={styles.bannerInner}>
                     <div className={styles.center}>
                         <h1>Zamów bezpłatną próbę zabezpieczenia antypoślizgowego!</h1>

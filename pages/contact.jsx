@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import Banner from '../components/banner'
 import Link from 'next/link'
 import styles from '../styles/Common.module.css'
@@ -10,12 +10,19 @@ import AboutUsDiffBlock from '../components/about-us-diff-block'
 import UslugiBtns from '../components/uslugi-btns'
 import MainForm from '../components/main-form'
 import AntpslzgBreadcrumb from '../components/antpslzgBreadcrumb'
+import Animate from '../components/animate'
 
 const Contact = () => {
+
+    const otherBannerRef = useRef()
+    const rightRef = useRef()
+
     return (
         <div className={styles.all}>
+            <Animate elementRef={otherBannerRef} animationName="fadeInUp"/>
+            <Animate elementRef={rightRef} animationName="fadeInRight10"/>
             <AntpslzgBreadcrumb pathArr={[{title: 'Kontakt'}]}/>
-            <Banner backgroundImage='url(/images/stairs.png)' withwaves={false}>
+            <Banner backgroundImage='url(/images/stairs.png)' withwaves={false} isFadeInLeft10={true}>
                 <div className={`${styles.bannerInner}`}>
                     <div className={`${styles.left} ${styles.self}`}>
                         <h1>Kontakt</h1>
@@ -26,7 +33,7 @@ const Contact = () => {
             </Banner>
             
             <div className={otherStyles.pageBody}>
-                <div className={otherStyles.banner}>
+                <div className={otherStyles.banner} ref={otherBannerRef}>
                     <div className={otherStyles.left}>
                         <h2>Zamów bezpłatną próbę zabezpieczenia antypoślizgowego</h2>
                     </div>
@@ -41,10 +48,11 @@ const Contact = () => {
                             <MainForm 
                                 style={{width: '100%', border: '1px solid rgb(220, 220, 220)', padding: '40px', display: 'block'}} 
                                 title={''}
+                                isFadeInLeftt10={true}
                             />
                         </div>
                     </div>
-                    <div className={`${styles.right} ${otherStyles.noMargin}`}>
+                    <div className={`${styles.right} ${otherStyles.noMargin}`} ref={rightRef}>
                         <div className={`${contactStyles.row}`}>
                             <i className={`${contactStyles.adress}`}/>
                             <div className={`${contactStyles.col}`}>
@@ -74,7 +82,7 @@ const Contact = () => {
                 </div>    
             </div>
             
-            <Banner backgroundImage="url('/images/feet2.jpg')">
+            <Banner backgroundImage="url('/images/feet2.jpg')" isFadeInUp={true}>
                 <div className={styles.bannerInner}>
                     <div className={styles.center}>
                         <h1>Zamów bezpłatną próbę zabezpieczenia antypoślizgowego!</h1>

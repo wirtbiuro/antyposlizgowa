@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import Banner from '../components/banner'
 import Link from 'next/link'
 import styles from '../styles/Common.module.css'
@@ -8,12 +8,25 @@ import AuxForm from '../components/aux-form'
 import AboutUsDiffBlock from '../components/about-us-diff-block'
 import UslugiBtns from '../components/uslugi-btns'
 import AntpslzgBreadcrumb from '../components/antpslzgBreadcrumb'
+import Animate from '../components/animate'
 
 const AboutUs = () => {
+
+    const otherBannerRef = useRef()
+    const imgRef = useRef()
+    const textRef = useRef()
+    const imgRef2 = useRef()
+    const textRef2 = useRef()
+
     return (
         <div className={styles.all}>
+            <Animate elementRef={otherBannerRef} animationName="fadeInUp10"/>
+            <Animate elementRef={imgRef} animationName="fadeInLeft10"/>
+            <Animate elementRef={textRef} animationName="fadeInRight10"/>
+            <Animate elementRef={imgRef2} animationName="fadeInRight10"/>
+            <Animate elementRef={textRef2} animationName="fadeInLeft10"/>
             <AntpslzgBreadcrumb pathArr={[{title: 'O nas'}]}/>
-            <Banner backgroundImage='url(/images/stairs.png)' withwaves={false}>
+            <Banner backgroundImage='url(/images/stairs.png)' withwaves={false} isFadeInLeft10={true}>
                 <div className={`${styles.bannerInner}`}>
                     <div className={`${styles.left} ${styles.self}`}>
                         <h1>O nas</h1>
@@ -23,7 +36,7 @@ const AboutUs = () => {
                 </div>
             </Banner>
             <div className={otherStyles.pageBody}>
-                <div className={otherStyles.banner}>
+                <div className={otherStyles.banner} ref={otherBannerRef}>
                     <div className={otherStyles.left}>
                         <h2>Zamów profesjonalną usługę</h2>
                     </div>
@@ -32,10 +45,10 @@ const AboutUs = () => {
                     </div>
                 </div>
                 <div className={`${styles.pageBody} ${otherStyles.innerPageBody}`}>
-                    <div className={`${styles.left} ${otherStyles.left}`}>
+                    <div className={`${styles.left} ${otherStyles.left}`} ref={imgRef}>
                         <img src="/images/measurement-3.png" className={styles.decorImg}/>
                     </div>
-                    <div className={`${styles.right} ${otherStyles.right}`}>
+                    <div className={`${styles.right} ${otherStyles.right}`} ref={textRef}>
                         <h2>Lider Branży Antypoślizgowej</h2>
                         <p>&nbsp;</p>
                         <p>Posiadamy 17-letnie doświadczenie w branży. Pracujemy na własnych, profesjonalnych preparatach chemicznych marki CTS Chemistry. Gwarantujemy jakość i wieloletnią trwałość stosowanych zabezpieczeń. Stosujemy własne preparaty chemiczne oparte na autorskich i certyfikowanych recepturach oraz pracujemy zgodnie z własną opatentowaną technologią ZAP®. Posiadamy wieloletnie doświadczenie w kraju i za granicą.</p>
@@ -52,7 +65,7 @@ const AboutUs = () => {
             <AboutUsDiffBlock/>
             <div className={otherStyles.pageBody}>
                 <div className={`${styles.pageBody} ${otherStyles.innerPageBody}`}>
-                    <div className={`${styles.left} ${otherStyles.left}`}>
+                    <div className={`${styles.left} ${otherStyles.left}`} ref={textRef2}>
                         <h2>Nasze usługi</h2>
                         <p>&nbsp;</p>
                         <ul>
@@ -65,13 +78,13 @@ const AboutUs = () => {
                             <li><p>Działamy w kraju i zagranicą.</p></li>
                         </ul>
                     </div>
-                    <div className={`${styles.right} ${otherStyles.right}`}>
+                    <div className={`${styles.right} ${otherStyles.right}`} ref={imgRef2}>
                         <img src="/images/wash.png" className={styles.decorImg}/>
                     </div>
                 </div>
                 <UslugiBtns/>
             </div>
-            <Banner backgroundImage="url('/images/feet2.jpg')">
+            <Banner backgroundImage="url('/images/feet2.jpg')" isFadeInUp={true}>
                 <div className={styles.bannerInner}>
                     <div className={styles.center}>
                         <h1>Zamów bezpłatną próbę zabezpieczenia antypoślizgowego!</h1>

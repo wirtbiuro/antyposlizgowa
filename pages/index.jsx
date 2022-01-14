@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import Banner from '../components/banner'
 import MainForm from '../components/main-form'
 import Link from 'next/link'
@@ -7,13 +7,18 @@ import Cards from '../components/cards'
 import DiffBlock from '../components/diff-block'
 import TrustBlock from '../components/trust-block'
 import Footer from '../components/footer'
+import Animate from '../components/animate'
 
 const Home = () => {
+
+    const bannerLeftRef = useRef()
+
     return (
         <div>
             <Banner>
                 <div className={styles.bannerInner}>
-                    <div className={styles.left}>
+                    <div className={`${styles.left}`} ref={bannerLeftRef}>
+                        <Animate elementRef={bannerLeftRef} animationName='fadeInLeft10'/>
                         <h1>Zabezpieczenia antypoślizgowe</h1>
                         <h2>pomiar współczynnika tarcia i PTV, doczyszczanie, odkamienianie, impregnacja</h2>
                         <div><Link href='/services'><a>SPRAWDŹ NASZE USŁUGI</a></Link></div>
@@ -24,7 +29,7 @@ const Home = () => {
             <Cards/>
             <DiffBlock/>
             <TrustBlock/>
-            <Banner>
+            <Banner isFadeInUp={true}>
                 <div className={styles.bannerInner}>
                     <div className={styles.center}>
                         <h1>Zamów bezpłatną próbę zabezpieczenia antypoślizgowego!</h1>

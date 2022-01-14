@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import Banner from '../components/banner'
 import MainForm from '../components/main-form'
 import Link from 'next/link'
@@ -9,12 +9,17 @@ import TrustBlock from '../components/trust-block'
 import Footer from '../components/footer'
 import AuxForm from '../components/aux-form'
 import AntpslzgBreadcrumb from '../components/antpslzgBreadcrumb'
+import Animate from '../components/animate'
 
 const Protection = () => {
+
+    const imgRef = useRef()
+
     return (
         <div>
+            <Animate elementRef={imgRef} animationName="fadeInUp10"/>
             <AntpslzgBreadcrumb pathArr={[{title: 'Usługi', href:'/services'}, {title: 'Doczyszczanie powierzchni'}]}/>
-            <Banner backgroundImage='url(/images/plates-flowers.jpg)' withwaves={false}>
+            <Banner backgroundImage='url(/images/plates-flowers.jpg)' withwaves={false} isFadeInLeft10={true}>
                 <div className={`${styles.bannerInner}`}>
                     <div className={`${styles.left} ${styles.self}`}>
                         <h1>Doczyszczanie powierzchni</h1>
@@ -25,7 +30,7 @@ const Protection = () => {
             </Banner>
             <div className={styles.pageBody}>
                 <div className={styles.left}>
-                    <img src="/images/vacuum-cleaner.png" className={styles.decorImg}/>
+                    <img src="/images/vacuum-cleaner.png" className={styles.decorImg} ref={imgRef}/>
                     <h2>Kiedy zdecydować się na specjalistyczną usługę doczyszczania?</h2>
                     <p>&nbsp;</p>
                     <p>W budynkach użyteczności publicznej, centrach medycznych, ośrodkach sportowych, w biurach a nawet prywatnych domach posadzki i chodniki są szczególnie narażone na różnego rodzaju zabrudzenia. Z czasem trwałe zabrudzenia stają się bardziej widoczne i trudne do usunięcia. W pomieszczeniach spędzamy znaczną część naszego dnia. Warto, więc odpowiednio zadbać o najbliższe otoczenie, aby nie tylko długo wyglądało czysto, ale również było bezpieczne dla naszego zdrowia.</p>
@@ -52,7 +57,7 @@ const Protection = () => {
                     <AuxForm/>
                 </div>
             </div>
-            <Banner backgroundImage="url('/images/feet2.jpg')">
+            <Banner backgroundImage="url('/images/feet2.jpg')" isFadeInUp={true}>
                 <div className={styles.bannerInner}>
                     <div className={styles.center}>
                         <h1>Zamów bezpłatną próbę zabezpieczenia antypoślizgowego!</h1>

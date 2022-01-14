@@ -1,16 +1,22 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import Banner from '../components/banner'
 import Link from 'next/link'
 import styles from '../styles/Common.module.css'
 import Footer from '../components/footer'
 import AuxForm from '../components/aux-form'
 import AntpslzgBreadcrumb from '../components/antpslzgBreadcrumb'
+import Animate from '../components/animate'
 
 const FrictionMeasurement = () => {
+
+    const leftRef = useRef()
+    const imgRef = useRef()
+
     return (
         <div className={styles.frictionMeasurement}>
+            <Animate elementRef={imgRef} animationName="fadeInUp10"/>
             <AntpslzgBreadcrumb pathArr={[{title: 'Usługi', href:'/services'}, {title: 'Pomiar współczynnika tarcia i PTV'}]}/>
-            <Banner backgroundImage='url(/images/stairs.png)' withwaves={false}>
+            <Banner backgroundImage='url(/images/stairs.png)' withwaves={false} isFadeInLeft10={true}>
                 <div className={`${styles.bannerInner}`}>
                     <div className={`${styles.left} ${styles.self}`}>
                         <h1>Pomiar współczynnika tarcia i PTV</h1>
@@ -20,8 +26,8 @@ const FrictionMeasurement = () => {
                 </div>
             </Banner>
             <div className={styles.pageBody}>
-                <div className={styles.left}>
-                    <img src="/images/measurement.png" className={styles.decorImg}/>
+                <div className={styles.left} ref={leftRef}>
+                    <img src="/images/measurement.png" className={styles.decorImg} ref={imgRef}/>
                     <h2>Dlaczego należy sprawdzać stan posadzki w zakresie antypoślizgowości?</h2>
                     <p>&nbsp;</p>
                     <p>Każda płytka ceramiczna, w miarę upływu czasu oraz intensywności eksploatacji, traci swoją antypoślizgowość fabryczną. Dlatego antypoślizgowość posadzek należy okresowo kontrolować (nie rzadziej niż raz na 3 lata), w ramach przeglądów technicznych obiektów.</p>
@@ -122,7 +128,7 @@ const FrictionMeasurement = () => {
                     <AuxForm/>
                 </div>
             </div>
-            <Banner backgroundImage="url('/images/feet2.jpg')">
+            <Banner backgroundImage="url('/images/feet2.jpg')" isFadeInUp={true}>
                 <div className={styles.bannerInner}>
                     <div className={styles.center}>
                         <h1>Zamów bezpłatną próbę zabezpieczenia antypoślizgowego!</h1>

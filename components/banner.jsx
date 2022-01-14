@@ -1,15 +1,23 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import styles from '../styles/Banner.module.css'
 import MainForm from './main-form'
+import Animate from './animate'
 
-const Banner = ({children, withwaves=true, backgroundImage='url(/images/feet.jpg)'}) => {
+const Banner = ({children, withwaves=true, backgroundImage='url(/images/feet.jpg)', isFadeInUp=false,
+    isFadeInLeft10=false, backgroundPosition="center center"
+}) => {
 
     const paddingBottom = withwaves? '0': '11%'
 
-    return (
-        <div className={styles.banner} style={{backgroundImage, paddingBottom}}>
+    const childrenDivRef = useRef()
 
-            <div className={styles.childrenDiv}>
+    return (
+        <div className={styles.banner} style={{backgroundImage, paddingBottom, backgroundPosition}}>
+
+            {isFadeInLeft10 && <Animate animationName="fadeInLeft10" elementRef={childrenDivRef}/>}
+            {isFadeInUp && <Animate animationName="fadeInUp10" elementRef={childrenDivRef}/>}
+
+            <div className={styles.childrenDiv} ref={childrenDivRef}>
                 {children}
             </div>
             

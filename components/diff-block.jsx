@@ -1,13 +1,22 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import styles from '../styles/DiffBlock.module.css'
 import { Carousel } from 'antd';
+import Animate from './animate';
 
 const DiffBlock = () => {
+
+    const h2Ref = useRef()
+    const leftRef = useRef()
+    const rightRef = useRef()
+
     return (
         <div className={styles.diffBlock}>
-            <div className={`${styles.mainHeader} header`}><h2>Co nas wyróżnia?</h2></div>
+            <Animate animationName="fadeInUp" elementRef={h2Ref}/>
+            <Animate animationName="fadeInLeft10" elementRef={leftRef}/>
+            <Animate animationName="fadeInRight10" elementRef={rightRef}/>
+            <div className={`${styles.mainHeader} header`}><h2 ref={h2Ref}>Co nas wyróżnia?</h2></div>
             <div className={styles.mainBlock}>
-                <div className={styles.left}>
+                <div className={styles.left} ref={leftRef}>
                     <div className={styles.row}>
                         <div className={styles.left}>
                             <div className={`${styles.icon} ${styles.atom}`}></div>
@@ -36,7 +45,7 @@ const DiffBlock = () => {
                         </div>
                     </div>
                 </div>
-                <div className={styles.right}>
+                <div className={styles.right} ref={rightRef}>
                     <img src="/images/technika-antyposlizgowa.jpg"/>
                     <div>
                         <Carousel  effect="fade" autoplay autoplaySpeed={8000}>
