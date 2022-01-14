@@ -2,6 +2,7 @@ import React, { useRef } from 'react'
 import styles from '../styles/MainForm.module.css'
 import axios from 'axios'
 import Animate from './animate'
+import { Modal } from 'antd'
 
 const AuxForm = () => {
 
@@ -31,6 +32,20 @@ const AuxForm = () => {
                 email: e.target.email.value,
                 phone: e.target.phone.value,
                 // message: e.target.message.value
+            }
+        })
+
+        return Modal.success({
+            content: "You have successfully sent a message.",
+            onOk: ()=>{
+                e.target.fullName.value = ''
+                e.target.email.value = ''
+                e.target.phone.value = ''
+                e.target.zgoda1.checked = false
+                e.target.zgoda2.checked = false
+                fullNameRef.current.required = false
+                zgoda1Ref.current.required = false
+                emailRef.current.required = false
             }
         })
 

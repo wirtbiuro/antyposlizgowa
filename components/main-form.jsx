@@ -2,6 +2,7 @@ import React, { useRef } from 'react'
 import styles from '../styles/MainForm.module.css'
 import axios from 'axios'
 import Animate from './animate'
+import { Modal } from 'antd'
 
 const MainForm = ({style, title='Potrzebujesz konsultacji? Napisz do nas wiadomość:', isFadeInLeftt10=false}) => {
 
@@ -32,6 +33,22 @@ const MainForm = ({style, title='Potrzebujesz konsultacji? Napisz do nas wiadomo
                 phone: e.target.phone.value,
                 city: e.target.city.value,
                 message: e.target.message.value
+            }
+        })
+
+        return Modal.success({
+            content: "You have successfully sent a message.",
+            onOk: ()=>{
+                e.target.fullName.value = ''
+                e.target.email.value = ''
+                e.target.phone.value = ''
+                e.target.city.value = ''
+                e.target.message.value = ''
+                e.target.zgoda1.checked = false
+                e.target.zgoda2.checked = false
+                fullNameRef.current.required = false
+                zgoda1Ref.current.required = false
+                emailRef.current.required = false
             }
         })
 
