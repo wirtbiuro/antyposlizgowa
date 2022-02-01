@@ -8,6 +8,7 @@ import DiffBlock from '../components/diff-block'
 import TrustBlock from '../components/trust-block'
 import Footer from '../components/footer'
 import Animate from '../components/animate'
+import { phone, phoneLink } from '../constants'
 
 const Home = () => {
 
@@ -19,8 +20,8 @@ const Home = () => {
                 <div className={styles.bannerInner}>
                     <div className={`${styles.left}`} ref={bannerLeftRef}>
                         <Animate elementRef={bannerLeftRef} animationName='fadeInLeft10'/>
-                        <h1>Zabezpieczenia antypoślizgowe</h1>
-                        <h2>pomiar współczynnika tarcia i PTV, doczyszczanie, odkamienianie, impregnacja</h2>
+                        <h1>Sklisikring</h1>
+                        <h2>måling av friksjonskoeffisient og PTV (Pendulum Test Value) rengjøring, avkalking, impregnering</h2>
                         <div><Link href='/services'><a>SPRAWDŹ NASZE USŁUGI</a></Link></div>
                     </div>
                     <MainForm/>
@@ -32,9 +33,9 @@ const Home = () => {
             <Banner isFadeInUp={true}>
                 <div className={styles.bannerInner}>
                     <div className={styles.center}>
-                        <h1>Zamów bezpłatną próbę zabezpieczenia antypoślizgowego!</h1>
-                        <h2>Skontaktuj się z nami:</h2>
-                        <div><Link href='/'><a>TEL. 22 750 20 66</a></Link></div>
+                        <h1>Bestill et gratis prøve med sklisikring!</h1>
+                        <h2>Ta kontakt med oss:</h2>
+                        <div><Link href={phoneLink}><a>{phone}</a></Link></div>
                     </div>
                 </div>
             </Banner>

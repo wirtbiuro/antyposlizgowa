@@ -14,7 +14,7 @@ const DiffBlock = () => {
             <Animate animationName="fadeInUp" elementRef={h2Ref}/>
             <Animate animationName="fadeInLeft10" elementRef={leftRef}/>
             <Animate animationName="fadeInRight10" elementRef={rightRef}/>
-            <div className={`${styles.mainHeader} header`}><h2 ref={h2Ref}>Co nas wyróżnia?</h2></div>
+            <div className={`${styles.mainHeader} header`}><h2 ref={h2Ref}>Hva kjennetegner oss?</h2></div>
             <div className={styles.mainBlock}>
                 <div className={styles.left} ref={leftRef}>
                     <div className={styles.row}>
@@ -22,8 +22,10 @@ const DiffBlock = () => {
                             <div className={`${styles.icon} ${styles.atom}`}></div>
                         </div>
                         <div className={styles.right}>
-                            <div className={styles.header}><h3>Własna opatentowana technologia ZAP®</h3></div>
-                            <div className={styles.text}><p>Stosujemy własne preparaty chemiczne oparte na autorskich recepturach oraz pracujemy zgodnie z własną opatentowaną technologię ZAP®. To dzięki unikatowym rozwiązaniom technologicznym nasze produkty i usługi stają się symbolem jakości, skuteczności i bezpieczeństwa.</p></div>
+                            <div className={styles.header}><h3>Den patenterte teknologien ZAP®</h3></div>
+                            <div className={styles.text}><p>
+                                Vi bruker kjemiske preparater som bygger på CTS Chemistry sine originale oppskrifter, samt vi arbeider i henhold til den patenterte teknologien ZAP®. Det er de unike teknologiske løsninger som gjør at produkter og tjenester blir kvalitetens, effektivitetens og sikkerhetens forbilde.
+                            </p></div>
                         </div>
                     </div>
                     <div className={styles.row}>
@@ -31,8 +33,10 @@ const DiffBlock = () => {
                             <div className={`${styles.icon} ${styles.check}`}></div>
                         </div>
                         <div className={styles.right}>
-                            <div className={styles.header}><h3>Doświadczenie i specjalizacja</h3></div>
-                            <div className={styles.text}><p>Posiadamy wieloletnie doświadczenie w kraju i za granicą! Wszystkie usługi z naszego portfolio wykonują specjaliści z wieloletnim doświadczeniem w branży zgodnie z wytycznymi Instytutu Techniki Budowlanej i Ministerstwa Rozwoju. Każde zlecenie rozpatrujemy indywidualnie, uwzględniając potrzeby i życzenia Klientów. Realizujemy zarówno zlecenia jednorazowe jak i umowy stałe</p></div>
+                            <div className={styles.header}><h3>Erfaring og spesialisering</h3></div>
+                            <div className={styles.text}><p>
+                                Alle tjenester i vår portefølje utføres av spesialister med erfaring i bransjen. Vi har en individuell tilnærming til hvert oppdrag, og vi setter kundenes behov og ønsker i fokus. Vi gjennomfører både et enkelt oppdrag, samt faste oppdrag med grunnlag i et samarbeidsavtale.
+                            </p></div>
                         </div>
                     </div>
                     <div className={styles.row}>

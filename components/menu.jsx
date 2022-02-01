@@ -61,7 +61,7 @@ const Menu = () => {
     return (
         <div className={styles.menu}>
             <div className={styles.logo}><Link href='/'><a>
-                <img src='https://antyposlizgowa.com/wp-content/uploads/2021/02/logo1.png'/>
+                <img src='/images/logo-antyposlizgowa.svg'/>
             </a></Link></div>
             <div className={styles.menuBtn} onClick={onMenuBtn}>
                 <span className={styles.title}>MENU</span>
@@ -69,7 +69,7 @@ const Menu = () => {
             </div>
             <nav className={show? styles.show: styles.hide} onClick={navClicked}>
                 <Link href='/'><a>
-                    <div className={isMainClass('/') ? styles.main: null}>STRONA GŁÓWNA</div>
+                    <div className={isMainClass('/') ? styles.main: null}>HJEM</div>
                 </a></Link>
                 <Link href='/services'><a onClick={uslugiClicked} onMouseLeave={uslugiOut}
                     onMouseOver={uslugiIn}
@@ -79,7 +79,7 @@ const Menu = () => {
                     >
                         <div className={styles.titleWithArrow}>
                             <div className={styles.title}>
-                                USŁUGI
+                                TJENESTER
                             </div>
                             <div className={styles.arrow} onClick={arrowClicked} ref={arrowRef}>
                                 <DownOutlined />
@@ -125,7 +125,7 @@ const Menu = () => {
                 </a></Link>
             
                 <Link href='/about-us'><a>
-                    <div className={isMainClass('/about-us') ? styles.main: null}>O NAS</div>
+                    <div className={isMainClass('/about-us') ? styles.main: null}>OM OSS</div>
                 </a></Link>
                 <Link href='/contact'><a>
                     <div className={isMainClass('/contact') ? styles.main: null}>KONTAKT</div>

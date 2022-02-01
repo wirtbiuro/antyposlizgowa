@@ -18,12 +18,12 @@ const Descaling = () => {
     return (
         <div>
             <Animate elementRef={imgRef} animationName="fadeInUp10"/>
-            <AntpslzgBreadcrumb pathArr={[{title: 'Usługi', href:'/services'}, {title: 'Odkamienianie'}]}/>
+            <AntpslzgBreadcrumb pathArr={[{title: 'Usługi', href:'/services'}, {title: 'Avkalking'}]}/>
             <Banner backgroundImage='url(/images/plates-flowers.jpg)' withwaves={false} isFadeInLeft10={true}>
                 <div className={`${styles.bannerInner}`}>
                     <div className={`${styles.left} ${styles.self}`}>
-                        <h1>Odkamienianie</h1>
-                        <p>Zanieczyszczenie np. basenu kamieniem tworzy konieczność zastosowania kwaśnych preparatów chemicznych. Należy także pamiętać o okresowym czyszczeniu takiej przestrzeni. Napisz do nas i zapytaj jak możemy pomóc.</p>
+                        <h1>Avkalking</h1>
+                        <p>Kalsiumoppbygging på f.eks. bassengoverflater gjør det nødvendig å bruke sure kjemiske preparater.  Det er også viktig å rengjøre slike overflater periodisk. Send en melding til oss og hvordan vi kan hjelpe deg.</p>
                         <div className={styles.link}><Link href='/services'><a>SPRAWDŹ WSZYSTKIE USŁUGI</a></Link></div>
                     </div>
                 </div>
@@ -31,7 +31,7 @@ const Descaling = () => {
             <div className={styles.pageBody}>
                 <div className={styles.left}>
                     <img src="/images/plates.png" className={styles.decorImg} ref={imgRef}/>
-                    <h2>Odkamienianie</h2>
+                    <h2>Avkalking</h2>
                     <p>&nbsp;</p>
                     <p>Skład chemiczny osadów kamiennych powstających w procesie eksploatacji np. basenu kąpielowego, zależy od rodzaju i jakości wody, stosowanych złóż filtracyjnych, reagentów chemicznych i ich dawek zastosowanych w oczyszczaniu wody oraz pH wody.</p>
                     <p>&nbsp;</p>

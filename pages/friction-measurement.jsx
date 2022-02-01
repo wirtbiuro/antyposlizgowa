@@ -6,6 +6,7 @@ import Footer from '../components/footer'
 import AuxForm from '../components/aux-form'
 import AntpslzgBreadcrumb from '../components/antpslzgBreadcrumb'
 import Animate from '../components/animate'
+import { phoneLink, phone } from '../constants'
 
 const FrictionMeasurement = () => {
 
@@ -15,11 +16,11 @@ const FrictionMeasurement = () => {
     return (
         <div className={styles.frictionMeasurement}>
             <Animate elementRef={imgRef} animationName="fadeInUp10"/>
-            <AntpslzgBreadcrumb pathArr={[{title: 'Usługi', href:'/services'}, {title: 'Pomiar współczynnika tarcia i PTV'}]}/>
+            <AntpslzgBreadcrumb pathArr={[{title: 'Usługi', href:'/services'}, {title: 'Måling av friksjonskoeffisient og PTV (Pendulum Test Value)'}]}/>
             <Banner backgroundImage='url(/images/stairs.png)' withwaves={false} isFadeInLeft10={true}>
                 <div className={`${styles.bannerInner}`}>
                     <div className={`${styles.left} ${styles.self}`}>
-                        <h1>Pomiar współczynnika tarcia i PTV</h1>
+                        <h1>Måling av friksjonskoeffisient og PTV (Pendulum Test Value)</h1>
                         <p>Wykonamy pomiar antypoślizgowości Twojej powierzchni według wytycznych Instytutu Techniki Budowlanej. Następnie otrzymasz Certyfikat Zgodności przeprowadzonego badania.</p>
                         <div className={styles.link}><Link href='/services'><a>SPRAWDŹ WSZYSTKIE USŁUGI</a></Link></div>
                     </div>
@@ -28,20 +29,21 @@ const FrictionMeasurement = () => {
             <div className={styles.pageBody}>
                 <div className={styles.left} ref={leftRef}>
                     <img src="/images/measurement.png" className={styles.decorImg} ref={imgRef}/>
-                    <h2>Dlaczego należy sprawdzać stan posadzki w zakresie antypoślizgowości?</h2>
+                    <h2>Hvorfor er det viktig å teste gulvet for sklisikkerhet?</h2>
                     <p>&nbsp;</p>
-                    <p>Każda płytka ceramiczna, w miarę upływu czasu oraz intensywności eksploatacji, traci swoją antypoślizgowość fabryczną. Dlatego antypoślizgowość posadzek należy okresowo kontrolować (nie rzadziej niż raz na 3 lata), w ramach przeglądów technicznych obiektów.</p>
-                    <p>&nbsp;</p>
-                    <p>&nbsp;</p>
-                    <h2>Kto zleca nam pomiar odporności posadzek na poślizg?</h2>
-                    <p>&nbsp;</p>
-                    <p>Projektanci, inspektorzy nadzoru budowlanego, inwestorzy, zarządcy, administratorzy obiektów użyteczności publicznej lub budynków mieszkalnych, chcąc mieć pewność, że ich posadzki są bezpieczne i zgodne z obowiązującymi przepisami prawa, wytycznymi i poradnikami, regularnie badają odporność na poślizg, nowych oraz eksploatowanych posadzek.</p>
+                    <p>Alle keramiske fliser mister sin opprinnelige sklisikkerhet med tiden og på grunn av bruksintensitet. Derfor skal man teste gulvet for sklisikkerhet med jevne mellomrom (ikke sjeldnere enn en gang i en periode på 3 år), i forbindelse med bygningens tekniske kontroll.</p>
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
-                    <h2>W jaki sposób mierzy się odporność posadzki na poślizg ?</h2>
+                    <h2>Hva er gjeldende krav vedrørende sklisikring? Hvem pålegger oss måling av gulvenes sklisikkerhet?</h2>
                     <p>&nbsp;</p>
-                    <p>Ze względów praktycznych, najczęściej takich pomiarów dokonuje się przy użyciu dwóch mobilnych metod :</p>
-                    <p>1. Metodą weryfikacji odporności posadzki na poślizg jest <strong>badanie oporu poślizgu</strong>. Badanie to wykonujemy przy użyciu przyrządu zwanego wahadłem angielskim, stąd badanie w skrócie określane jest jako PTV (Pendulum Test Value). Metodę badania opisano szczegółowo w normie PN-EN 13036-4:2011.</p>
+                    <p>Arkitekter, tilsynsmyndigheter, byggherrer, eiendomsforvaltere ved næringsbygg eller boligbygg vil være sikre på at gulv i byggene de har ansvar for er trygge og i samsvar med gjeldende lovbestemmelser, retningslinjer og veiledning, de undersøker regelmessig sklisikkerheten til eksisterende og nye gulv.</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <h2>Hvordan måles det gulvets sklisikkerhet?</h2>
+                    <p>&nbsp;</p>
+                    <p>Av praktiske grunner benyttes det en mobil verifikasjonsmetode får måling av sklisikkerhet, dette er <strong>måling av friksjon.</strong> Målingen gjennomføres ved hjelp av et pendelapparat. Metoden er utviklet i England, og derfor heter det PTV (Pendulum Test Value). PTV-måleverdier danner grunnlag for klassifisering av gulv med hensyn til sklirisiko. </p>
+                    {/* <p>Ze względów praktycznych, najczęściej takich pomiarów dokonuje się przy użyciu dwóch mobilnych metod :</p>
+                    <p>1. Metodą weryfikacji odporności posadzki na poślizg jest <strong>badanie oporu poślizgu</strong>. Badanie to wykonujemy przy użyciu przyrządu zwanego wahadłem angielskim, stąd badanie w skrócie określane jest jako PTV (Pendulum Test Value). Metodę badania opisano szczegółowo w normie PN-EN 13036-4:2011.</p> */}
                     <video 
                         playsInline={true} 
                         width="100%" 
@@ -55,30 +57,30 @@ const FrictionMeasurement = () => {
                         <source src="https://antyposlizgowa.com/wp-content/uploads/2021/03/Pomiar_wahadlem-angielskim.mov" type="video/mp4" />
                         Sorry, your browser does not support embedded videos.
                     </video>
-                    <p>Wartości oporu poślizgu PTV stanowią podstawę klasyfikacji posadzki w ujęciu ryzyka poślizgu. Klasyfikację tę przedstawiono w poniższej tabeli.</p>
+                    <p>Klassifiseringen er oppgitt i tabellen nedenfor.</p>
                     <table width="100%">
                         <tbody>
                             <tr>
-                                <td ><strong>Opór poślizgu, PTV</strong></td>
-                                <td ><strong>Klasyfikacja</strong></td>
+                                <td ><strong>Sklisikkerhet, PTV</strong></td>
+                                <td ><strong>Klassifisering</strong></td>
                             </tr>
                             <tr>
                                 <td >0 – 24</td>
-                                <td >Wysokie ryzyko poślizgnięcia</td>
+                                <td >Stor sklirisiko</td>
                             </tr>
                             <tr>
                                 <td >25 – 35</td>
-                                <td >Średnie ryzyko poślizgnięcia</td>
+                                <td >Modsrat sklirisiko</td>
                             </tr>
                             <tr>
                                 <td >≥ 36</td>
-                                <td >Niskie ryzyko poślizgnięcia</td>
+                                <td >Lav sklirisiko</td>
                             </tr>
                         </tbody>
                     </table>
                     <p>&nbsp;</p>
-                    <p>2. Drugą metodą badania odporności posadzki na poślizg jest <strong>pomiar dynamicznego współczynnika tarcia µ według normy DIN 51131.</strong></p>
-                    <p>Test wykonywany jest przez nas <strong>za pomocą urządzenia FSC 2011 lub GMG 200</strong>. Metoda ta została wykorzystana już w roku 1995, do porównania otrzymanych wyników pomiarów dynamicznego współczynnika tarcia µ, do parametrów antypoślizgowości R otrzymanych przy badaniu wg normy DIN 51130 oraz parametrów A/B/C otrzymanych przy badaniu wg normy DIN 51097.</p>
+                    {/* <p>2. Drugą metodą badania odporności posadzki na poślizg jest <strong>pomiar dynamicznego współczynnika tarcia µ według normy DIN 51131.</strong></p>
+                    <p>Test wykonywany jest przez nas <strong>za pomocą urządzenia FSC 2011 lub GMG 200</strong>. Metoda ta została wykorzystana już w roku 1995, do porównania otrzymanych wyników pomiarów dynamicznego współczynnika tarcia µ, do parametrów antypoślizgowości R otrzymanych przy badaniu wg normy DIN 51130 oraz parametrów A/B/C otrzymanych przy badaniu wg normy DIN 51097.</p> */}
                     <video 
                         playsInline={true} 
                         width="100%" 
@@ -93,32 +95,32 @@ const FrictionMeasurement = () => {
                         Sorry, your browser does not support embedded videos.
                     </video>
                     <p>&nbsp;</p>
-                    <h2>Jak działamy?</h2>
+                    <h2>Hvordan fungerer vi?</h2>
                     <p>&nbsp;</p>
                     <ul>
-                        <li><p>Pomiary wykonujemy zawsze zgodnie z wytycznymi zawartymi w normie oraz dedykowanymi do tych pomiarów ślizgaczami (stopkami), na suchym i mokrym.</p></li>
-                        <li><p>Po każdym badaniu przygotujemy raport odporności podłoża na poślizg.</p></li>
-                        <li><p>Rzetelne badanie jest podstawą do uznania zgodności parametrów badanego podłoża z wytycznymi opracowanymi przez Instytut Techniki Budowlanej w Warszawie w 2018 roku oraz Ministerstwo Inwestycji i Rozwoju w 2020 roku.</p></li>
+                        <li><p>Vi utfører målinger alltid i henhold til retningslinjer som er oppgitt i standarden, samt vi benytter føtter som er tilpasset målingene, både på en tørr og en våt overflate.</p></li>
+                        <li><p>Vi utarbeider en rapport vedrørende sklisikkerhet etter hver enkel undersøkelse.</p></li>
+                        <li><p>En grundig undersøkelse er grunnlaget for å kunne bekrefte parametrene til overflaten som testes.</p></li>
                     </ul>
                     <img src="/images/measurement-2.png"/>
                     <p>&nbsp;</p>
-                    <h2>O czym warto pamiętać przed podjęciem decyzji o profesjonalnym pomiarze odporności na poślizg?</h2>
+                    <h2>Hva skal du vite før du bestemmer deg for en profesjonell måling av sklisikkerhet?</h2>
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
                     <ul>
-                        <li><p>Każda płytka, w miarę upływu czasu oraz intensywności eksploatacji, traci swoją antypoślizgowości fabryczną.</p></li>
-                        <li><p>Antypoślizgowość danej posadzki w warunkach rzeczywistych zależy m.in. od :
-                            – rodzaju posadzki np. gres szkliwiony, granit polerowany, marmur, żywica, PCV,
-                            – rodzaju zelówki np. PU, TR, EVA, styrogum, tuniskór, skóra naturalna,
-                            – rodzaju lubrykanta np. woda, błoto, soki, olej, ketchup, musztarda, zupy, sosy,
-                            – siła nacisku czyli nasza waga.
+                        <li><p>Alle fliser mister sin opprinnelige sklisikkerhet med tiden og på grunn av bruksintensitet.</p></li>
+                        <li><p>Gulvets klisikkerhet under reelle forhold avhenger bl. a. av:
+                            – type gulvbelegg, f.eks. glaserte fliser, polert granitt, harpiks, PVC,
+                            – type såle,
+                            – type smøremiddel, f.eks. vann, søle, juice, olje, ketchup, sennep, suppe, sauser,
+                            – trykkkraft, det vil se vekten vår.
                         </p></li>
-                        <li><p>W zależności od miejsca, w którym znajduje się dana posadzka, sposobu jej eksploatacji czy charakterystyki zawodowej lub wiekowej osób z niej korzystających, każda podłoga wymaga profesjonalnego, indywidualnego podejścia przed wykonaniem pomiaru.</p></li>
-                        <li><p>Inna jest antypoślizgowość suchej i inna mokrej posadzki.</p></li>
-                        <li><p>Płytki ceramiczne potrafią bardzo znacznie różnić się w swojej klasie antypoślizgowości R lub A/B/C, wartościami PTV czy dynamicznego współczynnika tarcia µ.</p></li>
-                        <li><p>Zlecając usługę pomiaru poślizgu swojej podłogi, zawsze szukaj doświadczonej firmy, z ugruntowaną pozycją na rynku.</p></li>
-                        <li><p>Zlecaj usługę firmie dysponującej odpowiednimi urządzeniami pomiarowymi, gwarantującymi wykonanie rzetelnego pomiaru, zgodnego z obowiązującymi nomami.</p></li>
-                        <li><p>Zadbaj o to, aby pomiarów dokonywał doświadczony w obsłudze urządzenia pracownik.</p></li>
+                        <li><p>Avhengig av gulvets plassering, måten det brukes på, yrket eller alderen til personer som bruker det, er det nødvendig med en profesjonell, individuell tilnærming før målingen gjennomføres.</p></li>
+                        <li><p>Et tørt og et vått gulvbelegg har forskjellig sklisikkerhet.</p></li>
+                        <li><p>PTV-verdien eller den dynamiske friksjonskoeffisienten til keramiske fliser kan vesentlig variere i sklirisikogrupper R eller A/B/C.</p></li>
+                        <li><p>Når de bestiller en måling av sklisikkerheten til gulvet ditt, velg alltid en bedrift med erfaring og som er godt etablert på markedet.</p></li>
+                        <li><p>Bestill målingen i en bedrift som bruker nødvendige måleapparater som garanterer en pålitelig måling i henhold til gjeldende standarder.</p></li>
+                        <li><p>Sørg for at målingen utføres av en person som har erfaring med bruk av måleapparatet.</p></li>
                     </ul>
                     <p>&nbsp;</p>
 
@@ -131,9 +133,9 @@ const FrictionMeasurement = () => {
             <Banner backgroundImage="url('/images/feet2.jpg')" isFadeInUp={true}>
                 <div className={styles.bannerInner}>
                     <div className={styles.center}>
-                        <h1>Zamów bezpłatną próbę zabezpieczenia antypoślizgowego!</h1>
-                        <h2>Skontaktuj się z nami:</h2>
-                        <div><Link href='/'><a>TEL. 22 750 20 66</a></Link></div>
+                        <h1>Bestill et gratis prøve med sklisikring!</h1>
+                        <h2>Ta kontakt med oss:</h2>
+                        <div><Link href={phoneLink}><a>{phone}</a></Link></div>
                     </div>
                 </div>
             </Banner>

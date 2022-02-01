@@ -4,7 +4,7 @@ import axios from 'axios'
 import Animate from './animate'
 import { Modal } from 'antd'
 
-const MainForm = ({style, title='Potrzebujesz konsultacji? Napisz do nas wiadomość:', isFadeInLeftt10=false}) => {
+const MainForm = ({style, title=<>Trenger du rådgivning?<br/> Send oss en melding:</>, isFadeInLeftt10=false}) => {
 
     const fullNameRef = useRef()
     const emailRef = useRef()
@@ -82,13 +82,13 @@ const MainForm = ({style, title='Potrzebujesz konsultacji? Napisz do nas wiadomo
                     <div className={`${styles.row} ${styles.withCheckbox}`}>
                         <input type="checkbox" name="zgoda1" id="zgoda1" ref={zgoda1Ref}/>
                         <label htmlFor="zgoda1">
-                            Wyrażam zgodę na przetwarzanie przez CT Service S.A. moich danych osobowych podanych w niniejszym formularzu w celach związanych z prezentacją usług oferowanych przez CT Service S.A. oraz w celach marketingowych.
+                            Jeg samtykker i at Dyktighandverker AS behandler............ mine personopplysninger som er oppgitt i dette skjemaet i forbindelse med informasjon om tjenester som Dyktighandverker AS tilbyr ….......... og i forbindelse med markedsføring.
                         </label>
                     </div>
                     <div className={`${styles.row} ${styles.withCheckbox}`}>
                         <input type="checkbox" name="zgoda2" id="zgoda2"/>
                         <label htmlFor="zgoda2">
-                            Wyrażam zgodę na otrzymywanie od CT Service S.A. z siedzibą w Piasecznie przy ul. Okulickiego 19 informacji handlowych na adres elektroniczny podany w niniejszym Formularzu.                    
+                            Jeg samtykker i å motta markedsføring fra Dyktighandverker AS................  på e-postadressen som er oppgitt i dette skjemaet.
                         </label>
                     </div>
                     <div className={`${styles.row} ${styles.submit}`}>
