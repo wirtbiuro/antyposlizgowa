@@ -13,32 +13,37 @@ const Footer = () => {
                 </div>
                 <div className={styles.row}>
                     <div className={styles.left}><i className={styles['map-marker']}></i></div>
-                    <div className={styles.right}><strong>CTS Chemistry Sp. z o.o.</strong></div>
+                    <div className={styles.right}><strong>Dyktighandverker AS</strong></div>
                 </div>
                 <div className={styles.row}>
                     <div className={styles.left}></div>
-                    <div className={styles.right}><strong>Adres do korespondencji:</strong></div>
+                    <div className={styles.right}><strong>Org.nr. 916 258 801</strong></div>
+                </div>
+                <div className={styles.row}>
+                    <div className={styles.left}><i className={styles['file']}></i></div>
+                    <div className={styles.right}>Industriveien 13</div>
                 </div>
                 <div className={styles.row}>
                     <div className={styles.left}></div>
-                    <div className={styles.right}>ul. Okulickiego 19, 05-500 Piaseczno</div>
-                </div>
-                <div className={styles.row}>
-                    <div className={styles.left}><i className={styles['phone']}></i></div>
-                    <div className={styles.right}>22 750 20 66</div>
+                    <div className={styles.right}>1481 Hagan</div>
                 </div>
                 <div className={styles.row}>
                     <div className={styles.left}><i className={styles['envelope']}></i></div>
-                    <div className={styles.right}>office@ctservice.com.pl</div>
+                    <div className={styles.right}>epost: post@sklibeskyttelse.no</div>
                 </div>
                 <div className={styles.row}>
+                    <div className={styles.left}><i className={styles['phone']}></i></div>
+                    <div className={styles.right}>tlf: 62 81 59 81</div>
+                </div>
+
+                {/* <div className={styles.row}>
                     <div className={styles.left}><i className={styles['file']}></i></div>
                     <div className={styles.right}>ul. Frezerów 3, 20-209 Lublin</div>
                 </div>
                 <div className={styles.row}>
                     <div className={styles.left}></div>
                     <div className={styles.right}>NIP: 9512513546</div>
-                </div>
+                </div> */}
             </div>
 
             {/* <div className={styles.col}>
@@ -48,22 +53,22 @@ const Footer = () => {
                 <div className={styles.row}><Link href="/"><a>Polityka plików „cookies”</a></Link></div>
                 <div className={styles.row}><Link href="/"><a>Wiedza</a></Link></div>
             </div> */}
-            <div className={styles.col}>
-                <div className={styles.row}><h2 className={styles.title}>Nawigacja</h2></div>
-                <div className={styles.row}><Link href="/"><a>Strona główna</a></Link></div>
-                <div className={styles.row}><Link href="/services"><a>Nasze usługi</a></Link></div>
+            <div className={`${styles.col} ${styles.menu}`}>
+                <div className={styles.row}><h2 className={styles.title}>Menu</h2></div>
+                <div className={styles.row}><Link href="/"><a>Hjem</a></Link></div>
+                <div className={styles.row}><Link href="/services"><a>Våre tjenester</a></Link></div>
                 {/* <div className={styles.row}><Link href="/"><a>Realizacje</a></Link></div> */}
-                <div className={styles.row}><Link href="/about-us"><a>O nas</a></Link></div>
+                <div className={styles.row}><Link href="/about-us"><a>Om oss</a></Link></div>
                 <div className={styles.row}><Link href="/contact"><a>Kontakt</a></Link></div>
             </div>
 
             <div className={styles.col}>
-                <div className={styles.row}><h2 className={styles.title}>Usługi</h2></div>
-                <div className={styles.row}><Link href="/protection"><a>Zabezpieczenie antypoślizgowe</a></Link></div>
-                <div className={styles.row}><Link href="/friction-measurement"><a>Pomiar współczynnika tarcia i PTV</a></Link></div>
-                <div className={styles.row}><Link href="/cleaning"><a>Doczyszczanie powierzchni</a></Link></div>
-                <div className={styles.row}><Link href="/descaling"><a>Odkamienianie</a></Link></div>
-                <div className={styles.row}><Link href="/impregnation"><a>Impregnacja</a></Link></div>
+                <div className={styles.row}><h2 className={styles.title}>Tjenester</h2></div>
+                <div className={styles.row}><Link href="/protection"><a>Sklisikring</a></Link></div>
+                <div className={styles.row}><Link href="/friction-measurement"><a>Måling av friksjonskoeffisient og PTV</a></Link></div>
+                <div className={styles.row}><Link href="/cleaning"><a>Rengjøring av overflate</a></Link></div>
+                <div className={styles.row}><Link href="/descaling"><a>Avkalking</a></Link></div>
+                <div className={styles.row}><Link href="/impregnation"><a>Impregnering</a></Link></div>
             </div>
         </div>
     )

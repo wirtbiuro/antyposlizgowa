@@ -7,7 +7,7 @@ const HeaderBar = () => {
     return (
         <div className={styles.headerBar}>
             <div className={styles.headerBarInner}>
-                <div><Link href={phoneLink}><a>ZADZWOŃ: {phone}</a></Link></div>
+                <div><Link href={phoneLink}><a>Ring oss - {phone}</a></Link></div>
             </div>
         </div>
     )

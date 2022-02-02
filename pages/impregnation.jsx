@@ -6,6 +6,8 @@ import Footer from '../components/footer'
 import AuxForm from '../components/aux-form'
 import AntpslzgBreadcrumb from '../components/antpslzgBreadcrumb'
 import Animate from '../components/animate'
+import { uslugi, checkAllServices } from '../constants'
+import BottomBaner from '../components/bottom-banner'
 
 const Impregnation = () => {
 
@@ -16,13 +18,13 @@ const Impregnation = () => {
         <div className={styles.frictionMeasurement}>
             <Animate elementRef={imgRef} animationName="fadeInUp10"/>
             <Animate elementRef={selectionRef} animationName="fadeInUp10"/>
-            <AntpslzgBreadcrumb pathArr={[{title: 'Usługi', href:'/services'}, {title: 'Impregnacja'}]}/>
+            <AntpslzgBreadcrumb pathArr={[{title: uslugi, href:'/services'}, {title: 'Impregnering'}]}/>
             <Banner backgroundImage='url(/images/gray-plates.jpg)' withwaves={false} isFadeInLeft10={true}>
                 <div className={`${styles.bannerInner}`}>
                     <div className={`${styles.left} ${styles.self}`}>
-                        <h1>Impregnacja</h1>
-                        <p>Impregnacja skutecznie chroni przed wchłanianiem wody, tłustych plam, czy innych substancji w powierzchnię. Dzięki niej brud można łatwo usunąć, a materiał pozostaje niezniszczony.</p>
-                        <div className={styles.link}><Link href='/services'><a>SPRAWDŹ WSZYSTKIE USŁUGI</a></Link></div>
+                        <h1>Impregnering</h1>
+                        <p>Impregnering beskytter overflaten effektivt mot vannabsorpsjon, fete flekker eller andre stoffer. Takket være denne kan smuss enkelt fjernes og materialet forblir uskadet.</p>
+                        <div className={styles.link}><Link href='/services'><a>{checkAllServices}</a></Link></div>
                     </div>
                 </div>
             </Banner>
@@ -30,9 +32,9 @@ const Impregnation = () => {
                 <div className={styles.left}>
                     <img src="/images/drops.png" className={styles.decorImg} ref={imgRef}/>
                     <p>&nbsp;</p>
-                    <h2>Jakie powierzchnie warto impregnować i dlaczego?</h2>
+                    <h2>Hvilke overflater lønner det seg å impregnere og hvorfor?</h2>
                     <p>&nbsp;</p>
-                    <p>Taras i balkon, elewacja, schody, podjazdy, murki czy elementy wykonane z naturalnego kamienia, cegły, gresu, klinkieru, marmuru lub granitu, wszystkie te powierzchnie w przestrzeni domowej lub budynkach użyteczność publicznej nieustannie ulegają eksploatacji i narażone są na szkodliwy wpływ czynników zewnętrznych. Z upływem czasu niezabezpieczone powierzchnie ulegają trwałemu zabrudzeniu i szybciej się starzeją.</p>
+                    <p>Terrasser og balkonger, fasader, trapper, oppkjørsler, murer eller elementer utført av naturstein, murstein, gres, klinker, marmor eller granitt - alle disse overflatene hjemme eller i offentlige bygninger brukes stadig og de er utsatt for or skadelig påvirkning av ytre faktorer. Med tiden blir overflater som ikke er beskyttet fast tilsølt og de elder raskere.</p>
                     <p>Skuteczną ochroną jest odpowiednio dobrana impregnacja, która zapobiegają wchłanianiu wody i tłustych plam (olej, tłuszcz, smog, żywność, kosmetyki, mydła itp.). W rezultacie brud pozostaje na powierzchni kamienia, ale nie może wniknąć do środka, dlatego można go łatwo usunąć.</p>
                     <img src="/images/drops-2.png"/>
                     <p>&nbsp;</p>
@@ -94,15 +96,7 @@ const Impregnation = () => {
                     <AuxForm/>
                 </div>
             </div>
-            <Banner backgroundImage="url('/images/feet2.jpg')" isFadeInUp={true}>
-                <div className={styles.bannerInner}>
-                    <div className={styles.center}>
-                        <h1>Zamów bezpłatną próbę zabezpieczenia antypoślizgowego!</h1>
-                        <h2>Skontaktuj się z nami:</h2>
-                        <div><Link href='/'><a>TEL. 22 750 20 66</a></Link></div>
-                    </div>
-                </div>
-            </Banner>
+            <BottomBaner/>
             <Footer/>
             <div className={styles.footerBar}></div>
         </div>

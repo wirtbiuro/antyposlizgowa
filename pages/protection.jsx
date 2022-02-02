@@ -10,7 +10,8 @@ import Footer from '../components/footer'
 import AuxForm from '../components/aux-form'
 import AntpslzgBreadcrumb from '../components/antpslzgBreadcrumb'
 import Animate from '../components/animate'
-import { phoneLink, phone } from '../constants'
+import { phoneLink, phone, zamowUsluge, checkAllServices, uslugi } from '../constants'
+import BottomBaner from '../components/bottom-banner'
 
 const Protection = () => {
 
@@ -20,13 +21,13 @@ const Protection = () => {
     return (
         <div>
             <Animate elementRef={imgRef} animationName="fadeInUp10"/>
-            <AntpslzgBreadcrumb pathArr={[{title: 'Usługi', href:'/services'}, {title: 'Sklisikring'}]}/>
+            <AntpslzgBreadcrumb pathArr={[{title: uslugi, href:'/services'}, {title: 'Sklisikring'}]}/>
             <Banner backgroundImage='url(/images/floor.png)' withwaves={false} isFadeInLeft10={true}>
                 <div className={`${styles.bannerInner}`}>
                     <div className={`${styles.left} ${styles.self}`}>
                         <h1>Sklisikring</h1>
                         <p>Dersom du har ansvar for det offentlige rom, svarer du også for de smertefulle fallene og skader forårsaket av skliulykker. Unngå store erstatningskrav og sørg for brukernes sikkerhet. Sjekk hvordan du kan få et gulv med en sklihemmende effekt.</p>
-                        <div className={styles.link}><Link href='/services'><a>SPRAWDŹ WSZYSTKIE USŁUGI</a></Link></div>
+                        <div className={styles.link}><Link href='/services'><a>{checkAllServices}</a></Link></div>
                     </div>
                 </div>
             </Banner>
@@ -49,21 +50,13 @@ const Protection = () => {
                     <h2>Leter du etter en effektiv løsning?</h2>
                     <p>&nbsp;</p>
                     <p>Vi tilbyr profesjonelle tjenester innen sklisikring av gulv basert på egen, patentert ZAP-teknologi. Vi utfører profesjonelle målinger av gulvets sklisikkerhet, og vi utsteder et samsvarsertifikat for den utførte målingen, dette vedlegges en utskrift med egenskapene til den dynamiske friksjonskoeffisienten til den beskyttede overflaten.</p>
-                    <div className={styles.link}><Link href='/contact'><a>ZAMÓW USŁUGĘ &gt;&gt;</a></Link></div>
+                    <div className={styles.link}><Link href='/contact'><a>{zamowUsluge}</a></Link></div>
                 </div>
                 <div className={styles.right}>
                     <AuxForm/>
                 </div>
             </div>
-            <Banner backgroundImage="url('/images/feet2.jpg')" isFadeInUp={true}>
-                <div className={styles.bannerInner}>
-                    <div className={styles.center}>
-                        <h1>Bestill et gratis prøve med sklisikring!</h1>
-                        <h2>Ta kontakt med oss:</h2>
-                        <div><Link href={phoneLink}><a>{phone}</a></Link></div>
-                    </div>
-                </div>
-            </Banner>
+            <BottomBaner/>
             <Footer/>
             <div className={styles.footerBar}></div>
         </div>

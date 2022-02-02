@@ -9,6 +9,8 @@ import AboutUsDiffBlock from '../components/about-us-diff-block'
 import UslugiBtns from '../components/uslugi-btns'
 import AntpslzgBreadcrumb from '../components/antpslzgBreadcrumb'
 import Animate from '../components/animate'
+import { zamowUslugeS } from '../constants'
+import BottomBaner from '../components/bottom-banner'
 
 const AboutUs = () => {
 
@@ -25,11 +27,11 @@ const AboutUs = () => {
             <Animate elementRef={textRef} animationName="fadeInRight10"/>
             <Animate elementRef={imgRef2} animationName="fadeInRight10"/>
             <Animate elementRef={textRef2} animationName="fadeInLeft10"/>
-            <AntpslzgBreadcrumb pathArr={[{title: 'O nas'}]}/>
+            <AntpslzgBreadcrumb pathArr={[{title: 'Om oss'}]}/>
             <Banner backgroundImage='url(/images/stairs.png)' withwaves={false} isFadeInLeft10={true}>
                 <div className={`${styles.bannerInner}`}>
                     <div className={`${styles.left} ${styles.self}`}>
-                        <h1>O nas</h1>
+                        <h1>Om oss</h1>
                         <p>Świadczymy specjalistyczne usługi z zakresu zabezpieczenia antypoślizgowego, gruntownego doczyszczania, odkamieniania, impregnacji.</p>
                         {/* <div className={styles.link}><Link href='/services'><a>SPRAWDŹ WSZYSTKIE USŁUGI</a></Link></div> */}
                     </div>
@@ -38,10 +40,10 @@ const AboutUs = () => {
             <div className={otherStyles.pageBody}>
                 <div className={otherStyles.banner} ref={otherBannerRef}>
                     <div className={otherStyles.left}>
-                        <h2>Zamów profesjonalną usługę</h2>
+                        <h2>{zamowUslugeS}</h2>
                     </div>
                     <div className={otherStyles.right}>
-                        <Link href='/'><a><span>TEL.&nbsp;&nbsp;22&nbsp;&nbsp;750&nbsp;&nbsp;20&nbsp;&nbsp;66</span></a></Link>
+                        <Link href='/'><a><span>Tlf.&nbsp;&nbsp;+47&nbsp;&nbsp;62&nbsp;&nbsp;81&nbsp;&nbsp;59&nbsp;&nbsp;81</span></a></Link>
                     </div>
                 </div>
                 <div className={`${styles.pageBody} ${otherStyles.innerPageBody}`}>
@@ -49,11 +51,11 @@ const AboutUs = () => {
                         <img src="/images/measurement-3.png" className={styles.decorImg}/>
                     </div>
                     <div className={`${styles.right} ${otherStyles.right}`} ref={textRef}>
-                        <h2>Lider Branży Antypoślizgowej</h2>
+                        <h2>Leder innen sklisikring</h2>
                         <p>&nbsp;</p>
-                        <p>Posiadamy 17-letnie doświadczenie w branży. Pracujemy na własnych, profesjonalnych preparatach chemicznych marki CTS Chemistry. Gwarantujemy jakość i wieloletnią trwałość stosowanych zabezpieczeń. Stosujemy własne preparaty chemiczne oparte na autorskich i certyfikowanych recepturach oraz pracujemy zgodnie z własną opatentowaną technologią ZAP®. Posiadamy wieloletnie doświadczenie w kraju i za granicą.</p>
+                        <p>Dyktighandverker AS er forhandler av profesjonelle kjemiske preparater fra CTS Chemistry. Vi garanterer kvalitet og sklisikringens mangeårige holdbarhet. Vi bruker kjemiske preparater som bygger på egne og sertifiserte oppskrifter, samt vi arbeider i henhold til den patenterte teknologien ZAP®.</p>
                         <p>
-                            Zabezpieczamy mokre i śliskie powierzchnie, zarówno przed, jak i po montażu.
+                            Vi sikrer både våte og glatte overflater, både før og etter montering.
                             <br/>
                             Wykonujemy <strong>pomiar antypoślizgowości według wytycznych Instytutu Techniki Budowlanej.</strong>
                         </p>
@@ -66,16 +68,12 @@ const AboutUs = () => {
             <div className={otherStyles.pageBody}>
                 <div className={`${styles.pageBody} ${otherStyles.innerPageBody}`}>
                     <div className={`${styles.left} ${otherStyles.left}`} ref={textRef2}>
-                        <h2>Nasze usługi</h2>
+                        <h2>Våre tjenester</h2>
                         <p>&nbsp;</p>
                         <ul>
-                            <li><p>Wszystkie usługi z naszego portfolio wykonują specjaliści z wieloletnim doświadczeniem w branży.</p></li>
-                            <li><p>Usługi zabezpieczenia antypoślizgowego wykonujemy zgodnie z wytycznymi Instytutu Techniki Budowlanej i Ministerstwa Rozwoju.</p></li>
-                            <li><p>Jako jedyna w Polsce firma pracujemy w oparciu o własnej produkcji preparaty chemiczne, które pozwalają nam uzyskać najwyższą jakość świadczonych usług.</p></li>
-                            <li><p>Każde zlecenie rozpatrujemy indywidualnie, uwzględniając potrzeby i życzenia Klientów.</p></li>
-                            <li><p>Gwarantujemy terminowość i skuteczność wykonywanych prac.</p></li>
-                            <li><p>Realizujemy zarówno zlecenia jednorazowe jak i umowy stałe.</p></li>
-                            <li><p>Działamy w kraju i zagranicą.</p></li>
+                            <li><p>Vi er det eneste firmaet i Norge som bruker produktene fra CTS Chemistry. De bidrar til den høye kvaliteten til våre tjenester.</p></li>
+                            <li><p>Vi har en individuell tilnærming til hvert oppdrag, og vi setter kundenes behov og ønsker i fokus.</p></li>
+                            <li><p>Vi gjennomfører både et enkelt oppdrag, samt faste oppdrag med grunnlag i et samarbeidsavtale.</p></li>
                         </ul>
                     </div>
                     <div className={`${styles.right} ${otherStyles.right}`} ref={imgRef2}>
@@ -84,15 +82,7 @@ const AboutUs = () => {
                 </div>
                 <UslugiBtns/>
             </div>
-            <Banner backgroundImage="url('/images/feet2.jpg')" isFadeInUp={true}>
-                <div className={styles.bannerInner}>
-                    <div className={styles.center}>
-                        <h1>Zamów bezpłatną próbę zabezpieczenia antypoślizgowego!</h1>
-                        <h2>Skontaktuj się z nami:</h2>
-                        <div><Link href='/'><a>TEL. 22 750 20 66</a></Link></div>
-                    </div>
-                </div>
-            </Banner>
+            <BottomBaner/>
             <Footer/>
             <div className={styles.footerBar}></div>
         </div>

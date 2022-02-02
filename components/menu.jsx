@@ -92,32 +92,32 @@ const Menu = () => {
                             </a></Link>
                             <Link href='/protection'><a>
                                 <div className={`${isMainClass('/protection') ? styles.main: null} ${styles.usluga}`}>
-                                    Zabezpieczenia antypoślizgowe
+                                    Sklisikring
                                 </div>
                             </a></Link>
                             <Link href='/friction-measurement'><a>
                                 <div className={`${isMainClass('/friction-measurement') ? styles.main: null} ${styles.usluga}`}>
-                                    Pomiar współczynnika tarcia i PTV
+                                    Måling av friksjonskoeffisient og PTV
                                 </div>
                             </a></Link>
                             <Link href='/cleaning'><a>
                                 <div className={`${isMainClass('/cleaning') ? styles.main: null} ${styles.usluga}`}>
-                                    Doczyszczanie powierzchni
+                                    Rengjøring av overflate
                                 </div>
                             </a></Link>
                             <Link href='/descaling'><a>
                                 <div className={`${isMainClass('/descaling') ? styles.main: null} ${styles.usluga}`}>
-                                    Odkamienianie
+                                    Avkalking
                                 </div>
                             </a></Link>
                             <Link href='/impregnation'><a>
                                 <div className={`${isMainClass('/impregnation') ? styles.main: null} ${styles.usluga}`}>
-                                    Impregnacja
+                                    Impregnering
                                 </div>
                             </a></Link>
                             <Link href='/products'><a>
                                 <div className={`${isMainClass('/products') ? styles.main: null} ${styles.usluga}`}>
-                                    Nasze produkty
+                                    Våre produkter
                                 </div>
                             </a></Link>
                         </div>}

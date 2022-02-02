@@ -3,6 +3,7 @@ import styles from '../styles/MainForm.module.css'
 import axios from 'axios'
 import Animate from './animate'
 import { Modal } from 'antd'
+import { zgoda1, zgoda2 } from '../constants'
 
 const MainForm = ({style, title=<>Trenger du rådgivning?<br/> Send oss en melding:</>, isFadeInLeftt10=false}) => {
 
@@ -69,30 +70,30 @@ const MainForm = ({style, title=<>Trenger du rådgivning?<br/> Send oss en meldi
                         </h2>
                     </div>
                     <div className={styles.row}>
-                        <input type="text" name="fullName" placeholder="Imię i nazwisko*" ref={fullNameRef}/>
-                        <input type="email" name="email" placeholder="Email*" ref={emailRef}/>
+                        <input type="text" name="fullName" placeholder="Navn*" ref={fullNameRef}/>
+                        <input type="email" name="email" placeholder="Epost*" ref={emailRef}/>
                     </div>
                     <div className={styles.row}>
-                        <input type="text" name="phone" placeholder="Numer telefonu"/>
-                        <input type="text" name="city" placeholder="Miasto"/>
+                        <input type="text" name="phone" placeholder="Telefonnummer"/>
+                        <input type="text" name="city" placeholder="Postkode"/>
                     </div>
                     <div className={styles.row}>
-                        <textarea name="message" placeholder="Wiadomość" rows={4}/>
+                        <textarea name="message" placeholder="Melding" rows={4}/>
                     </div>
                     <div className={`${styles.row} ${styles.withCheckbox}`}>
                         <input type="checkbox" name="zgoda1" id="zgoda1" ref={zgoda1Ref}/>
                         <label htmlFor="zgoda1">
-                            Jeg samtykker i at Dyktighandverker AS behandler............ mine personopplysninger som er oppgitt i dette skjemaet i forbindelse med informasjon om tjenester som Dyktighandverker AS tilbyr ….......... og i forbindelse med markedsføring.
+                            {zgoda1}
                         </label>
                     </div>
                     <div className={`${styles.row} ${styles.withCheckbox}`}>
                         <input type="checkbox" name="zgoda2" id="zgoda2"/>
                         <label htmlFor="zgoda2">
-                            Jeg samtykker i å motta markedsføring fra Dyktighandverker AS................  på e-postadressen som er oppgitt i dette skjemaet.
+                            {zgoda2}
                         </label>
                     </div>
                     <div className={`${styles.row} ${styles.submit}`}>
-                        <input type="submit" value="WYŚLIJ"/>
+                        <input type="submit" value="Send"/>
                     </div>
                 </form>
             </div>

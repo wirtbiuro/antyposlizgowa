@@ -23,7 +23,7 @@ const Cards = () => {
                 <Card title='Impregnering' href="/impregnation" aClassName="icon-allWIPER"/>
                 <Card title='Våre produkter' href="/products" aClassName="icon-allMEGAPHONE"/>
             </div>
-            <div className={`${buttonStyles.buttonStyles} ${styles.btn}`}><Link href='/services'><a>Dowiedz się więcej &gt;&gt;</a></Link></div>
+            <div className={`${buttonStyles.buttonStyles} ${styles.btn}`}><Link href='/services'><a>Finn ut mer &gt;&gt;</a></Link></div>
         </div>
     )
 }

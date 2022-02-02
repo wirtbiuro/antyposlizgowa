@@ -10,6 +10,8 @@ import Footer from '../components/footer'
 import AuxForm from '../components/aux-form'
 import AntpslzgBreadcrumb from '../components/antpslzgBreadcrumb'
 import Animate from '../components/animate'
+import { zamowUsluge, uslugi, checkAllServices } from '../constants'
+import BottomBaner from '../components/bottom-banner'
 
 const Descaling = () => {
 
@@ -18,13 +20,13 @@ const Descaling = () => {
     return (
         <div>
             <Animate elementRef={imgRef} animationName="fadeInUp10"/>
-            <AntpslzgBreadcrumb pathArr={[{title: 'Usługi', href:'/services'}, {title: 'Avkalking'}]}/>
+            <AntpslzgBreadcrumb pathArr={[{title: uslugi, href:'/services'}, {title: 'Avkalking'}]}/>
             <Banner backgroundImage='url(/images/plates-flowers.jpg)' withwaves={false} isFadeInLeft10={true}>
                 <div className={`${styles.bannerInner}`}>
                     <div className={`${styles.left} ${styles.self}`}>
                         <h1>Avkalking</h1>
                         <p>Kalsiumoppbygging på f.eks. bassengoverflater gjør det nødvendig å bruke sure kjemiske preparater.  Det er også viktig å rengjøre slike overflater periodisk. Send en melding til oss og hvordan vi kan hjelpe deg.</p>
-                        <div className={styles.link}><Link href='/services'><a>SPRAWDŹ WSZYSTKIE USŁUGI</a></Link></div>
+                        <div className={styles.link}><Link href='/services'><a>{checkAllServices}</a></Link></div>
                     </div>
                 </div>
             </Banner>
@@ -52,22 +54,13 @@ const Descaling = () => {
                     <p>W miejscach, które narażone są na ciągły kontakt z wodą, a w szczególności z ciepłą wodą, należy pamiętać o okresowym czyszczeniu ich wodą z dodatkiem kwaśnego preparatu chemicznego.</p>
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
-
-                    <div className={styles.link}><Link href='/contact'><a>ZAMÓW USŁUGĘ &gt;&gt;</a></Link></div>
+                    <div className={styles.link}><Link href='/contact'><a>{zamowUsluge}</a></Link></div>
                 </div>
                 <div className={styles.right}>
                     <AuxForm/>
                 </div>
             </div>
-            <Banner backgroundImage="url('/images/feet2.jpg')" isFadeInUp={true}>
-                <div className={styles.bannerInner}>
-                    <div className={styles.center}>
-                        <h1>Zamów bezpłatną próbę zabezpieczenia antypoślizgowego!</h1>
-                        <h2>Skontaktuj się z nami:</h2>
-                        <div><Link href='/'><a>TEL. 22 750 20 66</a></Link></div>
-                    </div>
-                </div>
-            </Banner>
+            <BottomBaner/>
             <Footer/>
             <div className={styles.footerBar}></div>
         </div>

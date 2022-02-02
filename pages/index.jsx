@@ -9,20 +9,21 @@ import TrustBlock from '../components/trust-block'
 import Footer from '../components/footer'
 import Animate from '../components/animate'
 import { phone, phoneLink } from '../constants'
+import BottomBaner from '../components/bottom-banner'
 
 const Home = () => {
 
     const bannerLeftRef = useRef()
 
     return (
-        <div>
+        <div className={`${styles.home}`}>
             <Banner>
-                <div className={styles.bannerInner}>
+                <div className={`${styles.bannerInner}`}>
                     <div className={`${styles.left}`} ref={bannerLeftRef}>
                         <Animate elementRef={bannerLeftRef} animationName='fadeInLeft10'/>
                         <h1>Sklisikring</h1>
-                        <h2>måling av friksjonskoeffisient og PTV (Pendulum Test Value) rengjøring, avkalking, impregnering</h2>
-                        <div><Link href='/services'><a>SPRAWDŹ NASZE USŁUGI</a></Link></div>
+                        <h2>måling av friksjonskoeffisient og PTV, rengjøring, avkalking, impregnering</h2>
+                        <div><Link href='/services'><a>Se våre tjenester</a></Link></div>
                     </div>
                     <MainForm/>
                 </div>
@@ -30,15 +31,7 @@ const Home = () => {
             <Cards/>
             <DiffBlock/>
             <TrustBlock/>
-            <Banner isFadeInUp={true}>
-                <div className={styles.bannerInner}>
-                    <div className={styles.center}>
-                        <h1>Bestill et gratis prøve med sklisikring!</h1>
-                        <h2>Ta kontakt med oss:</h2>
-                        <div><Link href={phoneLink}><a>{phone}</a></Link></div>
-                    </div>
-                </div>
-            </Banner>
+            <BottomBaner/>
             <Footer/>
             <div className={styles.footerBar}></div>
         </div>

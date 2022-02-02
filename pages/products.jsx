@@ -5,11 +5,13 @@ import styles from '../styles/Common.module.css'
 import Footer from '../components/footer'
 import AuxForm from '../components/aux-form'
 import AntpslzgBreadcrumb from '../components/antpslzgBreadcrumb'
+import { uslugi } from '../constants'
+import BottomBaner from '../components/bottom-banner'
 
 const Products = () => {
     return (
         <div className={styles.frictionMeasurement}>
-            <AntpslzgBreadcrumb pathArr={[{title: 'Usługi', href:'/services'}, {title: 'Nasze produkty'}]}/>
+            <AntpslzgBreadcrumb pathArr={[{title: uslugi, href:'/services'}, {title: 'Våre produkter'}]}/>
             <Banner 
                 backgroundImage='linear-gradient(180deg, #ffffff 0%,rgba(255,255,255,0) 100%), url(/images/products.png)' 
                 withwaves={false}
@@ -18,8 +20,8 @@ const Products = () => {
             >
                 <div className={`${styles.bannerInner}`}>
                     <div className={`${styles.left} ${styles.self}`}>
-                        <h1>Nasze produkty</h1>
-                        <p>Świadczymy specjalistyczne usługi z zakresu zabezpieczenia antypoślizgowego, gruntownego doczyszczania, odkamieniania, impregnacji.</p>
+                        <h1>Våre produkter</h1>
+                        <p>Vi tilbyr profesjonelle tjenester innen sklisikring, en grundig rengjøring, avkalking, impregnering.</p>
                         {/* <div className={styles.link}><Link href='/services'><a>SPRAWDŹ WSZYSTKIE USŁUGI</a></Link></div> */}
                     </div>
                 </div>
@@ -29,32 +31,32 @@ const Products = () => {
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
-                    <h2>Nasze produkty:</h2>
+                    <h2>Våre produkter:</h2>
                     <p>&nbsp;</p>
                     <ul>
                         <li><p>Posiadają atest PZH.</p></li>
-                        <li><p>Są bezpieczne dla ludzi i środowiska.</p></li>
-                        <li><p>Nie niszczą podłoża.</p></li>
-                        <li><p>Można je stosować wewnątrz i na zewnątrz budynku</p></li>
-                        <li><p>Można je stosować na starych i nowych powierzchniach</p></li>
-                        <li><p>Wspomagają dezynfekcję powierzchni.</p></li>
+                        <li><p>De er trygge for mennesker og miljøvennlige.</p></li>
+                        <li><p>De skader ikke underlaget.</p></li>
+                        <li><p>De er lett å håndtere.</p></li>
+                        <li><p>De kan brukes utvendig og innvendig.</p></li>
+                        <li><p>De kan brukes på nye og gamle overflater.</p></li>
+                        <li><p>De bidrar til desinfeksjon av overflater.</p></li>
                     </ul>
                     <img src="/images/products-2.png" className={styles.decorImg}/>
-                    <h2>Produkty z kategorii antypoślizg:</h2>
+                    <h2>Produkter innen sklisikring:</h2>
                     <p>&nbsp;</p>
                     <p>
-                        Preparaty na bazie wody, przeznaczone do wykonania zabezpieczenia antypoślizgowego zarówno na zewnątrz, jak i wewnątrz budynków, na starych i nowych powierzchniach.
+                        Preparater basert på vann, beregnet for sklisikring ute og inne, på gamle og nye overflater.
                         <br/>
-                        Zachowują estetykę podłoża. Preparaty przeznaczone są do zabezpieczenia płytek ceramicznych, szkliwionych i polerowanych, z klinkieru, gresu, terakoty oraz granitu i gnejsu.
-                    </p>
+                        De bevarer underlagets utseende. Peraparatene er beregnet for sikring av keramiske, glaserte og polerte fliser, klinker, gres, terrakotta, samt granitt og genis.</p>
                     <img src="/images/products-3.png"/>
-                    <h2>Produkty z kategorii zmywacze:</h2>
+                    <h2>Produkter innen rengjøring:</h2>
                     <p>&nbsp;</p>
-                    <p>Wodne preparaty do usuwania bardzo trudnych, starych zabrudzeń oraz punktowego odplamiania. Profesjonalne, wysoko skoncentrowane produkty gwarantują 100% skuteczność działania bez ryzyka zmiany koloru powierzchni lub powstania przebarwień. Preparaty przeznaczone są do usuwania bardzo silnych zabrudzeń pochodzenia mineralnego oraz organicznego.</p>
+                    <p>Vannbaserte preparater beregnet for fjerning av veldig vanskelig, gammelt smuss, samt enkelte flekker. Profesjonalne, wysoko skoncentrowane produkty gwarantują 100% skuteczność działania bez ryzyka zmiany koloru powierzchni lub powstania przebarwień. Preparater er beregnet for fjerning av veldig sterkt mineralsk eller organisk smuss.</p>
                     <img src="/images/products-4.png"/>
-                    <h2>Produkty z kategorii impregnaty wodne:</h2>
+                    <h2>Produkter innen vannbasert impregnering:</h2>
                     <p>&nbsp;</p>
-                    <p>Całkowicie ekologiczne preparaty wykonane na bazie związków krzemoorganicznych. Zwiększają odporność zaimpregnowanej powierzchni na zabrudzenia, wykwity i rozwój skażeń́ biologicznych. Odporne na alkalia i działanie promieni UV, bezrozpuszczalnikowe.</p>
+                    <p>Helt økologiske preparater utviklet med grunnlag i organiske silisiumforbindelser. De øker den impregnerte overflatens motstandsdyktighet mot smuss, forekomst og utvikling av biologisk forurensning. Odporne na alkalia i działanie promieni UV, bezrozpuszczalnikowe.</p>
                     <p>&nbsp;</p>
                     <h2>Produkty z kategorii impregnaty rozpuszczalnikowe:</h2>
                     <p>&nbsp;</p>
@@ -67,15 +69,7 @@ const Products = () => {
                     <AuxForm/>
                 </div>
             </div>
-            <Banner backgroundImage="url('/images/feet2.jpg')" isFadeInUp={true}>
-                <div className={styles.bannerInner}>
-                    <div className={styles.center}>
-                        <h1>Zamów bezpłatną próbę zabezpieczenia antypoślizgowego!</h1>
-                        <h2>Skontaktuj się z nami:</h2>
-                        <div><Link href='/'><a>TEL. 22 750 20 66</a></Link></div>
-                    </div>
-                </div>
-            </Banner>
+            <BottomBaner/>
             <Footer/>
             <div className={styles.footerBar}></div>
         </div>

@@ -2,6 +2,7 @@ import React from 'react'
 import styles from '../styles/AntpslzgBreadcrumb.module.css'
 import { Breadcrumb } from 'antd';
 import Link from 'next/link';
+import { home } from '../constants';
 
 const AntpslzgBreadcrumb = ({pathArr}) => {
     return (
@@ -9,7 +10,7 @@ const AntpslzgBreadcrumb = ({pathArr}) => {
             <div className={styles.inner}>
                 <Breadcrumb separator="»">
                     <Breadcrumb.Item>
-                        <Link href='/'><a>Home</a></Link>
+                        <Link href='/'><a>{home}</a></Link>
                     </Breadcrumb.Item>
                     {pathArr.map(path=>(
                         <Breadcrumb.Item key={path.title}>

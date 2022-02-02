@@ -6,7 +6,7 @@ import Footer from '../components/footer'
 import AuxForm from '../components/aux-form'
 import AntpslzgBreadcrumb from '../components/antpslzgBreadcrumb'
 import Animate from '../components/animate'
-import { phoneLink, phone } from '../constants'
+import { phoneLink, phone, checkAllServices, zamowUsluge, uslugi } from '../constants'
 
 const FrictionMeasurement = () => {
 
@@ -16,13 +16,13 @@ const FrictionMeasurement = () => {
     return (
         <div className={styles.frictionMeasurement}>
             <Animate elementRef={imgRef} animationName="fadeInUp10"/>
-            <AntpslzgBreadcrumb pathArr={[{title: 'Usługi', href:'/services'}, {title: 'Måling av friksjonskoeffisient og PTV (Pendulum Test Value)'}]}/>
+            <AntpslzgBreadcrumb pathArr={[{title: uslugi, href:'/services'}, {title: 'Måling av friksjonskoeffisient og PTV'}]}/>
             <Banner backgroundImage='url(/images/stairs.png)' withwaves={false} isFadeInLeft10={true}>
                 <div className={`${styles.bannerInner}`}>
                     <div className={`${styles.left} ${styles.self}`}>
-                        <h1>Måling av friksjonskoeffisient og PTV (Pendulum Test Value)</h1>
+                        <h1>Måling av friksjonskoeffisient og PTV</h1>
                         <p>Wykonamy pomiar antypoślizgowości Twojej powierzchni według wytycznych Instytutu Techniki Budowlanej. Następnie otrzymasz Certyfikat Zgodności przeprowadzonego badania.</p>
-                        <div className={styles.link}><Link href='/services'><a>SPRAWDŹ WSZYSTKIE USŁUGI</a></Link></div>
+                        <div className={styles.link}><Link href='/services'><a>{checkAllServices}</a></Link></div>
                     </div>
                 </div>
             </Banner>
@@ -124,7 +124,7 @@ const FrictionMeasurement = () => {
                     </ul>
                     <p>&nbsp;</p>
 
-                    <div className={styles.link}><Link href='/contact'><a>ZAMÓW USŁUGĘ &gt;&gt;</a></Link></div>
+                    <div className={styles.link}><Link href='/contact'><a>{zamowUsluge}</a></Link></div>
                 </div>
                 <div className={styles.right}>
                     <AuxForm/>

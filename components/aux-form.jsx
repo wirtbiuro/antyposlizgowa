@@ -3,6 +3,7 @@ import styles from '../styles/MainForm.module.css'
 import axios from 'axios'
 import Animate from './animate'
 import { Modal } from 'antd'
+import { zgoda1, zgoda2 } from '../constants'
 
 const AuxForm = () => {
 
@@ -60,35 +61,31 @@ const AuxForm = () => {
                 <form onSubmit={submit} ref={formRef}>
                     <div className={styles.row}>
                         <h2>
-                            Potrzebujesz konsultacji technicznych? Zamów rozmowę:
+                            Trenger du teknisk rådgivelse? Bestill en samtale:
                         </h2>
                     </div>
                     <div className={styles.row}>
-                        <input type="text" name="fullName" placeholder="Imię i nazwisko*" ref={fullNameRef}/>
+                        <input type="text" name="fullName" placeholder="Navn*" ref={fullNameRef}/>
                     </div>
                     <div className={styles.row}>
-                        <input type="text" name="email" placeholder="Email*" ref={emailRef}/>
+                        <input type="text" name="email" placeholder="Epost*" ref={emailRef}/>
                     </div>
                     <div className={styles.row}>
-                        <input type="text" name="phone" placeholder="Numer telefonu"/>
+                        <input type="text" name="phone" placeholder="Telefonnummer"/>
                     </div>
                     <div className={`${styles.row} ${styles.info}`}>
-                        <span>Skontaktujemy się z Państwem jak najszybciej to możliwe.</span>
+                        <span>Vi vil kontakte deg så fort vi kan.</span>
                     </div>
                     <div className={`${styles.row} ${styles.withCheckbox}`}>
                         <input type="checkbox" name="zgoda1" id="zgoda1" ref={zgoda1Ref}/>
-                        <label htmlFor="zgoda1">
-                            Wyrażam zgodę na przetwarzanie przez CT Service S.A. moich danych osobowych podanych w niniejszym formularzu w celach związanych z prezentacją usług oferowanych przez CT Service S.A. oraz w celach marketingowych.
-                        </label>
+                        <label htmlFor="zgoda1">{zgoda1}</label>
                     </div>
                     <div className={`${styles.row} ${styles.withCheckbox}`}>
                         <input type="checkbox" name="zgoda2" id="zgoda2"/>
-                        <label htmlFor="zgoda2">
-                            Wyrażam zgodę na otrzymywanie od CT Service S.A. z siedzibą w Piasecznie przy ul. Okulickiego 19 informacji handlowych na adres elektroniczny podany w niniejszym Formularzu.                    
-                        </label>
+                        <label htmlFor="zgoda2">{zgoda2}</label>
                     </div>
                     <div className={styles.row}>
-                        <input type="submit" value="Zamów kontakt"/>
+                        <input type="submit" value="Bestill kontakt"/>
                     </div>
                 </form>
             </div>

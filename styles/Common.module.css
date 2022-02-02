@@ -49,6 +49,10 @@
   font-style: normal;
 }
 
+.home .bannerInner h2{
+  max-width: 540px;
+}
+
 .bannerInner p{
   font-size: 1.7rem;
   line-height: 1.2;

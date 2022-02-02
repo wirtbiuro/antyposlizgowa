@@ -7,8 +7,12 @@
 }
 
 .footer .col{
-    flex: 1;
+    flex: 2;
     padding: 0 10px;
+}
+
+.footer .col.menu{
+    flex: 1;
 }
 
 .footer .row{
