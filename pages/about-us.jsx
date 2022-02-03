@@ -43,7 +43,7 @@ const AboutUs = () => {
                         <h2>{zamowUslugeS}</h2>
                     </div>
                     <div className={otherStyles.right}>
-                        <Link href='/'><a><span>Tlf.&nbsp;&nbsp;+47&nbsp;&nbsp;62&nbsp;&nbsp;81&nbsp;&nbsp;59&nbsp;&nbsp;81</span></a></Link>
+                        <Link href='tel:+4762815981'><a><span>Tlf.&nbsp;&nbsp;+47&nbsp;&nbsp;62&nbsp;&nbsp;81&nbsp;&nbsp;59&nbsp;&nbsp;81</span></a></Link>
                     </div>
                 </div>
                 <div className={`${styles.pageBody} ${otherStyles.innerPageBody}`}>

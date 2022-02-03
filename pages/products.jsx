@@ -63,7 +63,9 @@ const Products = () => {
                     <p>Impregnaty przeznaczone do podłoży z materiałów nienasiąkliwych. Skutecznie zabezpieczają przed zabrudzeniami i nie zwiększają śliskości podłoża. Pozwalają zachować oryginalny kolor naturalnego kamienia.</p>
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
-                    <div className={styles.link}><Link href='/'><a>KUP PRODUKTY &gt;&gt;</a></Link></div>
+                    <div className={styles.link}><Link href='https://ctschemistry.com/en/shop/' target="_blank">
+                        <a>Bestill produkter &gt;&gt;</a>
+                    </Link></div>
                 </div>
                 <div className={styles.right}>
                     <AuxForm/>

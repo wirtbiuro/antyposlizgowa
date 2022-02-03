@@ -11,6 +11,7 @@ import UslugiBtns from '../components/uslugi-btns'
 import MainForm from '../components/main-form'
 import AntpslzgBreadcrumb from '../components/antpslzgBreadcrumb'
 import Animate from '../components/animate'
+import BottomBaner from '../components/bottom-banner'
 
 const Contact = () => {
 
@@ -35,16 +36,18 @@ const Contact = () => {
             <div className={otherStyles.pageBody}>
                 <div className={otherStyles.banner} ref={otherBannerRef}>
                     <div className={otherStyles.left}>
-                        <h2>Zamów bezpłatną próbę zabezpieczenia antypoślizgowego</h2>
+                        <h2>Bestill en gratis måling av sklisikkerhet</h2>
                     </div>
                     <div className={otherStyles.right}>
-                        <Link href='/'><a><span>TEL.&nbsp;&nbsp;22&nbsp;&nbsp;750&nbsp;&nbsp;20&nbsp;&nbsp;66</span></a></Link>
+                    <Link href='tel:+4762815981'>
+                        <a><span>Tlf.&nbsp;&nbsp;+47&nbsp;&nbsp;62&nbsp;&nbsp;81&nbsp;&nbsp;59&nbsp;&nbsp;81</span></a>
+                    </Link>
                     </div>
                 </div>
                 <div className={`${styles.pageBody} ${otherStyles.innerPageBody}`}>
                     <div className={`${styles.left} ${otherStyles.noMargin}`}>
                         <div className={`${contactStyles.mainFormWrapper}`}>
-                            <h2>Napisz do nas:</h2>
+                            <h2>Send oss en melding:</h2>
                             <MainForm 
                                 style={{width: '100%', border: '1px solid rgb(220, 220, 220)', padding: '40px', display: 'block'}} 
                                 title={''}
@@ -56,41 +59,34 @@ const Contact = () => {
                         <div className={`${contactStyles.row}`}>
                             <i className={`${contactStyles.adress}`}/>
                             <div className={`${contactStyles.col}`}>
-                                <h2>CTS&nbsp;Chemistry Sp.&nbsp;z&nbsp;o.o.</h2>
-                                <p>ul. Frezerów 3</p>
-                                <p>20-209 Lublin</p>
-                                <p>NIP: 9512513546</p>
+                                <h2>Dyktighandverker&nbsp;AS</h2>
+                                <p>Org.nr.&nbsp;916&nbsp;258&nbsp;801</p>
+                                <p>Industriveien 13</p>
+                                <p>1481 Hagan</p>
+                                {/* <p>NIP: 9512513546</p> */}
                                 <p>&nbsp;</p>
-                                <p>Adres do korespondencji</p>
+                                {/* <p>Adres do korespondencji</p>
                                 <p>ul. Okulickiego 19</p>
-                                <p>05-500 Piaseczno</p>
+                                <p>05-500 Piaseczno</p> */}
                             </div>
                         </div>
                         <div className={`${contactStyles.row}`}>
                             <i className={`${contactStyles.phone}`}/>
                             <div className={`${contactStyles.col}`}>
-                                <h3>+48 22 750 20 66</h3>
+                                <h3>+47 62 81 59 81</h3>
                             </div>
                         </div>
                         <div className={`${contactStyles.row}`}>
                             <i className={`${contactStyles.adress}`}/>
                             <div className={`${contactStyles.col}`}>
-                                <h3>office@ctservice.com.pl</h3>
+                                <h3>post@sklibeskyttelse.no</h3>
                             </div>
                         </div>
                     </div>
                 </div>    
             </div>
             
-            <Banner backgroundImage="url('/images/feet2.jpg')" isFadeInUp={true}>
-                <div className={styles.bannerInner}>
-                    <div className={styles.center}>
-                        <h1>Zamów bezpłatną próbę zabezpieczenia antypoślizgowego!</h1>
-                        <h2>Skontaktuj się z nami:</h2>
-                        <div><Link href='/'><a>TEL. 22 750 20 66</a></Link></div>
-                    </div>
-                </div>
-            </Banner>
+            <BottomBaner/>
             <Footer/>
             <div className={styles.footerBar}></div>
         </div>

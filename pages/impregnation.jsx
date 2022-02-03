@@ -6,7 +6,7 @@ import Footer from '../components/footer'
 import AuxForm from '../components/aux-form'
 import AntpslzgBreadcrumb from '../components/antpslzgBreadcrumb'
 import Animate from '../components/animate'
-import { uslugi, checkAllServices } from '../constants'
+import { uslugi, checkAllServices, zamowUsluge } from '../constants'
 import BottomBaner from '../components/bottom-banner'
 
 const Impregnation = () => {
@@ -90,7 +90,7 @@ const Impregnation = () => {
                         </ul>
                     </div>                    
                     <p>&nbsp;</p>
-                    <div className={styles.link}><Link href='/contact'><a>ZAMÓW USŁUGĘ &gt;&gt;</a></Link></div>
+                    <div className={styles.link}><Link href='/contact'><a>{zamowUsluge}</a></Link></div>
                 </div>
                 <div className={styles.right}>
                     <AuxForm/>
