@@ -56,11 +56,12 @@ const AboutUs = () => {
                         <p>Dyktighandverker AS er forhandler av profesjonelle kjemiske preparater fra CTS Chemistry. Vi garanterer kvalitet og sklisikringens mangeårige holdbarhet. Vi bruker kjemiske preparater som bygger på egne og sertifiserte oppskrifter, samt vi arbeider i henhold til den patenterte teknologien ZAP®.</p>
                         <p>
                             Vi sikrer både våte og glatte overflater, både før og etter montering.
-                            <br/>
-                            Wykonujemy <strong>pomiar antypoślizgowości według wytycznych Instytutu Techniki Budowlanej.</strong>
+                            {/* <br/>
+                            Wykonujemy <strong>pomiar antypoślizgowości według wytycznych Instytutu Techniki Budowlanej.</strong> */}
                         </p>
-                        <p>Po przeprowadzonej usłudze dokonamy pomiaru antypoślizgowości i wystawiamy <strong>Certyfikat Zgodności</strong> przeprowadzonego badania.</p>
-                        <p>Nasze usługi są skuteczne i bezpieczne, jako jedyne na rynku nie <strong>zmieniają stylistyki powierzchni.</strong> Bez potrzeby remontu lub stosowania nieestetycznych taśm, naklejek oraz mat antypoślizgowych, możemy zmienić każdą powierzchnię w czystą i bezpieczną.</p>
+                        <p>Etter at vi er ferdig med arbeidene, måler vi sklisikkerhet og vi utsteder  et samsvarsertifikat for den gjennomførte undersøkelsen.</p>
+                        <p>Våre tjenester er effektive og trygge, som de eneste på markedet endrer de ikke overflatens stil. </p>
+                        <p>Uten oppussing eller bruk av stygge remser, tape eller   Uten oppussing eller bruk av stygge taper, klistremerker og antisklimatte, kan vi gjøre hvilken som helst overflate til en ren og trygg overflate. </p>
                     </div>
                 </div>    
             </div>

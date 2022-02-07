@@ -109,7 +109,7 @@ const FrictionMeasurement = () => {
                     <p>&nbsp;</p>
                     <ul>
                         <li><p>Alle fliser mister sin opprinnelige sklisikkerhet med tiden og på grunn av bruksintensitet.</p></li>
-                        <li><p>Gulvets klisikkerhet under reelle forhold avhenger bl. a. av:
+                        <li><p>Gulvets sklisikkerhet under reelle forhold avhenger bl. a. av:
                             – type gulvbelegg, f.eks. glaserte fliser, polert granitt, harpiks, PVC,
                             – type såle,
                             – type smøremiddel, f.eks. vann, søle, juice, olje, ketchup, sennep, suppe, sauser,

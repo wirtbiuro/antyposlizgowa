@@ -35,22 +35,22 @@ const Impregnation = () => {
                     <h2>Hvilke overflater lønner det seg å impregnere og hvorfor?</h2>
                     <p>&nbsp;</p>
                     <p>Terrasser og balkonger, fasader, trapper, oppkjørsler, murer eller elementer utført av naturstein, murstein, gres, klinker, marmor eller granitt - alle disse overflatene hjemme eller i offentlige bygninger brukes stadig og de er utsatt for or skadelig påvirkning av ytre faktorer. Med tiden blir overflater som ikke er beskyttet fast tilsølt og de elder raskere.</p>
-                    <p>Skuteczną ochroną jest odpowiednio dobrana impregnacja, która zapobiegają wchłanianiu wody i tłustych plam (olej, tłuszcz, smog, żywność, kosmetyki, mydła itp.). W rezultacie brud pozostaje na powierzchni kamienia, ale nie może wniknąć do środka, dlatego można go łatwo usunąć.</p>
+                    <p>En godt tilpasset impregnering utgjør en effektiv beskyttelse som forhindrer absorpsjon av vann og fete flekker (olje, fett, smog, mat, kosmetika, såpe o.l.). Resultatet er at smuss forblir på steinens overflate, og det ikke trenger inn, derfor er det lett å fjerne det.</p>
                     <img src="/images/drops-2.png"/>
                     <p>&nbsp;</p>
-                    <h2>Wysokiej jakości preparat, dobrze dobrany do odpowiedniego podłoża:</h2>
+                    <h2>Preparat av høy kvalitet som er godt tilpasset underlaget:</h2>
                     <p>&nbsp;</p>
                     <ul>
-                        <li><p>wzmacnia jego strukturę,</p></li>
-                        <li><p>zabezpiecza przed wchłanianiem wilgoci,</p></li>
-                        <li><p>eliminuje pylenie,</p></li>
-                        <li><p>zwiększa odporność na ścieranie,</p></li>
-                        <li><p>zapobiega wchłanianiu zanieczyszczeń,</p></li>
-                        <li><p>zapobiega porastaniu mchem,</p></li>
-                        <li><p>zapobiega przebarwieniom,</p></li>
-                        <li><p>ułatwia czyszczenie,</p></li>
-                        <li><p>poprawia wygląd,</p></li>
-                        <li><p>może wzmocnić kolor lub nadać połysk.</p></li>
+                        <li><p>styrker dets struktur,</p></li>
+                        <li><p>sikrer mot opptak av fukt,</p></li>
+                        <li><p>eliminerer støv,</p></li>
+                        <li><p>øker motstanden mot slitasje,</p></li>
+                        <li><p>forebygger opptak av forurensninger,</p></li>
+                        <li><p>forebygger mosevekst,</p></li>
+                        <li><p>forebygger misfarging,</p></li>
+                        <li><p>gjør rengjøring lettere,</p></li>
+                        <li><p>forbedrer utseende,</p></li>
+                        <li><p>kan styrke fargen eller gi glans.</p></li>
                     </ul>
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
@@ -68,25 +68,25 @@ const Impregnation = () => {
                         Sorry, your browser does not support embedded videos.
                     </video>
                     <p>&nbsp;</p>
-                    <h2>Podczas wyboru odpowiedniego środka chemicznego do impregnacji należy zwrócić uwagę na to, aby:</h2>
+                    <h2>Ved valg av et riktig kjemisk middel til impregnering skal det tas hensyn til at impregneringen:</h2>
                     <p>&nbsp;</p>
                     <ul>
-                        <li><p>impregnat nie powodował żółknięcia zabezpieczonej powierzchni,</p></li>
-                        <li><p>nie zwiększał jej śliskości,</p></li>
-                        <li><p>był trwały,</p></li>
-                        <li><p>łatwy w aplikacji,</p></li>
-                        <li><p>bezpieczny dla środowiska,</p></li>
-                        <li><p>był odporny na alkalia,</p></li>
-                        <li><p>był odporny na działanie promieni UV</p></li>
+                        <li><p>ikke forårsaker gulning av den beskyttede overflaten,</p></li>
+                        <li><p>ikke gjør overflaten glattere,</p></li>
+                        <li><p>er permanent,</p></li>
+                        <li><p>er lett å påføre,</p></li>
+                        <li><p>er miljøvennlig,</p></li>
+                        <li><p>er  motstandsdyktig mot alkalier,</p></li>
+                        <li><p>er  motstandsdyktig mot UV-stråling.</p></li>
                     </ul>
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
                     <div className={styles.selection} ref={selectionRef}>
                         <ul>
-                            <li><p>Zalecamy stosowanie impregnacji na nowych i starych powierzchniach, zarówno wewnątrz jak i na zewnątrz budynków.</p></li>
-                            <li><p>Zabezpieczenie nowych niezabrudzonych powierzchni znacząco przedłuży czas, w którym będą wyglądać czysto i świeżo oraz ułatwi ich codzienną pielęgnację.</p></li>
-                            <li><p>Stare powierzchnie po zabiegu głębokiego oczyszczenia szczególnie należy poddać impregnacji, która wzmocni kolor lub przywróci blask zabezpieczanej powierzchni.</p></li>
-                            <li><p>Firma CT Service pracuje na preparatach ekologicznych, bezpiecznych dla ludzi i przyjaznych dla środowiska, dlatego swoje usługi możemy wykonywać również wewnątrz budynków.</p></li>
+                            <li><p>Vi anbefaler bruk av impregnering på nye og gamle overflater, både innvendig og utvendig.</p></li>
+                            <li><p>Beskyttelse av nye, rene overflater vil betydelig forlenge tiden de ser rent og fint ut, og vil lette deres daglige vedlikehold.</p></li>
+                            <li><p>Det er spesielt gamle overflater etter en dyp rengjøring som skal impregneres, denne behandlingen vil styrke fargen eller gjenopprette glansen til den beskyttede overflaten.</p></li>
+                            <li><p>Firmaet Dyktighandverker AS bruker økologiske preparater som er trygge for mennesker og miljøvennlige, derfor kan vi også tilby tjenester som utføres inne.</p></li>
                         </ul>
                     </div>                    
                     <p>&nbsp;</p>

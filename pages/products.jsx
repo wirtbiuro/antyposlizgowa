@@ -34,7 +34,7 @@ const Products = () => {
                     <h2>Våre produkter:</h2>
                     <p>&nbsp;</p>
                     <ul>
-                        <li><p>Posiadają atest PZH.</p></li>
+                        <li><p>Har PZH-godkjenning.</p></li>
                         <li><p>De er trygge for mennesker og miljøvennlige.</p></li>
                         <li><p>De skader ikke underlaget.</p></li>
                         <li><p>De er lett å håndtere.</p></li>
@@ -58,9 +58,9 @@ const Products = () => {
                     <p>&nbsp;</p>
                     <p>Helt økologiske preparater utviklet med grunnlag i organiske silisiumforbindelser. De øker den impregnerte overflatens motstandsdyktighet mot smuss, forekomst og utvikling av biologisk forurensning. Odporne na alkalia i działanie promieni UV, bezrozpuszczalnikowe.</p>
                     <p>&nbsp;</p>
-                    <h2>Produkty z kategorii impregnaty rozpuszczalnikowe:</h2>
+                    <h2>Produkter innen løsemiddelfri impregnering:</h2>
                     <p>&nbsp;</p>
-                    <p>Impregnaty przeznaczone do podłoży z materiałów nienasiąkliwych. Skutecznie zabezpieczają przed zabrudzeniami i nie zwiększają śliskości podłoża. Pozwalają zachować oryginalny kolor naturalnego kamienia.</p>
+                    <p>Impregnering beregnet for underlag av ikke-absorberende materialer. De beskytter effektivt mot smuss og ikke gjør overflaten glattere. De lar bevare den opprinnelige fargen på naturstein.</p>
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
                     <div className={styles.link}><Link href='https://ctschemistry.com/en/shop/' target="_blank">
