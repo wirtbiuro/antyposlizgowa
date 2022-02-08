@@ -61,7 +61,7 @@ const AuxForm = () => {
                 <form onSubmit={submit} ref={formRef}>
                     <div className={styles.row}>
                         <h2>
-                            Trenger du teknisk rådgivelse? Bestill en samtale:
+                            Kontakt oss:
                         </h2>
                     </div>
                     <div className={styles.row}>
@@ -85,7 +85,7 @@ const AuxForm = () => {
                         <label htmlFor="zgoda2">{zgoda2}</label>
                     </div>
                     <div className={styles.row}>
-                        <input type="submit" value="Bestill kontakt"/>
+                        <input type="submit" value="Send melding"/>
                     </div>
                 </form>
             </div>

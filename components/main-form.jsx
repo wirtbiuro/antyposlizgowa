@@ -5,7 +5,7 @@ import Animate from './animate'
 import { Modal } from 'antd'
 import { zgoda1, zgoda2 } from '../constants'
 
-const MainForm = ({style, title=<>Trenger du rådgivning?<br/> Send oss en melding:</>, isFadeInLeftt10=false}) => {
+const MainForm = ({style, title=<>Kontakt oss:</>, isFadeInLeftt10=false}) => {
 
     const fullNameRef = useRef()
     const emailRef = useRef()
@@ -93,7 +93,7 @@ const MainForm = ({style, title=<>Trenger du rådgivning?<br/> Send oss en meldi
                         </label>
                     </div>
                     <div className={`${styles.row} ${styles.submit}`}>
-                        <input type="submit" value="Send"/>
+                        <input type="submit" value="Send melding"/>
                     </div>
                 </form>
             </div>
