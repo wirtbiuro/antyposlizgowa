@@ -82,6 +82,10 @@
     content: "\f15c";
 }
 
+.footer .row a div:hover{
+    color: #f9d400;
+}
+
 @media (max-width: 640px){
     .footer{
         flex-direction: column;

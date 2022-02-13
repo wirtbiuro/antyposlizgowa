@@ -5,10 +5,15 @@ export default async(req, res) => {
     try {
 
         const {
-            email, fullName, phone, message, city,
+            email, fullName, phone, message, city, field1, field2
         } = req.body
 
         console.log('send message')
+        console.log('field1', field1)
+        console.log('field2', field2)        
+
+        if(field1 !== 'Gdańsk, ul. Obrońców Wybrzeża 4B' || field2 !== '')
+            return res.status(200).json('ok') 
 
         const msg = {
             from: process.env.EMAIL,

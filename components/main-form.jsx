@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef, useEffect } from 'react'
 import styles from '../styles/MainForm.module.css'
 import axios from 'axios'
 import Animate from './animate'
@@ -12,6 +12,14 @@ const MainForm = ({style, title=<>Kontakt oss:</>, isFadeInLeftt10=false}) => {
     const zgoda1Ref = useRef()
     const formRef = useRef()
     const mainFormRef = useRef()
+    const field1Ref = useRef()
+    const field2Ref = useRef()
+
+    const defaultAdress = 'Gdańsk, ul. Obrońców Wybrzeża 4B'
+
+    useEffect(()=>{
+        field1Ref.current.value = defaultAdress 
+    },[])
 
     const submit = async (e)=>{
         e.preventDefault()
@@ -33,7 +41,9 @@ const MainForm = ({style, title=<>Kontakt oss:</>, isFadeInLeftt10=false}) => {
                 email: e.target.email.value,
                 phone: e.target.phone.value,
                 city: e.target.city.value,
-                message: e.target.message.value
+                message: e.target.message.value,
+                field1: e.target.field1.value,
+                field2: e.target.field2.value,
             }
         })
 
@@ -79,6 +89,12 @@ const MainForm = ({style, title=<>Kontakt oss:</>, isFadeInLeftt10=false}) => {
                     </div>
                     <div className={styles.row}>
                         <textarea name="message" placeholder="Melding" rows={4}/>
+                    </div>
+                    <div className={`${styles.row} ${styles.city}`}>
+                        <input type="text" name="field1" placeholder="Field1" ref={field1Ref}/>
+                    </div>
+                    <div className={`${styles.row} ${styles.adress}`}>
+                        <input type="text" name="field2" placeholder="Field2" ref={field2Ref}/>
                     </div>
                     <div className={`${styles.row} ${styles.withCheckbox}`}>
                         <input type="checkbox" name="zgoda1" id="zgoda1" ref={zgoda1Ref}/>

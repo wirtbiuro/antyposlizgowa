@@ -21,7 +21,8 @@ const FrictionMeasurement = () => {
                 <div className={`${styles.bannerInner}`}>
                     <div className={`${styles.left} ${styles.self}`}>
                         <h1>Måling av friksjonskoeffisient og PTV</h1>
-                        <p>Wykonamy pomiar antypoślizgowości Twojej powierzchni według wytycznych Instytutu Techniki Budowlanej. Następnie otrzymasz Certyfikat Zgodności przeprowadzonego badania.</p>
+                        <p></p>
+                        {/* <p>Wykonamy pomiar antypoślizgowości Twojej powierzchni według wytycznych Instytutu Techniki Budowlanej. Następnie otrzymasz Certyfikat Zgodności przeprowadzonego badania.</p> */}
                         <div className={styles.link}><Link href='/services'><a>{checkAllServices}</a></Link></div>
                     </div>
                 </div>

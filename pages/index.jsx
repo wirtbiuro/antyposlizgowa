@@ -30,7 +30,7 @@ const Home = () => {
             </Banner>
             <Cards/>
             <DiffBlock/>
-            <TrustBlock/>
+            {/* <TrustBlock/> */}
             <BottomBaner/>
             <Footer/>
             <div className={styles.footerBar}></div>

@@ -127,6 +127,11 @@
     color: rgb(0, 0, 0);
 }
 
+.city, .adress{
+    position: absolute;
+    left: -200px;
+}
+
 @media (max-width: 1024px){
     .mainForm{
         width: 50%;

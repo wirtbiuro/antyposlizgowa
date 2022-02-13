@@ -27,7 +27,7 @@ const Contact = () => {
                 <div className={`${styles.bannerInner}`}>
                     <div className={`${styles.left} ${styles.self}`}>
                         <h1>Kontakt</h1>
-                        <p>Świadczymy specjalistyczne usługi z zakresu zabezpieczenia antypoślizgowego, gruntownego doczyszczania, odkamieniania, impregnacji.</p>
+                        {/* <p>Świadczymy specjalistyczne usługi z zakresu zabezpieczenia antypoślizgowego, gruntownego doczyszczania, odkamieniania, impregnacji.</p> */}
                         {/* <div className={styles.link}><Link href='/services'><a>SPRAWDŹ WSZYSTKIE USŁUGI</a></Link></div> */}
                     </div>
                 </div>
@@ -39,9 +39,9 @@ const Contact = () => {
                         <h2>Bestill en gratis måling av sklisikkerhet</h2>
                     </div>
                     <div className={otherStyles.right}>
-                    <Link href='tel:+4762815981'>
-                        <a><span>Tlf.&nbsp;&nbsp;+47&nbsp;&nbsp;62&nbsp;&nbsp;81&nbsp;&nbsp;59&nbsp;&nbsp;81</span></a>
-                    </Link>
+                        <Link href='tel:+4762815981'>
+                            <a><span>Tlf.&nbsp;&nbsp;+47&nbsp;&nbsp;62&nbsp;&nbsp;81&nbsp;&nbsp;59&nbsp;&nbsp;81</span></a>
+                        </Link>
                     </div>
                 </div>
                 <div className={`${styles.pageBody} ${otherStyles.innerPageBody}`}>
@@ -73,13 +73,17 @@ const Contact = () => {
                         <div className={`${contactStyles.row}`}>
                             <i className={`${contactStyles.phone}`}/>
                             <div className={`${contactStyles.col}`}>
-                                <h3>+47 62 81 59 81</h3>
+                                <Link href='tel:+4762815981'><a>
+                                    <h3>+47 62 81 59 81</h3>
+                                </a></Link>
                             </div>
                         </div>
                         <div className={`${contactStyles.row}`}>
                             <i className={`${contactStyles.adress}`}/>
                             <div className={`${contactStyles.col}`}>
-                                <h3>post@sklibeskyttelse.no</h3>
+                                <Link href='mailto:post@sklibeskyttelse.no'><a>
+                                    <h3>post@sklibeskyttelse.no</h3>
+                                </a></Link>
                             </div>
                         </div>
                     </div>

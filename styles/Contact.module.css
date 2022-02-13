@@ -42,6 +42,17 @@ i.phone::before{
     content: "\f095";
 }
 
+.row a, .row a:hover{
+    display: flex;
+    background-color: white;
+    padding-left: 0;
+    text-transform: none;
+}
+
+.row a h3:hover{
+    color: rgb(249, 212, 0);
+}
+
 @media (max-width: 425px){
     .row i{
         font-size: 18px;

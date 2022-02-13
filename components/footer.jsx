@@ -29,11 +29,15 @@ const Footer = () => {
                 </div>
                 <div className={styles.row}>
                     <div className={styles.left}><i className={styles['envelope']}></i></div>
-                    <div className={styles.right}>epost: post@sklibeskyttelse.no</div>
+                        <Link href='mailto:post@sklibeskyttelse.no'><a>
+                            <div className={styles.right}>epost: post@sklibeskyttelse.no</div>
+                        </a></Link>
                 </div>
                 <div className={styles.row}>
                     <div className={styles.left}><i className={styles['phone']}></i></div>
-                    <div className={styles.right}>tlf: 62 81 59 81</div>
+                    <Link href='tel:+4762815981'><a>
+                        <div className={styles.right}>tlf: 62 81 59 81</div>
+                    </a></Link>
                 </div>
 
                 {/* <div className={styles.row}>

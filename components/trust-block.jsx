@@ -13,12 +13,12 @@ const TrustBlock = () => {
                 <div className={styles.imgDiv}>
                     <img src="/images/deutsche-bank-logo.jpg"/>
                 </div>
-                <div className={styles.imgDiv}>
+                {/* <div className={styles.imgDiv}>
                     <img src="/images/leroy-merlin-logo.png"/>
-                </div>
-                <div className={styles.imgDiv}>
+                </div> */}
+                {/* <div className={styles.imgDiv}>
                     <img src="/images/obi-logo.jpg"/>
-                </div>
+                </div> */}
                 <div className={styles.imgDiv}>
                     <img src="/images/skanska-logo.jpg"/>
                 </div>

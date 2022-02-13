@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef, useEffect } from 'react'
 import styles from '../styles/MainForm.module.css'
 import axios from 'axios'
 import Animate from './animate'
@@ -12,6 +12,15 @@ const AuxForm = () => {
     const zgoda1Ref = useRef()
     const formRef = useRef()
     const mainFormRef = useRef()
+    const field1Ref = useRef()
+    const field2Ref = useRef()
+
+    const defaultAdress = 'Gdańsk, ul. Obrońców Wybrzeża 4B'
+
+    useEffect(()=>{
+        field1Ref.current.value = defaultAdress 
+    },[])
+
 
     const submit = async (e)=>{
         e.preventDefault()
@@ -32,6 +41,8 @@ const AuxForm = () => {
                 fullName: e.target.fullName.value,
                 email: e.target.email.value,
                 phone: e.target.phone.value,
+                field1: e.target.field1.value,
+                field2: e.target.field2.value,
                 // message: e.target.message.value
             }
         })
@@ -72,6 +83,12 @@ const AuxForm = () => {
                     </div>
                     <div className={styles.row}>
                         <input type="text" name="phone" placeholder="Telefonnummer"/>
+                    </div>
+                    <div className={`${styles.row} ${styles.city}`}>
+                        <input type="text" name="field1" placeholder="Field1" ref={field1Ref}/>
+                    </div>
+                    <div className={`${styles.row} ${styles.adress}`}>
+                        <input type="text" name="field2" placeholder="Field2" ref={field2Ref}/>
                     </div>
                     <div className={`${styles.row} ${styles.info}`}>
                         <span>Vi vil kontakte deg så fort vi kan.</span>

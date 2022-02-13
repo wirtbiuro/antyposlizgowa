@@ -39,7 +39,7 @@ const DiffBlock = () => {
                             </p></div>
                         </div>
                     </div>
-                    <div className={styles.row}>
+                    {/* <div className={styles.row}>
                         <div className={styles.left}>
                             <div className={`${styles.icon} ${styles.thumbsup}`}></div>
                         </div>
@@ -47,11 +47,11 @@ const DiffBlock = () => {
                             <div className={styles.header}><h3>Zadowoleni klienci</h3></div>
                             <div className={styles.text}><p>Ponad 400 zadowolonych partnerów biznesowych i ponad 700 wykonanych realizacji, w kraju i zagranicą.</p></div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
                 <div className={styles.right} ref={rightRef}>
                     <img src="/images/technika-antyposlizgowa.jpg"/>
-                    <div>
+                    {/* <div>
                         <Carousel  effect="fade" autoplay autoplaySpeed={8000}>
                             <div>
                                 <p className={styles.carouselText}>Firma jest profesjonalnym wykonawcą, zna i stosuje nowoczesne, profesjonalne i bezpieczne technologie. Przedstawiciele firmy wykazywali się ogromnym zaangażowaniem i dokładnością. Z pełnym zaufaniem polecam firmę. </p>
@@ -66,7 +66,7 @@ const DiffBlock = () => {
                                 <p className={styles.author}><strong>Grzegorz Adamus</strong>, Euro-Granit Adamus</p>
                             </div>                  
                         </Carousel>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

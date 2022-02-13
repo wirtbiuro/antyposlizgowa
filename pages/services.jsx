@@ -12,6 +12,7 @@ import AuxForm from '../components/aux-form'
 import AntpslzgBreadcrumb from '../components/antpslzgBreadcrumb'
 import Animate from '../components/animate'
 import { uslugi } from '../constants'
+import BottomBaner from '../components/bottom-banner'
 
 const Services = () => {
 
@@ -26,11 +27,12 @@ const Services = () => {
 
     return (
         <div>
-            <Animate elementRef={ifRef1} animationName="fadeInUp10"/>
+
+            {/* <Animate elementRef={ifRef1} animationName="fadeInUp10"/>
             <Animate elementRef={ifRef2} animationName="fadeInUp10"/>
             <Animate elementRef={ifRef3} animationName="fadeInUp10"/>
             <Animate elementRef={ifRef4} animationName="fadeInUp10"/>
-            <Animate elementRef={ifRef5} animationName="fadeInUp10"/>
+            <Animate elementRef={ifRef5} animationName="fadeInUp10"/> */}
             <Animate elementRef={cardRef1} animationName="fadeInLeft10"/>
             <Animate elementRef={cardRef2} animationName="fadeInLeft10"/>
             <Animate elementRef={cardRef3} animationName="fadeInLeft10"/>
@@ -42,15 +44,19 @@ const Services = () => {
             >
                 <div className={`${styles.bannerInner}`}>
                     <div className={`${styles.left} ${styles.self}`}>
-                        <h1>Usługi</h1>
-                        <p>Świadczymy specjalistyczne usługi z zakresu zabezpieczenia antypoślizgowego, gruntownego doczyszczania, odkamieniania, impregnacji.</p>
+                        <h1>{uslugi}</h1>
+                        {/* <p>Świadczymy specjalistyczne usługi z zakresu zabezpieczenia antypoślizgowego, gruntownego doczyszczania, odkamieniania, impregnacji.</p> */}
                         {/* <div className={styles.link}><Link href='/services'><a>SPRAWDŹ WSZYSTKIE USŁUGI</a></Link></div> */}
                     </div>
                 </div>
             </Banner>
+
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+
             <div className={`${styles.pageBody} ${serviceStyles.pageBody}`}>
                 <div className={styles.left}>
-                    <div className={`${serviceStyles.row}`} ref={ifRef1}>
+                    {/* <div className={`${serviceStyles.row}`} ref={ifRef1}>
                         <div className={`${serviceStyles.arrow}`}></div>
                         <div className={`${serviceStyles.col} ${serviceStyles.if}`}>
                             <h2>Jeśli Twoja posadzka jest śliska...</h2>
@@ -88,43 +94,43 @@ const Services = () => {
                         </div>
                     </div>
 
-                    <p>&nbsp;</p>
+                    <p>&nbsp;</p> */}
 
                     <div className={serviceStyles.row} ref={cardRef1}>
                         <div className={serviceStyles.card}>
-                            <h2>Zabezpieczenie antypoślizgowe</h2>
-                            <p>Zabezpieczamy każdy rodzaj starej lub nowej powierzchni: z kamienia, ceramiki, betonu, cegły, na zewnątrz i wewnątrz budynku. Jako jedyna polska firma świadczymy profesjonalne usługi w oparciu o własną, opatentowaną technologię ZAP.</p>
+                            <h2>Sklisikring</h2>
+                            {/* <p>Zabezpieczamy każdy rodzaj starej lub nowej powierzchni: z kamienia, ceramiki, betonu, cegły, na zewnątrz i wewnątrz budynku. Jako jedyna polska firma świadczymy profesjonalne usługi w oparciu o własną, opatentowaną technologię ZAP.</p> */}
                             <div className={styles.link}><Link href='/protection'><a>Les mer</a></Link></div>
                         </div>
                         <div className={serviceStyles.card}>
-                            <h2>Pomiar tarcia dynamicznego i PCV</h2>
-                            <p>Wykonamy pomiar antypoślizgowości i wystawimy Certyfikat Zgodności oraz dostarczymy wydruk charakterystyki współczynnika tarcia dynamicznego zabezpieczonej powierzchni. Wszystko zgodnie z wytycznymi Instytutu Techniki Budowlanej i Ministerstwa Rozwoju.</p>
+                            <h2>Måling av friksjonskoeffisient og PTV</h2>
+                            {/* <p>Wykonamy pomiar antypoślizgowości i wystawimy Certyfikat Zgodności oraz dostarczymy wydruk charakterystyki współczynnika tarcia dynamicznego zabezpieczonej powierzchni. Wszystko zgodnie z wytycznymi Instytutu Techniki Budowlanej i Ministerstwa Rozwoju.</p> */}
                             <div className={styles.link}><Link href='/friction-measurement'><a>Les mer</a></Link></div>
                         </div>
                     </div>
 
                     <div className={serviceStyles.row} ref={cardRef2}>
                         <div className={serviceStyles.card}>
-                            <h2>Doczyszczanie powierzchni</h2>
-                            <p>Usługa głębokiego doczyszczenia posadzek sprawia, że każda powierzchnia wygląda lepiej niż kiedykolwiek, łatwiej podlega codziennemu czyszczeniu, wolniej ulega eksploatacji i jest bezpieczniejsza dla użytkowników.</p>
+                            <h2>Rengjøring av overflate</h2>
+                            {/* <p>Usługa głębokiego doczyszczenia posadzek sprawia, że każda powierzchnia wygląda lepiej niż kiedykolwiek, łatwiej podlega codziennemu czyszczeniu, wolniej ulega eksploatacji i jest bezpieczniejsza dla użytkowników.</p> */}
                             <div className={styles.link}><Link href='/cleaning'><a>Les mer</a></Link></div>
                         </div>
                         <div className={serviceStyles.card}>
-                            <h2>Odkamienianie</h2>
-                            <p>Duże zanieczyszczenie kamieniem np. basenu tworzy konieczność zastosowania kwaśnych preparatów chemicznych. W miejscach, które narażone są na ciągły kontakt z wodą, należy pamiętać o okresowym czyszczeniu. Napisz do nas i zapytaj jak możemy pomóc.</p>
+                            <h2>Avkalking</h2>
+                            {/* <p>Duże zanieczyszczenie kamieniem np. basenu tworzy konieczność zastosowania kwaśnych preparatów chemicznych. W miejscach, które narażone są na ciągły kontakt z wodą, należy pamiętać o okresowym czyszczeniu. Napisz do nas i zapytaj jak możemy pomóc.</p> */}
                             <div className={styles.link}><Link href='/descaling'><a>Les mer</a></Link></div>
                         </div>
                     </div>
 
                     <div className={serviceStyles.row} ref={cardRef3}>
                         <div className={serviceStyles.card}>
-                            <h2>Impregnacja</h2>
-                            <p>Powierzchnie będą wyglądać czysto i świeżo przez dłuższy czas, a ich codzienna pielęgnacja będzie łatwiejsza. Usługa może też wzmocnić kolor i przywrócić blask. Wykorzystamy ekologiczne, przyjazne dla ludzi i środowiska preparaty. Impregnacja zapobiega wchłanianiu substancji, w rezultacie brud można łatwo usuwać.</p>
+                            <h2>Impregnering</h2>
+                            {/* <p>Powierzchnie będą wyglądać czysto i świeżo przez dłuższy czas, a ich codzienna pielęgnacja będzie łatwiejsza. Usługa może też wzmocnić kolor i przywrócić blask. Wykorzystamy ekologiczne, przyjazne dla ludzi i środowiska preparaty. Impregnacja zapobiega wchłanianiu substancji, w rezultacie brud można łatwo usuwać.</p> */}
                             <div className={styles.link}><Link href='/impregnation'><a>Les mer</a></Link></div>
                         </div>
                         <div className={serviceStyles.card}>
-                            <h2>Nasze produkty</h2>
-                            <p>Posiadamy własne produkty z kategorii: antypoślizg, zmywacze, impregnaty wodne, impregnaty rozpuszczalnikowe. Posiadają atest PZH, są bezpieczne dla ludzi i środowiska, a większość z nich jest ekologiczna. Dodatkowo nie niszczą podłoża, wspomagają dezynfekcję, są łatwe w aplikacji wewnątrz i na zewnątrz, dla starych i nowych powierzchni.</p>
+                            <h2>Våre produkter</h2>
+                            {/* <p>Posiadamy własne produkty z kategorii: antypoślizg, zmywacze, impregnaty wodne, impregnaty rozpuszczalnikowe. Posiadają atest PZH, są bezpieczne dla ludzi i środowiska, a większość z nich jest ekologiczna. Dodatkowo nie niszczą podłoża, wspomagają dezynfekcję, są łatwe w aplikacji wewnątrz i na zewnątrz, dla starych i nowych powierzchni.</p> */}
                             <div className={styles.link}><Link href='/products'><a>Les mer</a></Link></div>
                         </div>
                     </div>
@@ -134,15 +140,11 @@ const Services = () => {
                     <AuxForm/>
                 </div>
             </div>
-            <Banner backgroundImage="url('/images/feet2.jpg')" isFadeInUp={true}>
-                <div className={styles.bannerInner}>
-                    <div className={styles.center}>
-                        <h1>Zamów bezpłatną próbę zabezpieczenia antypoślizgowego!</h1>
-                        <h2>Skontaktuj się z nami:</h2>
-                        <div><Link href='/'><a>TEL. 22 750 20 66</a></Link></div>
-                    </div>
-                </div>
-            </Banner>
+
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+
+            <BottomBaner/>
             <Footer/>
             <div className={styles.footerBar}></div>
         </div>
