@@ -3,6 +3,7 @@ import Banner from '../components/banner'
 import MainForm from '../components/main-form'
 import Link from 'next/link'
 import styles from '../styles/Common.module.css'
+import animateStyles from '../styles/Animate.module.css'
 import Cards from '../components/cards'
 import DiffBlock from '../components/diff-block'
 import TrustBlock from '../components/trust-block'
@@ -19,8 +20,8 @@ const Home = () => {
         <div className={`${styles.home}`}>
             <Banner>
                 <div className={`${styles.bannerInner}`}>
-                    <div className={`${styles.left}`} ref={bannerLeftRef}>
-                        <Animate elementRef={bannerLeftRef} animationName='fadeInLeft10'/>
+                    <div className={`${styles.left} ${animateStyles.fadeInLeft10}`} ref={bannerLeftRef}>
+                        {/* <Animate elementRef={bannerLeftRef} animationName='fadeInLeft10'/> */}
                         <h1>Sklisikring</h1>
                         <h2>måling av friksjonskoeffisient og PTV, rengjøring, avkalking, impregnering</h2>
                         <div><Link href='/services'><a>Se våre tjenester</a></Link></div>

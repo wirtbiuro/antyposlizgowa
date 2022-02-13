@@ -129,7 +129,7 @@
 
 .city, .adress{
     position: absolute;
-    left: -200px;
+    left: -2200px;
 }
 
 @media (max-width: 1024px){
