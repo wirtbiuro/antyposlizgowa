@@ -10,7 +10,7 @@ import Footer from '../components/footer'
 import AuxForm from '../components/aux-form'
 import AntpslzgBreadcrumb from '../components/antpslzgBreadcrumb'
 import Animate from '../components/animate'
-import { zamowUsluge, uslugi, checkAllServices } from '../constants'
+import { zamowUsluge, uslugi, checkAllServices, links } from '../constants'
 import BottomBaner from '../components/bottom-banner'
 
 const Descaling = () => {
@@ -20,13 +20,13 @@ const Descaling = () => {
     return (
         <div>
             <Animate elementRef={imgRef} animationName="fadeInUp10"/>
-            <AntpslzgBreadcrumb pathArr={[{title: uslugi, href:'/services'}, {title: 'Avkalking'}]}/>
+            <AntpslzgBreadcrumb pathArr={[{title: uslugi, href: `/${links.descaling}`}, {title: 'Avkalking'}]}/>
             <Banner backgroundImage='url(/images/plates-flowers.jpg)' withwaves={false} isFadeInLeft10={true}>
                 <div className={`${styles.bannerInner}`}>
                     <div className={`${styles.left} ${styles.self}`}>
                         <h1>Avkalking</h1>
-                        <p>Kalsiumoppbygging på f.eks. bassengoverflater gjør det nødvendig å bruke sure kjemiske preparater.  Det er også viktig å rengjøre slike overflater periodisk. Send en melding til oss og hvordan vi kan hjelpe deg.</p>
-                        <div className={styles.link}><Link href='/services'><a>{checkAllServices}</a></Link></div>
+                        <p>Kalsiumoppbygging på f.eks. bassengoverflater gjør det nødvendig å bruke sure kjemiske preparater.  Det er også viktig å rengjøre slike overflater periodisk. Send en melding til oss og sjekk hvordan vi kan hjelpe deg.</p>
+                        <div className={styles.link}><Link href={`/${links.services}`}><a>{checkAllServices}</a></Link></div>
                     </div>
                 </div>
             </Banner>
@@ -55,7 +55,7 @@ const Descaling = () => {
                     <p>Det er viktig å huske om at steder som er utsatt for fast kontakt med vann, spesielt med varmt vann, skal regelmessig rengjøres med vann tilsatt et surt kjemisk preparat.</p>
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
-                    <div className={styles.link}><Link href='/contact'><a>{zamowUsluge}</a></Link></div>
+                    <div className={styles.link}><Link href={`/${links.contact}`}><a>{zamowUsluge}</a></Link></div>
                 </div>
                 <div className={styles.right}>
                     <AuxForm/>

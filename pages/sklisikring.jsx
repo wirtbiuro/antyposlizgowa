@@ -10,7 +10,7 @@ import Footer from '../components/footer'
 import AuxForm from '../components/aux-form'
 import AntpslzgBreadcrumb from '../components/antpslzgBreadcrumb'
 import Animate from '../components/animate'
-import { phoneLink, phone, zamowUsluge, checkAllServices, uslugi } from '../constants'
+import { phoneLink, phone, zamowUsluge, checkAllServices, uslugi, links } from '../constants'
 import BottomBaner from '../components/bottom-banner'
 
 const Protection = () => {
@@ -21,13 +21,13 @@ const Protection = () => {
     return (
         <div>
             <Animate elementRef={imgRef} animationName="fadeInUp10"/>
-            <AntpslzgBreadcrumb pathArr={[{title: uslugi, href:'/services'}, {title: 'Sklisikring'}]}/>
+            <AntpslzgBreadcrumb pathArr={[{title: uslugi, href:`/${links.protection}`}, {title: 'Sklisikring'}]}/>
             <Banner backgroundImage='url(/images/floor.png)' withwaves={false} isFadeInLeft10={true}>
                 <div className={`${styles.bannerInner}`}>
                     <div className={`${styles.left} ${styles.self}`}>
                         <h1>Sklisikring</h1>
                         <p>Dersom du har ansvar for det offentlige rom, svarer du også for de smertefulle fallene og skader forårsaket av skliulykker. Unngå store erstatningskrav og sørg for brukernes sikkerhet. Sjekk hvordan du kan få et gulv med en sklihemmende effekt.</p>
-                        <div className={styles.link}><Link href='/services'><a>{checkAllServices}</a></Link></div>
+                        <div className={styles.link}><Link href={`/${links.services}`}><a>{checkAllServices}</a></Link></div>
                     </div>
                 </div>
             </Banner>
@@ -36,7 +36,7 @@ const Protection = () => {
                     <img src="/images/wet-floor.png" className={styles.decorImg} ref={imgRef}/>
                     <h2>Sklisikring</h2>
                     <p>&nbsp;</p>
-                    <p>Vi bruker kun egenproduserte preparater. Produktene våre er økologiske, vi benytter moderne teknologier basert på vann. Derfor er kvaliteten på tjenestene våre høy.</p>
+                    <p>Vi bruker preparater fra CTS Chemistry. Produktene er økologiske, og benytter moderne teknologier basert på vann. Derfor er kvaliteten på tjenestene våre høy.</p>
                     {/* <p>Jako jedyna w Polsce firma pracujemy w oparciu o własnej produkcji preparaty chemiczne, które pozwalają nam uzyskać najwyższą jakość świadczonych usług.</p> */}
                     <img src="/images/gray.png"/>
                     <p>&nbsp;</p>
@@ -49,8 +49,8 @@ const Protection = () => {
                     <p>&nbsp;</p>
                     <h2>Leter du etter en effektiv løsning?</h2>
                     <p>&nbsp;</p>
-                    <p>Vi tilbyr profesjonelle tjenester innen sklisikring av gulv basert på egen, patentert ZAP-teknologi. Vi utfører profesjonelle målinger av gulvets sklisikkerhet, og vi utsteder et samsvarsertifikat for den utførte målingen, dette vedlegges en utskrift med egenskapene til den dynamiske friksjonskoeffisienten til den beskyttede overflaten.</p>
-                    <div className={styles.link}><Link href='/contact'><a>{zamowUsluge}</a></Link></div>
+                    <p>Vi tilbyr profesjonelle tjenester innen sklisikring av gulv basert på egen, patentert ZAP-teknologi. Vi utfører profesjonelle målinger av gulvets sklisikkerhet, og vi utsteder et sertifikat som bekrefter målingens resultater, dette vedlegges en utskrift med egenskapene til den dynamiske friksjonskoeffisienten til den beskyttede overflaten.</p>
+                    <div className={styles.link}><Link href={`/${links.contact}`}><a>{zamowUsluge}</a></Link></div>
                 </div>
                 <div className={styles.right}>
                     <AuxForm/>

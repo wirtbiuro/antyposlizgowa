@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef, useEffect } from 'react'
 import Banner from '../components/banner'
 import Link from 'next/link'
 import styles from '../styles/Common.module.css'
@@ -12,12 +12,22 @@ import MainForm from '../components/main-form'
 import AntpslzgBreadcrumb from '../components/antpslzgBreadcrumb'
 import Animate from '../components/animate'
 import BottomBaner from '../components/bottom-banner'
+import { useRouter } from 'next/router'
 
 const Contact = () => {
 
+    const router = useRouter()
+
     const otherBannerRef = useRef()
     const rightRef = useRef()
+    const anchorRef = useRef()
 
+    useEffect(()=>{
+        // console.log('router', router)
+        if(router.asPath.includes('#form'))
+        anchorRef.current.scrollIntoView()
+      }, [router.query])
+    
     return (
         <div className={styles.all}>
             <Animate elementRef={otherBannerRef} animationName="fadeInUp"/>
@@ -28,7 +38,7 @@ const Contact = () => {
                     <div className={`${styles.left} ${styles.self}`}>
                         <h1>Kontakt</h1>
                         {/* <p>Świadczymy specjalistyczne usługi z zakresu zabezpieczenia antypoślizgowego, gruntownego doczyszczania, odkamieniania, impregnacji.</p> */}
-                        {/* <div className={styles.link}><Link href='/services'><a>SPRAWDŹ WSZYSTKIE USŁUGI</a></Link></div> */}
+                        {/* <div className={styles.link}><Link href={`/${links.services}`}><a>SPRAWDŹ WSZYSTKIE USŁUGI</a></Link></div> */}
                     </div>
                 </div>
             </Banner>
@@ -46,7 +56,7 @@ const Contact = () => {
                 </div>
                 <div className={`${styles.pageBody} ${otherStyles.innerPageBody}`}>
                     <div className={`${styles.left} ${otherStyles.noMargin}`}>
-                        <div className={`${contactStyles.mainFormWrapper}`}>
+                        <div className={`${contactStyles.mainFormWrapper}`} ref={anchorRef}>
                             <h2>Send oss en melding:</h2>
                             <MainForm 
                                 style={{width: '100%', border: '1px solid rgb(220, 220, 220)', padding: '40px', display: 'block'}} 

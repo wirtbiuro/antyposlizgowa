@@ -1,0 +1,37 @@
+.personvernpolitikk{
+    max-width: 1000px;
+    margin: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 80px;
+    margin-bottom: 120px;
+}
+
+.personvernpolitikk  h1, .personvernpolitikk h2{
+    text-align: center;
+}
+
+.personvernpolitikk h1{
+    margin-bottom: 60px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.personvernpolitikk h2{
+    margin-top: 40px;
+}
+
+.personvernpolitikk a{
+    margin-left: 8px;
+    text-decoration: underline;
+}
+
+@media(max-width: 700px){
+    .personvernpolitikk{
+        padding-left: 26px;
+        padding-right: 26px;
+    }
+    .personvernpolitikk h1{
+        font-size: 20px;
+    }
+}

@@ -52,6 +52,10 @@
     content: '\f053';
 }
 
+.ant-breadcrumb-link{
+    text-transform: capitalize;
+}
+
 
 
 

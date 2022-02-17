@@ -6,7 +6,7 @@ import Footer from '../components/footer'
 import AuxForm from '../components/aux-form'
 import AntpslzgBreadcrumb from '../components/antpslzgBreadcrumb'
 import Animate from '../components/animate'
-import { uslugi, checkAllServices, zamowUsluge } from '../constants'
+import { uslugi, checkAllServices, zamowUsluge, links } from '../constants'
 import BottomBaner from '../components/bottom-banner'
 
 const Impregnation = () => {
@@ -18,13 +18,13 @@ const Impregnation = () => {
         <div className={styles.frictionMeasurement}>
             <Animate elementRef={imgRef} animationName="fadeInUp10"/>
             <Animate elementRef={selectionRef} animationName="fadeInUp10"/>
-            <AntpslzgBreadcrumb pathArr={[{title: uslugi, href:'/services'}, {title: 'Impregnering'}]}/>
+            <AntpslzgBreadcrumb pathArr={[{title: uslugi, href:`/${links.services}`}, {title: 'Impregnering'}]}/>
             <Banner backgroundImage='url(/images/gray-plates.jpg)' withwaves={false} isFadeInLeft10={true}>
                 <div className={`${styles.bannerInner}`}>
                     <div className={`${styles.left} ${styles.self}`}>
                         <h1>Impregnering</h1>
                         <p>Impregnering beskytter overflaten effektivt mot vannabsorpsjon, fete flekker eller andre stoffer. Takket være denne kan smuss enkelt fjernes og materialet forblir uskadet.</p>
-                        <div className={styles.link}><Link href='/services'><a>{checkAllServices}</a></Link></div>
+                        <div className={styles.link}><Link href={`/${links.services}`}><a>{checkAllServices}</a></Link></div>
                     </div>
                 </div>
             </Banner>
@@ -90,7 +90,7 @@ const Impregnation = () => {
                         </ul>
                     </div>                    
                     <p>&nbsp;</p>
-                    <div className={styles.link}><Link href='/contact'><a>{zamowUsluge}</a></Link></div>
+                    <div className={styles.link}><Link href={`/${links.contact}#form`}><a>{zamowUsluge}</a></Link></div>
                 </div>
                 <div className={styles.right}>
                     <AuxForm/>

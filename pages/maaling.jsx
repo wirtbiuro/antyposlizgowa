@@ -6,7 +6,7 @@ import Footer from '../components/footer'
 import AuxForm from '../components/aux-form'
 import AntpslzgBreadcrumb from '../components/antpslzgBreadcrumb'
 import Animate from '../components/animate'
-import { phoneLink, phone, checkAllServices, zamowUsluge, uslugi } from '../constants'
+import { phoneLink, phone, checkAllServices, zamowUsluge, uslugi, links } from '../constants'
 
 const FrictionMeasurement = () => {
 
@@ -16,14 +16,15 @@ const FrictionMeasurement = () => {
     return (
         <div className={styles.frictionMeasurement}>
             <Animate elementRef={imgRef} animationName="fadeInUp10"/>
-            <AntpslzgBreadcrumb pathArr={[{title: uslugi, href:'/services'}, {title: 'Måling av friksjonskoeffisient og PTV'}]}/>
+            {/* <AntpslzgBreadcrumb pathArr={[{title: uslugi, href:`/${links.services}`}, {title: 'Måling av friksjonskoeffisient og PTV'}]}/> */}
+            <AntpslzgBreadcrumb pathArr={[{title: uslugi, href:`/${links.services}`}, {title: links.frictionMeasurement}]}/>
             <Banner backgroundImage='url(/images/stairs.png)' withwaves={false} isFadeInLeft10={true}>
                 <div className={`${styles.bannerInner}`}>
                     <div className={`${styles.left} ${styles.self}`}>
                         <h1>Måling av friksjonskoeffisient og PTV</h1>
-                        <p></p>
+                        <p>Vi utfører PTV-måling av gulvets sklisikkerhet og vi utsteder et sertifikat som bekrefter målingens resultater.</p>
                         {/* <p>Wykonamy pomiar antypoślizgowości Twojej powierzchni według wytycznych Instytutu Techniki Budowlanej. Następnie otrzymasz Certyfikat Zgodności przeprowadzonego badania.</p> */}
-                        <div className={styles.link}><Link href='/services'><a>{checkAllServices}</a></Link></div>
+                        <div className={styles.link}><Link href={`/${links.services}`}><a>{checkAllServices}</a></Link></div>
                     </div>
                 </div>
             </Banner>
@@ -125,7 +126,7 @@ const FrictionMeasurement = () => {
                     </ul>
                     <p>&nbsp;</p>
 
-                    <div className={styles.link}><Link href='/contact'><a>{zamowUsluge}</a></Link></div>
+                    <div className={styles.link}><Link href={`/${links.contact}`}><a>{zamowUsluge}</a></Link></div>
                 </div>
                 <div className={styles.right}>
                     <AuxForm/>

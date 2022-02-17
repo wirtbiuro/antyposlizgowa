@@ -5,13 +5,14 @@ import styles from '../styles/Common.module.css'
 import Footer from '../components/footer'
 import AuxForm from '../components/aux-form'
 import AntpslzgBreadcrumb from '../components/antpslzgBreadcrumb'
-import { uslugi } from '../constants'
+import { uslugi, links } from '../constants'
 import BottomBaner from '../components/bottom-banner'
 
 const Products = () => {
     return (
         <div className={styles.frictionMeasurement}>
-            <AntpslzgBreadcrumb pathArr={[{title: uslugi, href:'/services'}, {title: 'Våre produkter'}]}/>
+            {/* <AntpslzgBreadcrumb pathArr={[{title: uslugi, href: `/${links.services}`}, {title: 'Våre produkter'}]}/> */}
+            <AntpslzgBreadcrumb pathArr={[{title: uslugi, href: `/${links.services}`}, {title: links.products}]}/>
             <Banner 
                 backgroundImage='linear-gradient(180deg, #ffffff 0%,rgba(255,255,255,0) 100%), url(/images/products.png)' 
                 withwaves={false}
@@ -22,7 +23,7 @@ const Products = () => {
                     <div className={`${styles.left} ${styles.self}`}>
                         <h1>Våre produkter</h1>
                         <p>Vi tilbyr profesjonelle tjenester innen sklisikring, en grundig rengjøring, avkalking, impregnering.</p>
-                        {/* <div className={styles.link}><Link href='/services'><a>SPRAWDŹ WSZYSTKIE USŁUGI</a></Link></div> */}
+                        {/* <div className={styles.link}><Link href={`/${links.services}`}><a>SPRAWDŹ WSZYSTKIE USŁUGI</a></Link></div> */}
                     </div>
                 </div>
             </Banner>
@@ -34,7 +35,7 @@ const Products = () => {
                     <h2>Våre produkter:</h2>
                     <p>&nbsp;</p>
                     <ul>
-                        <li><p>Har PZH-godkjenning.</p></li>
+                        {/* <li><p>Har PZH-godkjenning.</p></li> */}
                         <li><p>De er trygge for mennesker og miljøvennlige.</p></li>
                         <li><p>De skader ikke underlaget.</p></li>
                         <li><p>De er lett å håndtere.</p></li>
@@ -63,7 +64,7 @@ const Products = () => {
                     <p>Impregnering beregnet for underlag av ikke-absorberende materialer. De beskytter effektivt mot smuss og ikke gjør overflaten glattere. De lar bevare den opprinnelige fargen på naturstein.</p>
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
-                    <div className={styles.link}><Link href='https://ctschemistry.com/en/shop/' target="_blank">
+                    <div className={styles.link}><Link href={`/${links.contact}#form`} target="_blank">
                         <a>Bestill produkter &gt;&gt;</a>
                     </Link></div>
                 </div>

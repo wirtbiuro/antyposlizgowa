@@ -10,3 +10,16 @@ export const zamowUsluge = <>Bestill en tjeneste &gt;&gt;</>
 export const zamowUslugeS = <>Bestill en tjeneste</>
 
 export const checkAllServices = 'Se våre tjenester'
+
+export const links = {
+    services: 'tjenester',
+    aboutUs: 'omoss',
+    contact: 'kontakt',
+    personvernpolitikk: 'personvernpolitikk',
+    protection: 'sklisikring',
+    frictionMeasurement: 'maaling',
+    cleaning: 'rengjoring',
+    descaling: 'avkalking',
+    impregnation: 'impregnering',
+    products: 'produkter',
+}

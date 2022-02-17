@@ -53,6 +53,10 @@ i.phone::before{
     color: rgb(249, 212, 0);
 }
 
+.anchor{
+    padding: 0 !important;
+}
+
 @media (max-width: 425px){
     .row i{
         font-size: 18px;

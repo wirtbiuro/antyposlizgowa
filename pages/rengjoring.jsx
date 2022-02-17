@@ -10,7 +10,7 @@ import Footer from '../components/footer'
 import AuxForm from '../components/aux-form'
 import AntpslzgBreadcrumb from '../components/antpslzgBreadcrumb'
 import Animate from '../components/animate'
-import { phoneLink, phone, checkAllServices, uslugi, zamowUsluge } from '../constants'
+import { phoneLink, phone, checkAllServices, uslugi, zamowUsluge, links } from '../constants'
 
 const Protection = () => {
 
@@ -19,13 +19,14 @@ const Protection = () => {
     return (
         <div>
             <Animate elementRef={imgRef} animationName="fadeInUp10"/>
-            <AntpslzgBreadcrumb pathArr={[{title: uslugi, href:'/services'}, {title: 'Rengjøring av overflate'}]}/>
+            {/* <AntpslzgBreadcrumb pathArr={[{title: uslugi, href: `/${links.services}`}, {title: 'Rengjøring av overflate'}]}/> */}
+            <AntpslzgBreadcrumb pathArr={[{title: uslugi, href: `/${links.services}`}, {title: `${links.cleaning}`}]}/>
             <Banner backgroundImage='url(/images/plates-flowers.jpg)' withwaves={false} isFadeInLeft10={true}>
                 <div className={`${styles.bannerInner}`}>
                     <div className={`${styles.left} ${styles.self}`}>
                         <h1>Rengjøring av overflate</h1>
                         <p>Vi fjerner de fleste forurensninger som har oppstått ved langvarig bruk av følgende overflater: keramiske fliser, bassengfliser, naturlig stein, betong og klinker.</p>
-                        <div className={styles.link}><Link href='/services'><a>{checkAllServices}</a></Link></div>
+                        <div className={styles.link}><Link href={`/${links.services}`}><a>{checkAllServices}</a></Link></div>
                     </div>
                 </div>
             </Banner>
@@ -52,7 +53,7 @@ const Protection = () => {
                     </ul>
                     <p>Vi tar en gratis prøve før gjennomføring av et oppdrag. Du blir sikker på at den planlagte rengjøringen gir ønsket effekt og er trygg for overflaten.</p>
                     <p>&nbsp;</p>
-                    <div className={styles.link}><Link href='/contact'><a>{zamowUsluge}</a></Link></div>
+                    <div className={styles.link}><Link href={`/${links.contact}`}><a>{zamowUsluge}</a></Link></div>
                 </div>
                 <div className={styles.right}>
                     <AuxForm/>
