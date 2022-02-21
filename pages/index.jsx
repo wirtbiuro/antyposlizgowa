@@ -18,7 +18,7 @@ const Home = () => {
 
     return (
         <div className={`${styles.home}`}>
-            <Banner>
+            <Banner childrenDivOpacity={1}>
                 <div className={`${styles.bannerInner}`}>
                     <div className={`${styles.left} ${animateStyles.fadeInLeft10}`} ref={bannerLeftRef}>
                         {/* <Animate elementRef={bannerLeftRef} animationName='fadeInLeft10'/> */}

@@ -43,18 +43,18 @@ const Products = () => {
                         <li><p>De kan brukes på nye og gamle overflater.</p></li>
                         <li><p>De bidrar til desinfeksjon av overflater.</p></li>
                     </ul>
-                    <img src="/images/products-2.png" className={styles.decorImg}/>
+                    <img src="/images/spotless-clean.png" className={styles.decorImg}/>
                     <h2>Produkter innen sklisikring:</h2>
                     <p>&nbsp;</p>
                     <p>
                         Preparater basert på vann, beregnet for sklisikring ute og inne, på gamle og nye overflater.
                         <br/>
                         De bevarer underlagets utseende. Peraparatene er beregnet for sikring av keramiske, glaserte og polerte fliser, klinker, gres, terrakotta, samt granitt og genis.</p>
-                    <img src="/images/products-3.png"/>
+                    <img src="/images/anty-slip-treatment.png"/>
                     <h2>Produkter innen rengjøring:</h2>
                     <p>&nbsp;</p>
                     <p>Vannbaserte preparater beregnet for fjerning av veldig vanskelig, gammelt smuss, samt enkelte flekker. Profesjonalne, wysoko skoncentrowane produkty gwarantują 100% skuteczność działania bez ryzyka zmiany koloru powierzchni lub powstania przebarwień. Preparater er beregnet for fjerning av veldig sterkt mineralsk eller organisk smuss.</p>
-                    <img src="/images/products-4.png"/>
+                    <img src="/images/exellent-protection.png"/>
                     <h2>Produkter innen vannbasert impregnering:</h2>
                     <p>&nbsp;</p>
                     <p>Helt økologiske preparater utviklet med grunnlag i organiske silisiumforbindelser. De øker den impregnerte overflatens motstandsdyktighet mot smuss, forekomst og utvikling av biologisk forurensning. Odporne na alkalia i działanie promieni UV, bezrozpuszczalnikowe.</p>

@@ -26,7 +26,7 @@ const Animate = ({elementRef, animationName}) => {
                 setIsAnimated(true)
             }
         }
-    }, [scrollPos, isAnimated])
+    }, [scrollPos, isAnimated, elementRef])
 
     return (
         <></>

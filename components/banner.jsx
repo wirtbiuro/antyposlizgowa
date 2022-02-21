@@ -4,7 +4,8 @@ import MainForm from './main-form'
 import Animate from './animate'
 
 const Banner = ({children, withwaves=true, backgroundImage='url(/images/feet.jpg)', isFadeInUp=false,
-    isFadeInLeft10=false, backgroundPosition="center center"
+    isFadeInLeft10=false, backgroundPosition="center center", 
+    childrenDivOpacity=0
 }) => {
 
     const paddingBottom = withwaves? '0': '11%'
@@ -17,7 +18,7 @@ const Banner = ({children, withwaves=true, backgroundImage='url(/images/feet.jpg
             {isFadeInLeft10 && <Animate animationName="fadeInLeft10" elementRef={childrenDivRef}/>}
             {isFadeInUp && <Animate animationName="fadeInUp10" elementRef={childrenDivRef}/>}
 
-            <div className={styles.childrenDiv} ref={childrenDivRef}>
+            <div className={`${styles.childrenDiv} ${childrenDivOpacity===1 && styles.opacityOne}`} ref={childrenDivRef}>
                 {children}
             </div>
             

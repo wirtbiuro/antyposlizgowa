@@ -12,6 +12,7 @@
 .fadeInUp {
     animation-name: fadeInUp;
     animation-duration: 1s;
+    opacity: 1 !important;
 }
 
 @keyframes fadeInUp10 {
@@ -28,6 +29,7 @@
 .fadeInUp10 {
   animation-name: fadeInUp10;
   animation-duration: 1s;
+  opacity: 1 !important;
 }
 
 @keyframes fadeInLeft10 {
@@ -44,6 +46,7 @@
 .fadeInLeft10 {
     animation-name: fadeInLeft10;
     animation-duration: 1s;
+    opacity: 1 !important;
 }
 
 @keyframes fadeInRight10 {
@@ -60,5 +63,6 @@
 .fadeInRight10 {
     animation-name: fadeInRight10;
     animation-duration: 1s;
+    opacity: 1 !important;
 }
 
