@@ -102,7 +102,19 @@
     margin-bottom: 15px;
 }
 
+@media (max-width: 600px){
+    .row{
+        flex-direction: column;
+    }
+    .row .card{
+        margin-right: 0;
+    }
+}
+
 @media (max-width: 425px){
+    .row .card{
+        padding: 20px 10px;
+    }
     .row i{
         font-size: 18px;
     }
