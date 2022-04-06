@@ -17,7 +17,7 @@ export default async(req, res) => {
 
         const msg = {
             from: process.env.EMAIL,
-            to: "ivan@hrex.eu",
+            to: "post@dyktighandverker.no",
             // bcc: process.env.NEXT_PUBLIC_ENV==='PROD'? ["biuro@virtoffice.pl"] : ["ivan@hrex.eu"],
             subject: `Antyposlizgowa Message`,
             html: `
