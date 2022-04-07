@@ -11,31 +11,37 @@ import Footer from '../components/footer'
 import Animate from '../components/animate'
 import { phone, phoneLink, links } from '../constants'
 import BottomBaner from '../components/bottom-banner'
+import Meta from '../components/meta'
 
 const Home = () => {
 
     const bannerLeftRef = useRef()
 
     return (
-        <div className={`${styles.home}`}>
-            <Banner childrenDivOpacity={1}>
-                <div className={`${styles.bannerInner}`}>
-                    <div className={`${styles.left} ${animateStyles.fadeInLeft10}`} ref={bannerLeftRef}>
-                        {/* <Animate elementRef={bannerLeftRef} animationName='fadeInLeft10'/> */}
-                        <h1>Sklisikring</h1>
-                        <h2>måling av friksjonskoeffisient og PTV, rengjøring, avkalking, impregnering</h2>
-                        <div><Link href={`/${links.services}`}><a>Se våre tjenester</a></Link></div>
+        <>
+            <Meta/>
+
+            <div className={`${styles.home}`}>
+                <Banner childrenDivOpacity={1}>
+                    <div className={`${styles.bannerInner}`}>
+                        <div className={`${styles.left} ${animateStyles.fadeInLeft10}`} ref={bannerLeftRef}>
+                            {/* <Animate elementRef={bannerLeftRef} animationName='fadeInLeft10'/> */}
+                            <h1>Sklisikring</h1>
+                            <h2>måling av friksjonskoeffisient og PTV, rengjøring, avkalking, impregnering</h2>
+                            <div><Link href={`/${links.services}`}><a>Se våre tjenester</a></Link></div>
+                        </div>
+                        <MainForm/>
                     </div>
-                    <MainForm/>
-                </div>
-            </Banner>
-            <Cards/>
-            <DiffBlock/>
-            {/* <TrustBlock/> */}
-            <BottomBaner/>
-            <Footer/>
-            <div className={styles.footerBar}></div>
-        </div>
+                </Banner>
+                <Cards/>
+                <DiffBlock/>
+                {/* <TrustBlock/> */}
+                <BottomBaner/>
+                <Footer/>
+                <div className={styles.footerBar}></div>
+            </div>
+
+        </>
     )
 }
 
